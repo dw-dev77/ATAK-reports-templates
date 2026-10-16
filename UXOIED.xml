@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='UXO/IED' title='UXO/IED report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='9-Line Explosive Hazard Report' role='All' id='title' selected='false'>
+        <option type='dateTime' required='true' title='Line 1: DTG' value='' id='DTG'/>
+        <option type='geometry' required='true' title='Line 2: Location' value='' id='Location' drawMapItem='false'/>
+        <option type='string' required='true' title='Line 3: Contact Method (Freq / Callsign)' value='' id='Contact Method'/>
+        <list title='Line 4: Type of Ordnance' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Dropped (Bomb, Cluster, Rocket)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Projected (Artillery, Mortar, Grenade)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Placed (IED, Landmine, Booby Trap)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Thrown (Hand Grenade, Incendiary, Improvised)'/>
+        </list>
+        <list title='Line 5: NBC Contamination' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='None / Clear'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Suspected NBC'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed Chemical'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed Biological'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed Radiological'/>
+        </list>
+         <list title='Line 6:Resources Threatened' required='true' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Buildings / Facilities' value='' id='Buildings / Facilities'/>
+            <option type='string' required='false' title='Roads / Tracks / Egress Routes' value='' id='Roads / Tracks / Egress Routes'/>
+            <option type='string' required='false' title='Vehicles / Aircraft' value='' id='Vehicles / Aircraft'/>
+            <option type='string' required='false' title='Personnel / Civilians' value='' id='Personnel / Civilians'/>
+            <option type='string' required='false' title='Critical Infrastructure' value='' id='Critical Infrastructure'/>
+        </list>
+        <option type='string' required='true' title='Line 7: Impact on Mission' value='' id='Impact on Mission'/>
+        <option type='string' required='true' title='Line 8: Protective Measures (Cordon / Evac)' value='' id='Protective Measures'/>
+        <list title='Line 8: Hazard Marking Method' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Engineered Marking (Tape / Flags)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Improvised Marking (Paint / Physical Marker)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmarked / High Hazard Area'/>
+        </list>
+        <list title='Line 9: Recommended Priority' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Immediate (Stops Strategic Mission)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Indirect (Slows Mission)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Minor (Low Impact)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Threat'/>
+        </list>
+        <option type='string' required='false' title='Remarks / Additional Observations' value='' id='Remarks'/>
+    </section>
+</report>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='LOGREP' title='LOGREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='Logistics &amp; Supply Report' role='All' id='title' selected='false'>
+        <list title='Report Type' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Status Update'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Resupply Request'/>
+        </list>
+        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
+        <option type='string' required='true' title='Node ID / Unit Callsign' value='' id='Node ID'/>
+        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
+        
+        <section title='Supply Status' role='All' id='Supply Status' selected='false'>
+           <option type='number' required='true' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;Gal&#34;' id='Water State'/>
+            <option type='number' required='true' title='Food State' value='' unitOptions='&#34;Days&#34;,&#34;Day&#34;' id='Food State'/>
+            <list title='Battery State' type='dropdown' required='true'>
+                <option type='checkbox' value='false' required='' selected='false' title='100-75%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='75-50%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='50-25%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Critical'/>
+            </list>
+           <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;Gal&#34;' id='Fuel State'/>
+            <list title='Medical Status' type='dropdown' required='true'>
+                <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+            </list>
+            <list title='Ammo Status' type='dropdown' required='true'>
+                <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+            </list>
+        </section>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>

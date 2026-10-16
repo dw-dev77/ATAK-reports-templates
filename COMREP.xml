@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='COMREP' title='COMREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='Tactical Communications Report' role='All' id='title' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
+        <option type='geometry' required='true' title='Observer Position / Grid' value='' id='Location' drawMapItem='false'/>
+        <option type='number' required='true' title='Frequency / Band' value='' unitOptions='&#34;kHz&#34;,&#34;MHz&#34;,&#34;GHz&#34;' id='Frequency / Band'/>
+        <list title='Signal Strength' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='S1 - S3 (-120 to -100 dBm) Noise Floor / Weak'/>
+            <option type='checkbox' value='false' required='' selected='false' title='S4 - S6 (-100 to -80 dBm) Fair / Readable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='S7 - S9 (-80 to -60 dBm) Strong / Clear'/>
+            <option type='checkbox' value='false' required='' selected='false' title='S9+ (&gt; -60 dBm) Overloading / Close Proximity'/>
+        </list>
+        <list title='Modulation' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='V-ANLG (FM/AM)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='V-DIGI (DMR/P25)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='DATA (LoRa/FSK)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='SSB (USB/LSB)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='ENCR/FHSS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='UNK (Noise/CW)'/>
+        </list>
+        <option type='number' required='true' title='Direction of Arrival' value='' unitOptions='&#34;° (deg)&#34;,&#34;mils&#34;' id='Direction of Arrival'/>   
+        <list title='Interference Level' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Clear'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Sporadic'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Heavy'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Saturated'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Jammed'/>
+        </list>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>

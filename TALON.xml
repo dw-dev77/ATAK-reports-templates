@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='TALON' title='TALON report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='TALON C-UAS Report' role='All' id='title' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>    
+        <list title='Type' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='FPV (Analog / Digital RF)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='FPV (Fiber Optic / Non-RF)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Quad (Commercial / Recon)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Micro Swarm'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Heavy Multirotor'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Loitering Munition'/>
+            <option type='checkbox' value='false' required='' selected='false' title='VTOL / Fixed Wing Hybrid'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown sUAS'/>
+        </list>
+        <list title='Activity' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Transit (High Speed)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Low Hover / Target Search'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Thermal / Optical Sweep'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Payload Drop / Terminal Strike'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Perched / Static Surveillance'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Signal Relay / Airborne Mesh'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mine Laying / Dispersal'/>
+        </list>
+        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
+        <option type='rangeBearing' required='true' title='Orientation' value='' id='Orientation'/>
+        <list title='Noise' required='true' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Loud (Close Proximity)' value='' id='Loud (Close Proximity)'/>
+            <option type='string' required='false' title='Moderate (Audible)' value='' id='Moderate (Audible)'/>
+            <option type='string' required='false' title='Low / Faint' value='' id='Low / Faint'/>
+            <option type='string' required='false' title='High Pitch Buzz' value='' id='High Pitch Buzz'/>
+            <option type='string' required='false' title='Heavy Motor Thrum' value='' id='Heavy Motor Thrum'/>
+            <option type='string' required='false' title='Piston / Prop Engine Hum' value='' id='Piston / Prop Engine Hum'/>
+            <option type='string' required='false' title='Silent / Negligible' value='' id='Silent / Negligible'/>
+        </list>
+        <list title='Estimated Altitude AGL' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Ultra Low (&lt;15m)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Canopy Level (15m-50m)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Low Altitude (50m-150m)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Medium Altitude (150m-500m)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='High Altitude (&gt;500m)'/>
+        </list>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>

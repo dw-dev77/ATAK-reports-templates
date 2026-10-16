@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='INTREP' title='INTREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='Intelligence Report' role='All' id='title' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
+        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
+        <list title='Collection Asset / Source' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='HUMINT (Direct Visual / Recon)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='GEOINT / sUAS Reconnaissance'/>
+            <option type='checkbox' value='false' required='' selected='false' title='SIGINT / EW Intercept'/>
+            <option type='checkbox' value='false' required='' selected='false' title='OSINT / Civilian Report'/>
+        </list>
+        <list title='Target / Force Identification' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Infantry / Foot Mobile'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mechanized / Armored Vehicle'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Soft-Skin / Motorized Transport'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Recon Element / Advance Guard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Command &#38; Control (C2) / Comms Node'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Logistics / Support Element'/>
+        </list>
+        <list title='Estimated Strength / Size' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Individual / Single Unit'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Small Team (2-6)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Squad / Section'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Platoon'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Company+'/>
+        </list>
+        <list title='Activity Type' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Advancing / Attack'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Defending / Hunkered'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Retreating / Breaking Contact'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Patrolling / Reconnaissance'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Resupply / Bivouac'/>
+        </list>
+        <option type='rangeBearing' required='true' title='Direction of Movement / Bearing' value='' id='Direction of Movement / Bearing'/>
+        <list title='Equipment / Signatures Noted' required='true' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Heavy Weapons / Support' value='' id='Heavy Weapons / Support'/>
+            <option type='string' required='false' title='Communications / Antennas' value='' id='Communications / Antennas'/>
+            <option type='string' required='false' title='Night Vision / Optics' value='' id='Night Vision / Optics'/>
+            <option type='string' required='false' title='CBRN Protective Gear' value='' id='CBRN Protective Gear'/>
+            <option type='string' required='false' title='Civilian Attire / Mixed' value='' id='Civilian Attire / Mixed'/>
+        </list>
+        <list title='Evaluation Rating' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='A1 - Completely Reliable / Confirmed by Other Sources'/>
+            <option type='checkbox' value='false' required='' selected='false' title='B2 - Usually Reliable / Probably True'/>
+            <option type='checkbox' value='false' required='' selected='false' title='C3 - Fairly Reliable / Possibly True'/>
+            <option type='checkbox' value='false' required='' selected='false' title='D4 - Not Usually Reliable / Doubtful'/>
+            <option type='checkbox' value='false' required='' selected='false' title='E5 - Unreliable / Improbable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='F6 - Reliability / Truth Cannot Be Judged'/>
+        </list>
+        <option type='string' required='true' title='Intel Assessment / Predicted Intent' value='' id='Intel Assessment'/>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>

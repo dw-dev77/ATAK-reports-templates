@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='SITREP' title='SITREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='Situation Report' role='All' id='title' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
+        <option type='string' required='true' title='General Situation' value='' id='General Situation'/>
+        <option type='string' required='true' title='Enemy Forces' value='' id='Enemy Forces'/>
+        <option type='string' required='true' title='Friendly Forces' value='' id='Friendly Forces'/>
+        <option type='string' required='true' title='Incidents / Observations' value='' id='Incidents / Observations'/>
+        <option type='string' required='true' title='Logistics &#38; Administration' value='' id='Logistics &#38; Administration'/>
+        <option type='string' required='true' title='Command &#38; Signal' value='' id='Command &#38; Signal'/>
+        <option type='string' required='true' title='Commander Assessment' value='' id='Commander Assessment'/>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>

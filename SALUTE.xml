@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='SALUTE' title='SALUTE Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+    <section title='Main Section' role='All' id='title' selected='false'>
+        <option type='string' required='true' title='Size' value='' id='Size'/>
+        <option type='string' required='true' title='Activity' value='' id='Activity'/>
+        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
+        <option type='string' required='true' title='Unit' value='' id='Unit'/>
+        <option type='dateTime' required='true' title='Time' value='' id='Time'/>
+        <option type='string' required='true' title='Equipment' value='' id='Equipment'/>
+        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+    </section>
+</report>
