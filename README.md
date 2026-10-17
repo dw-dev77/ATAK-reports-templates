@@ -3,17 +3,17 @@
 
 ###  Included Templates
 
-| Template | Purpose / Scope |
+| Template | Description |
 | :--- | :--- |
 | **SITREP** | Situation report covering operational status assessment, unit readiness, and mission progress |
-| **SALUTE** | Standard spot report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment) |
-| **INTREP** | Intelligence report detailing threat assessments and NATO Admiralty code ratings |
-| **LINKREP** | Tactical data link and radio/mesh network status monitoring |
+| **SALUTE** | Standard report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment) |
+| **INTREP** | Intelligence report detailing threat assessments and NATO Admiralty Code ratings |
+| **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions |
 | **LOGREP** | Logistics report covering supply state, equipment readiness, and resupply requirements |
-| **UXO / IED** | Explosive hazard reporting, clearance, and cordon marking |
-| **TALON** | Counter-UAS spot report for drone detection, classification, acoustic signature, and visual tracking |
-| **COMREP** | RF spectrum intercept logging, signal strength (S-units/dBm), modulation, and bearing vectors |
-| **METHANE** | Major incident declaration, scene hazards, and Mass Casualty (MASCAL) triage counts |
+| **UXO / IED** | Standardized 9-Line explosive ordnance and hazard report |
+| **TALON** | Report template for tracking small unmanned aerial system (sUAS) threats, visual/acoustic sightings, flight vectors, and payload capabilities |
+| **COMREP** | Signal intercept report for logging RF emissions, frequency/modulation tracking, Direction of Arrival (DoA), and electronic interference/jamming levels |
+| **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts |
 
 ## Key Features
 
