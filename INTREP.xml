@@ -75,36 +75,36 @@
         </list>
         <option type='rangeBearing' required='false' title='Range &amp; Bearing (Movement)' value='' id='intrep_direction_of_movement_bearing'/>
         <list title='Equipment Observed' required='false' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Small Arms' value='' id='intrep_small_arms'/>
-            <option type='string' required='false' title='Crew-Served Weapons' value='' id='intrep_crew_served_weapons'/>
-            <option type='string' required='false' title='Heavy Weapons / Support Systems' value='' id='intrep_heavy_weapons_support_systems'/>
-            <option type='string' required='false' title='Communications Equipment' value='' id='intrep_communications_equipment'/>
-            <option type='string' required='false' title='Optical / Observation Equipment' value='' id='intrep_optical_observation_equipment'/>
-            <option type='string' required='false' title='Night Vision Equipment' value='' id='intrep_night_vision_equipment'/>
-            <option type='string' required='false' title='CBRN Protective Equipment' value='' id='intrep_cbrn_protective_equipment'/>
-            <option type='string' required='false' title='Unmanned Systems' value='' id='intrep_unmanned_systems'/>
-            <option type='string' required='false' title='Other' value='' id='intrep_equipment_other'/>
-            <option type='string' required='false' title='Unknown / Undetermined' value='' id='intrep_equipment_unknown_undetermined'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Small Arms'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Crew-Served Weapons'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Heavy Weapons / Support Systems'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Communications Equipment'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Optical / Observation Equipment'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Night Vision Equipment'/>
+        <option type='checkbox' value='false' required='' selected='false' title='CBRN Protective Equipment'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Unmanned Systems'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+        <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Personnel Appearance' required='false' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Military Uniform' value='' id='intrep_military_uniform'/>
-            <option type='string' required='false' title='Civilian Clothing' value='' id='intrep_civilian_clothing'/>
-            <option type='string' required='false' title='Mixed Attire' value='' id='intrep_mixed_attire'/>
-            <option type='string' required='false' title='Distinctive Insignia / Identification' value='' id='intrep_distinctive_insignia_identification'/>
-            <option type='string' required='false' title='Protective Equipment' value='' id='intrep_protective_equipment'/>
-            <option type='string' required='false' title='Other' value='' id='intrep_personnel_other'/>
-            <option type='string' required='false' title='Unknown / Undetermined' value='' id='intrep_personnel_unknown_undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military Uniform'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Civilian Clothing'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mixed Attire'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Distinctive Insignia / Identification'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Protective Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+           
         </list>
         <list title='Observable Signatures' required='false' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Radio / Antenna Presence' value='' id='intrep_radio_antenna_presence'/>
-            <option type='string' required='false' title='Electronic Equipment / Components' value='' id='intrep_electronic_equipment_components'/>
-            <option type='string' required='false' title='Vehicle Markings' value='' id='intrep_vehicle_markings'/>
-            <option type='string' required='false' title='Unit Markings / Insignia' value='' id='intrep_unit_markings_insignia'/>
-            <option type='string' required='false' title='Visible Camouflage / Concealment' value='' id='intrep_visible_camouflage_concealment'/>
-            <option type='string' required='false' title='Physical Fortifications' value='' id='intrep_physical_fortifications'/>
-            <option type='string' required='false' title='Vehicle / Equipment Configuration' value='' id='intrep_vehicle_equipment_configuration'/>
-            <option type='string' required='false' title='Other' value='' id='intrep_signatures_other'/>
-            <option type='string' required='false' title='Unknown / Undetermined' value='' id='intrep_signatures_unknown_undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Radio / Antenna Presence'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Electronic Equipment / Components'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vehicle Markings'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unit Markings / Insignia'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Visible Camouflage / Concealment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Physical Fortifications'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vehicle / Equipment Configuration'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Source Reliability' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='A - Completely Reliable'/>
