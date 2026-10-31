@@ -1,53 +1,130 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<report type='INTREP' title='INTREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+<report type='INTREP' title='INTREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='intrep'>
     <section title='Intelligence Report' role='All' id='title' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
-        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
-        <list title='Collection Asset / Source' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='HUMINT (Direct Visual / Recon)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='GEOINT / sUAS Reconnaissance'/>
-            <option type='checkbox' value='false' required='' selected='false' title='SIGINT / EW Intercept'/>
-            <option type='checkbox' value='false' required='' selected='false' title='OSINT / Civilian Report'/>
+        <option type='dateTime' required='true' title='DTG' value='' id='intrep_dtg'/>
+        <option type='geometry' required='true' title='Location' value='' id='intrep_location' drawMapItem='false'/>
+        <list title='Collection Discipline' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='HUMINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='GEOINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='SIGINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='OSINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='IMINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='MASINT'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Target / Force Identification' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Infantry / Foot Mobile'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Mechanized / Armored Vehicle'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Soft-Skin / Motorized Transport'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Recon Element / Advance Guard'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Command &#38; Control (C2) / Comms Node'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Logistics / Support Element'/>
+        <list title='Source / Collection Origin' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Own Observation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Friendly Unit Report'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Partner Force Report'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Civilian Report'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Open-Source Publication'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Social Media'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Sensor / Surveillance Feed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Captured Material / Document'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Estimated Strength / Size' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Individual / Single Unit'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Small Team (2-6)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Squad / Section'/>
+        <list title='Target Type' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Personnel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military Vehicle'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Civilian Vehicle'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Aircraft'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vessel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Installation / Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Equipment / Material'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Multiple / Mixed Targets'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unidentified Target'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+        </list>
+        <list title='Assessed Element / Role' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Infantry'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mechanized / Armored'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Reconnaissance'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Command &amp; Control'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Logistics / Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Electronic Warfare'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Air Defence'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Estimated Strength / Size' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Individual'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Small Team'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Section / Squad'/>
             <option type='checkbox' value='false' required='' selected='false' title='Platoon'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Company+'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Company'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Battalion'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Regiment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Brigade'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Division+'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Activity Type' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Advancing / Attack'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Defending / Hunkered'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Retreating / Breaking Contact'/>
+         <option type='number' required='false' title='Estimated Personnel / Unit Count' value='' id='intrep_personnel_unit_count'/>
+        <list title='Activity Type' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Advancing / Moving Forward'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Defensive Posture / Entrenched'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Withdrawing / Disengaging'/>
             <option type='checkbox' value='false' required='' selected='false' title='Patrolling / Reconnaissance'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Resupply / Bivouac'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Resupply / Logistics'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Transiting / Movement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Establishing / Occupying Position'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Stationary'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='rangeBearing' required='true' title='Direction of Movement / Bearing' value='' id='Direction of Movement / Bearing'/>
-        <list title='Equipment / Signatures Noted' required='true' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Heavy Weapons / Support' value='' id='Heavy Weapons / Support'/>
-            <option type='string' required='false' title='Communications / Antennas' value='' id='Communications / Antennas'/>
-            <option type='string' required='false' title='Night Vision / Optics' value='' id='Night Vision / Optics'/>
-            <option type='string' required='false' title='CBRN Protective Gear' value='' id='CBRN Protective Gear'/>
-            <option type='string' required='false' title='Civilian Attire / Mixed' value='' id='Civilian Attire / Mixed'/>
+        <option type='rangeBearing' required='false' title='Range &amp; Bearing (Movement)' value='' id='direction_of_movement_bearing'/>
+        <list title='Equipment Observed' required='false' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Small Arms' value='' id='small_arms'/>
+            <option type='string' required='false' title='Crew-Served Weapons' value='' id='crew_served_weapons'/>
+            <option type='string' required='false' title='Heavy Weapons / Support Systems' value='' id='heavy_weapons_support_systems'/>
+            <option type='string' required='false' title='Communications Equipment' value='' id='communications_equipment'/>
+            <option type='string' required='false' title='Optical / Observation Equipment' value='' id='optical_observation_equipment'/>
+            <option type='string' required='false' title='Night Vision Equipment' value='' id='night_vision_equipment'/>
+            <option type='string' required='false' title='CBRN Protective Equipment' value='' id='cbrn_protective_equipment'/>
+            <option type='string' required='false' title='Unmanned Systems' value='' id='unmanned_systems'/>
+            <option type='string' required='false' title='Other' value='' id='equipment_other'/>
+            <option type='string' required='false' title='Unknown / Undetermined' value='' id='equipment_unknown_undetermined'/>
         </list>
-        <list title='Evaluation Rating' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='A1 - Completely Reliable / Confirmed by Other Sources'/>
-            <option type='checkbox' value='false' required='' selected='false' title='B2 - Usually Reliable / Probably True'/>
-            <option type='checkbox' value='false' required='' selected='false' title='C3 - Fairly Reliable / Possibly True'/>
-            <option type='checkbox' value='false' required='' selected='false' title='D4 - Not Usually Reliable / Doubtful'/>
-            <option type='checkbox' value='false' required='' selected='false' title='E5 - Unreliable / Improbable'/>
-            <option type='checkbox' value='false' required='' selected='false' title='F6 - Reliability / Truth Cannot Be Judged'/>
+        <list title='Personnel Appearance' required='false' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Military Uniform' value='' id='military_uniform'/>
+            <option type='string' required='false' title='Civilian Clothing' value='' id='civilian_clothing'/>
+            <option type='string' required='false' title='Mixed Attire' value='' id='mixed_attire'/>
+            <option type='string' required='false' title='Distinctive Insignia / Identification' value='' id='distinctive_insignia_identification'/>
+            <option type='string' required='false' title='Protective Equipment' value='' id='protective_equipment'/>
+            <option type='string' required='false' title='Other' value='' id='personnel_other'/>
+            <option type='string' required='false' title='Unknown / Undetermined' value='' id='personnel_unknown_undetermined'/>
         </list>
-        <option type='string' required='true' title='Intel Assessment / Predicted Intent' value='' id='Intel Assessment'/>
-        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+        <list title='Observable Signatures' required='false' multiple='true' type='checkbox'>
+            <option type='string' required='false' title='Radio / Antenna Presence' value='' id='radio_antenna_presence'/>
+            <option type='string' required='false' title='Electronic Equipment / Components' value='' id='electronic_equipment_components'/>
+            <option type='string' required='false' title='Vehicle Markings' value='' id='vehicle_markings'/>
+            <option type='string' required='false' title='Unit Markings / Insignia' value='' id='unit_markings_insignia'/>
+            <option type='string' required='false' title='Visible Camouflage / Concealment' value='' id='visible_camouflage_concealment'/>
+            <option type='string' required='false' title='Physical Fortifications' value='' id='physical_fortifications'/>
+            <option type='string' required='false' title='Vehicle / Equipment Configuration' value='' id='vehicle_equipment_configuration'/>
+            <option type='string' required='false' title='Other' value='' id='signatures_other'/>
+            <option type='string' required='false' title='Unknown / Undetermined' value='' id='signatures_unknown_undetermined'/>
+        </list>
+        <list title='Source Reliability' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='A - Completely Reliable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='B - Usually Reliable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='C - Fairly Reliable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='D - Not Usually Reliable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='E - Unreliable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='F - Cannot Be Judged'/>
+        </list>
+        <list title='Information Credibility' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='1 - Confirmed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='2 - Probably True'/>
+            <option type='checkbox' value='false' required='' selected='false' title='3 - Possibly True'/>
+            <option type='checkbox' value='false' required='' selected='false' title='4 - Doubtful'/>
+            <option type='checkbox' value='false' required='' selected='false' title='5 - Improbable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='6 - Cannot Be Judged'/>
+        </list>
+        <option type='string' required='true' title='Observation / Information Description' value='' id='observation_information_description'/>
+        <option type='string' required='false' title='Analytical Assessment' value='' id='analytical_assessment'/>
+        <option type='string' required='false' title='Assessed Intent' value='' id='assessed_intent'/>
+        <option type='string' required='false' title='Remarks' value='' id='intrep_remarks'/>
     </section>
 </report>
