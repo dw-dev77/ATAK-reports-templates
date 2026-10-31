@@ -1,34 +1,40 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<report type='LINKREP' title='LINKREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
-    <section title='Tactical Link Status Report' role='All' id='title' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
-        <option type='string' required='true' title='Reporting Station / Call sign' value='' id='Reporting Station'/>
-        <option type='string' required='true' title='Affected Node / Target Station' value='' id='Target Station'/>
-        <option type='geometry' required='false' title='Node Location' value='' id='Node Location' drawMapItem='false'/>
+<report type='LINKREP' title='LINKREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='linkrep'>
+    <section title='Tactical Link Status Report' role='All' id='linkrep_title' selected='false'>
+            <option type='dateTime' required='true' title='DTG' value='' id='linkrep_dtg'/>
+            <option type='string' required='true' title='Reporting Station / Call sign' value='' id='linkrep_reporting_station'/>
+            <option type='string' required='true' title='Affected Node / Target Station' value='' id='linkrep_target_station'/>
+            <option type='geometry' required='false' title='Node Location' value='' id='linkrep_node_location' drawMapItem='false'/>
         <list title='Link Status' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Active'/>
             <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
             <option type='checkbox' value='false' required='' selected='false' title='Dropped'/>
             <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Medium / Transport Type' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Mesh IP'/>
             <option type='checkbox' value='false' required='' selected='false' title='VHF / UHF'/>
             <option type='checkbox' value='false' required='' selected='false' title='SatCom'/>
             <option type='checkbox' value='false' required='' selected='false' title='Cellular'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Alternate'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Alternate / Relay Path'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='string' required='true' title='Frequency / Channel / IP' value='' id='Channel Details'/>
+            <option type='string' required='false' title='Channel / Frequency / Network Identifier' value='' id='linkrep_channel_identifier'/>
         <list title='Signal Quality' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Good'/>
             <option type='checkbox' value='false' required='' selected='false' title='Marginal'/>
             <option type='checkbox' value='false' required='' selected='false' title='No Signal'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Impact on Operations' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='None'/>
             <option type='checkbox' value='false' required='' selected='false' title='Restricted'/>
             <option type='checkbox' value='false' required='' selected='false' title='Isolated'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>   
-        <option type='string' required='false' title='Remarks / Cause of Disruption' value='' id='Remarks'/>
+            <option type='string' required='false' title='Remarks / Cause of Disruption' value='' id='linkrep_remarks'/>
     </section>
 </report>
