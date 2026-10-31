@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <report type='METHANE' title='METHANE Report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='methane'>
     <section title='Major Incident / MASCAL Report' role='All' id='methane_title' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='methane_dtg'/>
+            <option type='dateTime' required='true' title='DTG' value='' id='methane_dtg'/>
         <list title='M: Major Incident Status' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Major Incident Declared'/>
             <option type='checkbox' value='false' required='' selected='false' title='Standby / Assessment Phase'/>
             <option type='checkbox' value='false' required='' selected='false' title='Incident De-escalated'/>
         </list>
-        <option type='geometry' required='true' title='E: Exact Location / Grid' value='' id='methane_location' drawMapItem='false'/>
+            <option type='geometry' required='true' title='E: Exact Location / Grid' value='' id='methane_location' drawMapItem='false'/>
         <list title='T: Type of Incident' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Mass Casualty / Kinetic Engagement'/>
             <option type='checkbox' value='false' required='' selected='false' title='Explosion / Ordnance / IED'/>
@@ -24,10 +24,18 @@
             <option type='checkbox' value='false' required='' selected='false' title='CBRN Contamination'/>
             <option type='checkbox' value='false' required='' selected='false' title='Enemy Small Arms Fire / Sniper Threat'/>
             <option type='checkbox' value='false' required='' selected='false' title='Downed Power Lines / Gas Leak'/>
+             <option type='checkbox' value='false' required='' selected='false' title='None Identified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='string' required='false' title='A: Access / Ingress / HLZ Routes' value='' id='methane_access_routes'/>
+            <option type='string' required='false' title='A: Access / Ingress / HLZ Routes' value='' id='methane_access_routes'/>
+        <list title='N: Casualty Assessment Status' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed Figures'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Estimated Figures'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Assessment Ongoing'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Casualties Reported'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
         <section title='N: Number &amp; Severity of Casualties' role='All' id='methane_casualty_breakdown' selected='false'>
             <option type='number' required='false' title='P1 / Red (Immediate)' value='' id='methane_p1_immediate'/>
             <option type='number' required='false' title='P2 / Yellow (Delayed)' value='' id='methane_p2_delayed'/>
@@ -43,6 +51,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='HazMat / CBRN'/>
             <option type='checkbox' value='false' required='' selected='false' title='Search and Rescue'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='None Present'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Emergency / Specialist Services Required' required='true' multiple='true' type='checkbox'>
@@ -53,9 +62,10 @@
             <option type='checkbox' value='false' required='' selected='false' title='Security / Perimeter Force'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fire and Rescue'/>
             <option type='checkbox' value='false' required='' selected='false' title='Search and Rescue'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Additional Services Required'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='string' required='false' title='Remarks / Additional Details' value='' id='methane_remarks'/>
+            <option type='string' required='false' title='Remarks / Additional Details' value='' id='methane_remarks'/>
     </section>
 </report>
