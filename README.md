@@ -12,7 +12,7 @@
 | **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements |
 | **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format |
 | **TALON** | Report template for tracking small unmanned aerial system (sUAS) threats, visual/acoustic sightings, flight vectors, and payload capabilities |
-| **COMREP** | Signal intercept report for logging RF emissions, frequency/modulation tracking, Direction of Arrival (DoA), and electronic interference/jamming levels |
+| **COMREP** | RF observation report for documenting observed frequencies, signal strength, emission types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
 | **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts |
 
 ## Key Features
