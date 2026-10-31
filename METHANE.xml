@@ -1,42 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<report type='METHANE' title='METHANE Report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
-    <section title='Major Incident / MASCAL Report' role='All' id='title' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
+<report type='METHANE' title='METHANE Report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='methane'>
+    <section title='Major Incident / MASCAL Report' role='All' id='methane_title' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='methane_dtg'/>
         <list title='M: Major Incident Status' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Major Incident Declared'/>
             <option type='checkbox' value='false' required='' selected='false' title='Standby / Assessment Phase'/>
             <option type='checkbox' value='false' required='' selected='false' title='Incident De-escalated'/>
         </list>
-        <option type='geometry' required='true' title='E: Exact Location / Grid' value='' id='Location' drawMapItem='false'/>
+        <option type='geometry' required='true' title='E: Exact Location / Grid' value='' id='methane_location' drawMapItem='false'/>
         <list title='T: Type of Incident' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Mass Casualty / Kinetic Engagement'/>
             <option type='checkbox' value='false' required='' selected='false' title='Explosion / Ordnance / IED'/>
             <option type='checkbox' value='false' required='' selected='false' title='Structural Collapse / Vehicle Crash'/>
             <option type='checkbox' value='false' required='' selected='false' title='CBRN / Hazardous Material Release'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fire / Environmental Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Incident'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='H: On-Scene Hazards' required='true' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Secondary Devices / Unexploded Ordnance' value='' id='Secondary Devices'/>
-            <option type='string' required='false' title='Active Fire / Toxic Smoke' value='' id='Active Fire'/>
-            <option type='string' required='false' title='Structural Instability' value='' id='Structural Instability'/>
-            <option type='string' required='false' title='CBRN Contamination' value='' id='CBRN Contamination'/>
-            <option type='string' required='false' title='Enemy Small Arms Fire / Sniper Threat' value='' id='Enemy Small Arms Fire'/>
-            <option type='string' required='false' title='Downed Power Lines / Gas Leak' value='' id='Downed Power Lines'/>
+            <option type='string' required='false' title='Secondary Devices / Unexploded Ordnance' value='' id='methane_secondary_devices'/>
+            <option type='string' required='false' title='Active Fire / Toxic Smoke' value='' id='methane_active_fire'/>
+            <option type='string' required='false' title='Structural Instability' value='' id='methane_structural_instability'/>
+            <option type='string' required='false' title='CBRN Contamination' value='' id='methane_cbrn_contamination'/>
+            <option type='string' required='false' title='Enemy Small Arms Fire / Sniper Threat' value='' id='methane_enemy_small_arms_fire'/>
+            <option type='string' required='false' title='Downed Power Lines / Gas Leak' value='' id='methane_downed_power_lines'/>
+            <option type='string' required='false' title='None Identified' value='' id='methane_hazard_none_identified'/>
+            <option type='string' required='false' title='Unknown / Undetermined' value='' id='methane_hazard_unknown_undetermined'/>
         </list>
-        <option type='string' required='true' title='A: Access / Ingress / HLZ Routes' value='' id='Access Routes'/>
-        <section title='N: Number &amp; Severity of Casualties' role='All' id='Casualty Breakdown' selected='false'>
-            <option type='number' required='true' title='P1 / Red (Immediate)' value='' id='P1 Immediate'/>
-            <option type='number' required='true' title='P2 / Yellow (Delayed)' value='' id='P2 Delayed'/>
-            <option type='number' required='true' title='P3 / Green (Minimal)' value='' id='P3 Minimal'/>
-            <option type='number' required='true' title='Black (Deceased)' value='' id='Black Deceased'/>
+        <option type='string' required='false' title='A: Access / Ingress / HLZ Routes' value='' id='methane_access_routes'/>
+        <section title='N: Number &amp; Severity of Casualties' role='All' id='methane_casualty_breakdown' selected='false'>
+            <option type='number' required='false' title='P1 / Red (Immediate)' value='' id='methane_p1_immediate'/>
+            <option type='number' required='false' title='P2 / Yellow (Delayed)' value='' id='methane_p2_delayed'/>
+            <option type='number' required='false' title='P3 / Green (Minimal)' value='' id='methane_p3_minimal'/>
+            <option type='number' required='false' title='Black (Deceased)' value='' id='methane_black_deceased'/>
         </section>
-        <list title='E: Emergency / Specialist Capabilities Needed' required='true' multiple='true' type='checkbox'>
-            <option type='string' required='false' title='Medical Evacuation / Field Surgical' value='' id='Medical Evacuation'/>
-            <option type='string' required='false' title='EOD / C-IED Support' value='' id='EOD Support'/>
-            <option type='string' required='false' title='Heavy Rescue / Extrication' value='' id='Heavy Rescue'/>
-            <option type='string' required='false' title='HazMat / CBRN Decontamination' value='' id='HazMat Support'/>
-            <option type='string' required='false' title='Security / Perimeter Force' value='' id='Security Force'/>
+        <list title='E: Emergency Services Present' required='true' multiple='true' type='checkbox'>
+        <option type='string' required='false' title='Medical / Ambulance' value='' id='methane_medical_ambulance'/>
+        <option type='string' required='false' title='Fire and Rescue' value='' id='methane_fire_rescue'/>
+        <option type='string' required='false' title='Police / Security' value='' id='methane_police_security'/>
+        <option type='string' required='false' title='Military Medical' value='' id='methane_military_medical'/>
+        <option type='string' required='false' title='EOD / C-IED' value='' id='methane_eod_cied'/>
+        <option type='string' required='false' title='HazMat / CBRN' value='' id='methane_hazmat_cbrn'/>
+        <option type='string' required='false' title='Search and Rescue' value='' id='methane_search_rescue'/>
+        <option type='string' required='false' title='Other' value='' id='methane_other'/>
+        <option type='string' required='false' title='Unknown / Undetermined' value='' id='methane_unknown_undetermined'/>
         </list>
-        <option type='string' required='false' title='Remarks / Additional Details' value='' id='Remarks'/>
+        <list title='Emergency / Specialist Services Required' required='true' multiple='true' type='checkbox'>
+        <option type='string' required='false' title='Medical Evacuation / Field Surgical' value='' id='methane_emergency_specialist_medical_evacuation'/>
+        <option type='string' required='false' title='EOD / C-IED Support' value='' id='methane_emergency_specialist_eod_cied'/>
+        <option type='string' required='false' title='Heavy Rescue / Extrication' value='' id='methane_emergency_specialist_heavy_rescue'/>
+        <option type='string' required='false' title='HazMat / CBRN Decontamination' value='' id='methane_emergency_specialist_hazmat_cbrn'/>
+        <option type='string' required='false' title='Security / Perimeter Force' value='' id='methane_emergency_specialist_security'/>
+        <option type='string' required='false' title='Fire and Rescue' value='' id='methane_emergency_specialist_fire_rescue'/>
+        <option type='string' required='false' title='Search and Rescue' value='' id='methane_emergency_specialist_search_rescue'/>
+        <option type='string' required='false' title='Other' value='' id='methane_emergency_specialist_other'/>
+        <option type='string' required='false' title='Unknown / Undetermined' value='' id='methane_emergency_specialist_unknown_undetermined'/>
+        </list>
+        <option type='string' required='false' title='Remarks / Additional Details' value='' id='methane_remarks'/>
     </section>
 </report>
