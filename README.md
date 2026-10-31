@@ -5,15 +5,15 @@
 
 | Template | Description |
 | :--- | :--- |
-| **SITREP** | Situation report covering operational status assessment, unit readiness, and mission progress |
-| **SALUTE** | Standard report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment) |
-| **INTREP** | Intelligence report for documenting observed activities, target characteristics, collection information, and analytical assessments, including source reliability and information credibility ratings (Admiralty Code) |
-| **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions |
-| **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements |
-| **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format |
-| **TALON** | Report template for tracking small unmanned aerial system (sUAS) threats, visual/acoustic sightings, flight vectors, and payload capabilities |
+| **SITREP** | Situation report covering operational status assessment, unit readiness, and mission progress. |
+| **SALUTE** | Standard report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment). |
+| **INTREP** | Intelligence report for documenting observed activities, target characteristics, collection information, and analytical assessments, including source reliability and information credibility ratings (Admiralty Code). |
+| **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions. |
+| **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements. |
+| **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format. |
+| **TALON** | Report template for tracking small unmanned aerial system (sUAS) threats, visual/acoustic sightings, flight vectors, and payload capabilities. |
 | **COMREP** | RF observation report for documenting observed frequencies, signal strength, emission types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
-| **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts |
+| **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts. |
 
 ## Key Features
 
