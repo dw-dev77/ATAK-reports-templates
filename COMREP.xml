@@ -12,11 +12,14 @@
             <option type='checkbox' value='false' required='' selected='false' title='Very Strong'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
     </list>
-    <list title='Signal / Emission Type' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='V-ANLG (FM/AM)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='V-DIGI (DMR/P25)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='DATA (LoRa/FSK)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='SSB (USB/LSB)'/>
+    <list title='Signal / Communications Type' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Analog Voice (AM / FM / SSB)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Digital LMR (DMR / P25 / TETRA / NXDN)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Digital Data / Telemetry (FSK / PSK / LoRa)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Cellular Communications (LTE / 5G NR)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='WLAN / Wireless Network (Wi-Fi)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Satellite Communications'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Broadcast'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Specialized'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
     </list>
@@ -27,6 +30,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Moderate'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy'/>
             <option type='checkbox' value='false' required='' selected='false' title='Saturated'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
     </list>
     <list title='Jamming Assessment' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Not Suspected'/>
