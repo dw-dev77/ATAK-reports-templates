@@ -1,7 +1,8 @@
-# ATAK-reports-templates
-## A collection of standard operational reporting templates for [ATAK](https://tak.gov)
+# ATAK Reports Templates
 
-###  Included Templates
+A collection of XML-based operational reporting templates for [ATAK](https://tak.gov), covering established reporting formats and purpose-built templates for tactical, intelligence, logistics, communications, incident response, and other operational requirements.
+
+## Included Templates
 
 | Template | Description |
 | :--- | :--- |
@@ -12,48 +13,83 @@
 | **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements. |
 | **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format. |
 | **TALON** | Report template for documenting small unmanned aircraft system (sUAS) threats, observed activity, location, orientation, acoustic signatures, and estimated altitude. |
-| **COMREP** | RF observation report for documenting observed frequencies, signal strength, emission types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
+| **COMREP** | RF observation report for documenting observed frequencies, signal strength, communications types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
 | **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts. |
 
 ## Key Features
 
-* **Native Multi-Select Support:** Built using proper XML syntax for multi-select checklists (e.g., tagging multiple scene hazards in `METHANE` or acoustic signatures in `TALON`).
-* **Low-Bandwidth Optimized:** Lightweight schemas designed to pass smoothly over tactical mesh radios and constrained RF links.
-* **Geospatial Integration:** Utilizes native ATAK `geometry` and `rangeBearing` pickers for quick map placement and vector plotting.
+- **Established reporting formats:** XML implementations of established reporting formats and conventions, including `SITREP`, `SALUTE`, `INTREP`, `LOGREP`, `METHANE`, and `UXO/IED` (9-line), with appropriate adaptations for ATAK.
+- **Purpose-built templates:** Dedicated templates for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), and RF communications observations (`COMREP`).
+- **Contemporary Operational Adaptation:** Reporting structures and conventions adapted to reflect current operational environments, evolving technologies, and modern reporting requirements.
+- **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
+- **Geospatial Integration:** Utilizes ATAK-native `geometry` and `rangeBearing` field types for location selection and map-derived directional observations.
+- **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
 ## Installation
 
 ### Manual Installation
 
-### Android ATAK Reports Plugin (ATAK-CIV)
-Copy the `.xml` template files directly to:
+Installation paths may vary depending on the ATAK distribution and version.
+
+#### ATAK-CIV — Reports Plugin
+
+Copy the `.xml` template files to:
+
 ```text
 /sdcard/atak/tools/reports/templates/custom/
 ```
-(Note: Create the `custom` directory if it does not exist).
 
-### Native Forms (ATAK-MIL / GOV)
-For native ATAK Form Manager storage or MIL/GOV deployments, copy the `.xml` template files to:
+Create the `custom` directory if it does not exist.
+
+#### ATAK-MIL / GOV — Native Forms
+
+For deployments using the native Form Manager, copy the `.xml` files to the appropriate forms directory:
+
 ```text
 /sdcard/atak/support/files/forms/
 ```
-### Windows (WinTAK)
-Copy the `.xml` template files to the WinTAK support directory:
+
+#### Windows — WinTAK
+
+Copy the `.xml` template files to the WinTAK support forms directory:
+
 ```text
 C:\ProgramData\WinTAK\Support\Forms\
 ```
 
+Verify the installation location for your ATAK distribution and version before deployment.
+
 ## Usage
+
 1. Open ATAK or WinTAK.
-2. Launch the Reports plugin or Custom Forms tool from the main menu.
-3. Select your desired template (e.g., `TALON`, `COMREP`, `METHANE`).
-4. Complete the required fields and broadcast over Cursor-on-Target (CoT).
+2. Launch the Reports plugin or Forms tool.
+3. Select the desired reporting template.
+4. Complete the relevant fields.
+5. Submit or share the report through the available ATAK reporting workflow.
+
+## Testing and Compatibility
+
+Templates are designed for ATAK's XML-based reporting and form functionality.
+
+Testing should cover:
+
+- Template loading and display.
+- Required and optional field behaviour.
+- Dropdown and multi-select interactions.
+- Geospatial field selection and map interaction.
+- Numeric fields and measurement units.
+- Report submission and data transmission.
+
+XML well-formedness checks alone do not establish runtime compatibility.
 
 ## Contributing
+
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature/new-template`).
-3. Ensure your XML validates cleanly without unescaped special characters (`&`, `<`, `>`).
-4. Submit a Pull Request.
+3. Ensure XML files are well-formed and special characters are properly escaped.
+4. Test changes in the intended ATAK environment.
+5. Submit a Pull Request.
 
 ## License
+
 Distributed under the [MIT License](LICENSE).
