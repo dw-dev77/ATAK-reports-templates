@@ -27,10 +27,14 @@
             <option type='checkbox' value='false' required='' selected='false' title='Moderate'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy'/>
             <option type='checkbox' value='false' required='' selected='false' title='Saturated'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Jamming Suspected'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Jamming Confirmed'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
     </list>
+    <list title='Jamming Assessment' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Suspected'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Suspected'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+    </list>            
             <option type='string' required='false' title='Remarks' value='' id='comrep_remarks'/>
     </section>
 </report>
+
