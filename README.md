@@ -30,7 +30,7 @@ Copy the `.xml` template files directly to:
 ```text
 /sdcard/atak/tools/reports/templates/custom/
 ```
-(Note: Create the custom directory if it does not exist).
+(Note: Create the `custom` directory if it does not exist).
 
 ### Native Forms (ATAK-MIL / GOV)
 For native ATAK Form Manager storage or MIL/GOV deployments, copy the `.xml` template files to:
