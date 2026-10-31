@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <report type='INTREP' title='INTREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='intrep'>
     <section title='Intelligence Report' role='All' id='title' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='intrep_dtg'/>
-        <option type='geometry' required='true' title='Location' value='' id='intrep_location' drawMapItem='false'/>
+            <option type='dateTime' required='true' title='DTG' value='' id='intrep_dtg'/>
+            <option type='geometry' required='true' title='Location' value='' id='intrep_location' drawMapItem='false'/>
         <list title='Collection Discipline' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='HUMINT'/>
             <option type='checkbox' value='false' required='' selected='false' title='GEOINT'/>
@@ -60,7 +60,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Division+'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-         <option type='number' required='false' title='Estimated Personnel / Unit Count' value='' id='intrep_personnel_unit_count'/>
+            <option type='number' required='false' title='Estimated Personnel / Unit Count' value='' id='intrep_personnel_unit_count'/>
         <list title='Activity Type' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Advancing / Moving Forward'/>
             <option type='checkbox' value='false' required='' selected='false' title='Defensive Posture / Entrenched'/>
@@ -73,18 +73,18 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='rangeBearing' required='false' title='Range &amp; Bearing (Movement)' value='' id='intrep_direction_of_movement_bearing'/>
+            <option type='rangeBearing' required='false' title='Range &amp; Bearing (Movement)' value='' id='intrep_direction_of_movement_bearing'/>
         <list title='Equipment Observed' required='false' multiple='true' type='checkbox'>
-        <option type='checkbox' value='false' required='' selected='false' title='Small Arms'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Crew-Served Weapons'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Heavy Weapons / Support Systems'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Communications Equipment'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Optical / Observation Equipment'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Night Vision Equipment'/>
-        <option type='checkbox' value='false' required='' selected='false' title='CBRN Protective Equipment'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Unmanned Systems'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Other'/>
-        <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Small Arms'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Crew-Served Weapons'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Heavy Weapons / Support Systems'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Optical / Observation Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Night Vision Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='CBRN Protective Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmanned Systems'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Personnel Appearance' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Military Uniform'/>
@@ -122,9 +122,9 @@
             <option type='checkbox' value='false' required='' selected='false' title='5 - Improbable'/>
             <option type='checkbox' value='false' required='' selected='false' title='6 - Cannot Be Judged'/>
         </list>
-        <option type='string' required='true' title='Observation / Information Description' value='' id='intrep_observation_information_description'/>
-        <option type='string' required='false' title='Analytical Assessment' value='' id='intrep_analytical_assessment'/>
-        <option type='string' required='false' title='Assessed Intent' value='' id='intrep_assessed_intent'/>
-        <option type='string' required='false' title='Remarks' value='' id='intrep_remarks'/>
+            <option type='string' required='true' title='Observation / Information Description' value='' id='intrep_observation_information_description'/>
+            <option type='string' required='false' title='Analytical Assessment' value='' id='intrep_analytical_assessment'/>
+            <option type='string' required='false' title='Assessed Intent' value='' id='intrep_assessed_intent'/>
+            <option type='string' required='false' title='Remarks' value='' id='intrep_remarks'/>
     </section>
 </report>
