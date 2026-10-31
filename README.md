@@ -7,7 +7,7 @@
 | :--- | :--- |
 | **SITREP** | Situation report covering operational status assessment, unit readiness, and mission progress |
 | **SALUTE** | Standard report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment) |
-| **INTREP** | Intelligence report detailing threat assessments and NATO Admiralty Code ratings |
+| **INTREP** | Intelligence report for documenting observed activities, target characteristics, collection information, and analytical assessments, including source reliability and information credibility ratings (Admiralty Code) |
 | **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions |
 | **LOGREP** | Logistics report covering supply state, equipment readiness, and resupply requirements |
 | **UXO / IED** | Standardized 9-Line explosive ordnance and hazard report |
