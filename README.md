@@ -10,7 +10,7 @@
 | **INTREP** | Intelligence report for documenting observed activities, target characteristics, collection information, and analytical assessments, including source reliability and information credibility ratings (Admiralty Code) |
 | **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions |
 | **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements |
-| **UXO / IED** | Standardized 9-Line explosive ordnance and hazard report |
+| **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format |
 | **TALON** | Report template for tracking small unmanned aerial system (sUAS) threats, visual/acoustic sightings, flight vectors, and payload capabilities |
 | **COMREP** | Signal intercept report for logging RF emissions, frequency/modulation tracking, Direction of Arrival (DoA), and electronic interference/jamming levels |
 | **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts |
