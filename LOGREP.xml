@@ -1,37 +1,83 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
-<report type='LOGREP' title='LOGREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id=''>
+<report type='LOGREP' title='LOGREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='logrep'>
     <section title='Logistics &amp; Supply Report' role='All' id='title' selected='false'>
         <list title='Report Type' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Status Update'/>
             <option type='checkbox' value='false' required='' selected='false' title='Resupply Request'/>
         </list>
-        <option type='dateTime' required='true' title='DTG' value='' id='DTG'/>
-        <option type='string' required='true' title='Node ID / Unit Callsign' value='' id='Node ID'/>
-        <option type='geometry' required='true' title='Location' value='' id='Location' drawMapItem='false'/>
-        
-        <section title='Supply Status' role='All' id='Supply Status' selected='false'>
-           <option type='number' required='true' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;Gal&#34;' id='Water State'/>
-            <option type='number' required='true' title='Food State' value='' unitOptions='&#34;Days&#34;,&#34;Day&#34;' id='Food State'/>
-            <list title='Battery State' type='dropdown' required='true'>
-                <option type='checkbox' value='false' required='' selected='false' title='100-75%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='75-50%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='50-25%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='Critical'/>
+        <option type='dateTime' required='true' title='DTG' value='' id='logrep_dtg'/>
+        <option type='string' required='true' title='Node ID / Unit Callsign' value='' id='logrep_node_id'/>
+        <option type='geometry' required='true' title='Location' value='' id='logrep_location' drawMapItem='false'/>
+        <section title='Personnel Status' role='All' id='logrep_personnel_status' selected='false'>
+        <option type='number' required='false' title='Present Strength' value='' id='logrep_personnel_strength'/>
+         <option type='number' required='false' title='Personnel Available' value='' id='logrep_personnel_available'/>
+          <option type='number' required='false' title='Personnel Unavailable' value='' id='logrep_personnel_unavailable'/>
+        </section>
+        <section title='Supply Status' role='All' id='logrep_supply_status' selected='false'>
+           <option type='number' required='false' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;gal&#34;' id='logrep_water_state'/>
+            <option type='number' required='false' title='Food State' value='' unitOptions='&#34;Days&#34;,&#34;Day&#34;' id='logrep_food_state'/>
+            <list title='Battery State' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='76–100%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='51–75%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='26–50%'/>
+                 <option type='checkbox' value='false' required='' selected='false' title='1–25%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Depleted (0%)'/>
+                 <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             </list>
-           <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;Gal&#34;' id='Fuel State'/>
-            <list title='Medical Status' type='dropdown' required='true'>
+           <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;gal&#34;' id='logrep_fuel_state'/>
+            <list title='Medical Supplies Status' type='dropdown' required='false'>
                 <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             </list>
-            <list title='Ammo Status' type='dropdown' required='true'>
+            <list title='Ammunition Status' type='dropdown' required='false'>
                 <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+                 <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             </list>
         </section>
-        <option type='string' required='false' title='Remarks' value='' id='Remarks'/>
+        <section title='Equipment Status' role='All' id='logrep_equipment_status_section' selected='false'>
+         <list title='Equipment Status' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Non-operational'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Under Maintenance'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+    </section>
+     <section title='Resupply Requirements' role='All' id='logrep_resupply_requirements_section' selected='false'>
+     <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_supply_equipment_required'/>
+      <option type='number' required='false' title='Quantity Required' value='' id='logrep_quantity_required'/>
+      <list title='Unit of Measure' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Set'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Pair'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Kit'/>
+                <option type='checkbox' value='false' required='' selected='false' title='kg'/>
+                <option type='checkbox' value='false' required='' selected='false' title='g'/>
+                <option type='checkbox' value='false' required='' selected='false' title='L'/>
+                <option type='checkbox' value='false' required='' selected='false' title='mL'/>
+                <option type='checkbox' value='false' required='' selected='false' title='gal'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Box'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Case'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Pallet'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Pack'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                 <option type='checkbox' value='false' required='' selected='false' title='Days'/>
+                 <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            </list>
+              <option type='string' required='false' title='Custom Unit of Measure' value='' id='logrep_custom_unit_of_measure'/>
+             <list title='Priority' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Immediate'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Urgent'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Routine'/>
+            </list>
+            <option type='geometry' required='false' title='Delivery Location' value='' id='logrep_delivery_location' drawMapItem='false'/>
+     </section>
+        <option type='string' required='false' title='Remarks' value='' id='logrep_remarks'/>
     </section>
 </report>
