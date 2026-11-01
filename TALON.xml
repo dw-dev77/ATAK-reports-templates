@@ -2,16 +2,22 @@
 <report type='TALON' title='TALON C-UAS Report' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='talon'>
     <section title='TALON C-UAS Report' role='All' id='talon_title' selected='false'>
             <option type='dateTime' required='true' title='DTG' value='' id='talon_dtg'/>    
-        <list title='Type' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='FPV (Analog / Digital RF)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='FPV (Fiber Optic / Non-RF)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Quad (Commercial / Recon)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Micro Swarm'/>
+        <list title='Type of Platform' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Single-rotor'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Multirotor'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy Multirotor'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Loitering Munition'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fixed-Wing'/>
             <option type='checkbox' value='false' required='' selected='false' title='VTOL / Fixed Wing Hybrid'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown sUAS'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified UAS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Type of Propulsion' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Electric'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Piston / Combustion'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Turbine / Jet'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Hybrid'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Activity' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Transit (High Speed)'/>
@@ -21,9 +27,11 @@
             <option type='checkbox' value='false' required='' selected='false' title='Perched / Static Surveillance'/>
             <option type='checkbox' value='false' required='' selected='false' title='Signal Relay / Airborne Mesh'/>
             <option type='checkbox' value='false' required='' selected='false' title='Mine Laying / Dispersal'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified Activity'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='geometry' required='true' title='Location' value='' id='talon_location' drawMapItem='false'/>
-            <option type='rangeBearing' required='true' title='Orientation' value='' id='talon_orientation'/>
+            <option type='rangeBearing' required='false' title='Orientation' value='' id='talon_orientation'/>
             <option type='number' required='false' title='Orientation (Manual)' value='' unitOptions='&#34;° (deg)&#34;,&#34;mils&#34;' id='talon_orientation_manual'/>   
         <list title='Noise' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Loud (Close Proximity)'/>
@@ -32,15 +40,64 @@
             <option type='checkbox' value='false' required='' selected='false' title='High Pitch Buzz'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy Motor Thrum'/>
             <option type='checkbox' value='false' required='' selected='false' title='Piston / Prop Engine Hum'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Turbine / Jet Engine Noise'/>
             <option type='checkbox' value='false' required='' selected='false' title='Silent / Negligible'/>
         </list>
-        <list title='Estimated Altitude AGL' type='dropdown' required='true'>
+    </section>
+    <section title='Supplementary Observations' role='All' id='talon_supplementary_observations' selected='false'>
+        <list title='Group / Formation' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Single UAS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Multiple UAS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Coordinated Swarm'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Control Link' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='RF'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fibre-Optic'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Tethered'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Guidance / Navigation' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Manual / Pilot-Controlled'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Autonomous'/>
+            <option type='checkbox' value='false' required='' selected='false' title='GNSS-Assisted'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Inertial Navigation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Estimated Altitude AGL' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Ultra Low (&lt;15m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Canopy Level (15m-50m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Low Altitude (50m-150m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Medium Altitude (150m-500m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='High Altitude (&gt;500m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Payload Assessment' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Visually Identified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Suspected'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Payload Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Assess'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Payload / Equipment Type' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Explosive / Munition'/>
+            <option type='checkbox' value='false' required='' selected='false' title='ISR Sensor (EO / IR)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications / Relay Equipment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Cargo / Delivery Payload'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Multiple / Mixed Payload'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+            <option type='string' required='false' title='Payload / Equipment Description' value='' id='talon_payload_description'/>
+        <list title='Visual Characteristics' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Visible Lighting'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Flashing / Strobing Lights'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Distinctive Visual Markings'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unusual Airframe Features'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Visible External Attachments'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
         </list>
             <option type='string' required='false' title='Remarks' value='' id='talon_remarks'/>
     </section>
