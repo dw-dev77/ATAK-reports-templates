@@ -12,7 +12,7 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 | **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions. |
 | **LOGREP** | Logistics report covering personnel strength and availability, supply status, equipment readiness, and resupply requirements. |
 | **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format. |
-| **TALON** | Report template for documenting small unmanned aircraft system (sUAS) threats, observed activity, location, orientation, acoustic signatures, and estimated altitude. |
+| **TALON** | Structured C-UAS reporting template for documenting and classifying unmanned aircraft system (UAS) observations, including platform and propulsion types, observed activity, location, orientation, acoustic signatures, group formations, control links, guidance and navigation characteristics, estimated altitude, payload assessments, and visual characteristics. |
 | **COMREP** | RF observation report for documenting observed frequencies, signal strength, communications types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
 | **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and Mass Casualty (MASCAL) counts. |
 
