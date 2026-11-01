@@ -58,7 +58,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Guidance / Navigation' type='dropdown' required='false'>
+        <list title='Guidance / Navigation' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Manual / Pilot-Controlled'/>
             <option type='checkbox' value='false' required='' selected='false' title='Autonomous'/>
             <option type='checkbox' value='false' required='' selected='false' title='GNSS-Assisted'/>
@@ -75,11 +75,11 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Payload Assessment' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Visually Identified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Suspected'/>
             <option type='checkbox' value='false' required='' selected='false' title='No Payload Observed'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unable to Assess'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
         <list title='Payload / Equipment Type' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Explosive / Munition'/>
