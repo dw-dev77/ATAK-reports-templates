@@ -41,7 +41,7 @@
         </list>
     </section>
     <section title='Equipment Status' role='All' id='logrep_equipment_status_section' selected='false'>
-        <list title='Equipment Status' type='dropdown' required='false'>
+        <list title='Equipment State' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
             <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
             <option type='checkbox' value='false' required='' selected='false' title='Non-operational'/>
