@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='ROUTEREP' title='ROUTEREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='routerep'>
+    <section title='Route Information' role='All' id='routerep_information' selected='false'>
+        <option type='dateTime' required='true' title='Assessment DTG' value='' id='routerep_dtg'/>
+        <option type='geometry' required='true' title='Route / Segment' value='' id='routerep_geometry' drawMapItem='false'/>
+        <option type='string' required='false' title='Route Designation / Name' value='' id='routerep_designation'/>
+        <list title='Route Type' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Primary Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Alternate Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Supply Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Evacuation Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Access Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Local / Secondary Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
+        </list>
+        <option type='string' required='false' title='Route Description' value='' id='routerep_description'/>
+    </section>
+    <section title='Route Condition' role='All' id='routerep_condition' selected='false'>
+        <list title='Route Status' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Open'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Open with Restrictions'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Partially Blocked'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Blocked'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Impassable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <list title='Surface Type' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Paved / Asphalt'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Concrete'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Gravel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Dirt / Earth'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Sand'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Rock / Rough Terrain'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mixed Surface'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Surface Condition' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Good'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Poor'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Damaged'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Flooded / Waterlogged'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Snow / Ice Covered'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <option type='string' required='false' title='Route Condition Description' value='' id='routerep_condition_description'/>
+    </section>
+    <section title='Trafficability' role='All' id='routerep_trafficability' selected='false'>
+        <list title='Suitable Movement Categories' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Dismounted Personnel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Light Wheeled Vehicles'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Heavy Wheeled Vehicles'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Tracked Vehicles'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Emergency / Response Vehicles'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <list title='Movement Restrictions' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Width Restriction'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Height Restriction'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Weight / Load Restriction'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Speed Restriction'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Single-Lane Movement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Time-Based Restriction'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
+        </list>
+        <option type='string' required='false' title='Trafficability Details' value='' id='routerep_trafficability_details'/>
+    </section>
+    <section title='Obstacles &amp; Hazards' role='All' id='routerep_obstacles_hazards' selected='false'>
+        <list title='Observed Obstacles' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Road Debris'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Damaged / Destroyed Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Abandoned / Disabled Vehicles'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Flooding / Standing Water'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Landslide / Rockfall'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vegetation / Fallen Trees'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unexploded Ordnance / Explosive Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Road Closure / Checkpoint'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Observed Obstacle'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Obstacles Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <list title='Environmental / Safety Hazards' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Poor Visibility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Severe Weather'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unstable Ground / Subsidence'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fire / Smoke'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Chemical / Toxic Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Observed Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Hazards Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <option type='string' required='false' title='Obstacle / Hazard Description' value='' id='routerep_obstacle_description'/>
+    </section>
+    <section title='Additional Information' role='All' id='routerep_additional_info' selected='false'>
+        <option type='number' required='false' title='Estimated Delay' value='' unitOptions='&#34;min&#34;,&#34;h&#34;' id='routerep_estimated_delay'/>
+        <option type='string' required='false' title='Observed Traffic / Movement Conditions' value='' id='routerep_traffic_conditions'/>
+        <option type='string' required='false' title='Support Requirements' value='' id='routerep_support_requirements'/>
+        <option type='string' required='false' title='Remarks' value='' id='routerep_remarks'/>
+    </section>
+</report>
