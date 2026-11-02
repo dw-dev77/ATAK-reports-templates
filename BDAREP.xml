@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='BDAREP' title='BDAREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='bdarep'>
+    <section title='Assessment Information' role='All' id='bdarep_assessment_info' selected='false'>
+        <option type='dateTime' required='true' title='Assessment DTG' value='' id='bdarep_dtg'/>
+        <option type='geometry' required='true' title='Target Location' value='' id='bdarep_target_location' drawMapItem='false'/>
+        <list title='Target Category' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Personnel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vehicle'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmanned Aerial System (UAS)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Aircraft'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vessel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Building / Structure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Position / Installation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Equipment / System'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <option type='string' required='false' title='Target Description' value='' id='bdarep_target_description'/>
+        <option type='number' required='false' title='Estimated Target Count' value='' id='bdarep_target_count'/>
+        <list title='Identification Confidence' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Confirmed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Probable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Possible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+    </section>
+    <section title='Physical Damage Assessment' role='All' id='bdarep_physical_damage' selected='false'>
+        <list title='Physical Damage Level' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='No Visible Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Light'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Moderate'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Severe'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Destroyed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <option type='number' required='false' title='Estimated Damage (%)' value='' unitOptions='&#34;%&#34;' id='bdarep_damage_percentage'/>
+        <list title='Observed Damage Indicators' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Structural Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fire / Thermal Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Explosion Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Visible Deformation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Component / Equipment Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Debris / Fragmentation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Observed Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Damage Indicators Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <option type='string' required='false' title='Physical Damage Description' value='' id='bdarep_physical_damage_description'/>
+    </section>
+    <section title='Functional Assessment' role='All' id='bdarep_functional_assessment' selected='false'>
+        <list title='Functional Status' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Non-Operational'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Temporarily Inoperative'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <list title='Affected Capabilities' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Mobility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Power / Energy Supply'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Detection / Sensor Systems'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Weapons / Equipment Systems'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Command / Control Functions'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Structural Integrity'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <list title='Recovery Status' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Recovery / Repair Underway'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Recovery / Repair Possible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Recovery / Repair Unlikely'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Beyond Recovery'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <option type='string' required='false' title='Functional Effects Description' value='' id='bdarep_functional_effects'/>
+    </section>
+    <section title='Additional Effects' role='All' id='bdarep_additional_effects' selected='false'>
+        <list title='Additional / Collateral Damage' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Adjacent Structures'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Nearby Equipment / Assets'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Civilian Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Environmental Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Additional Damage Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <option type='number' required='false' title='Personnel Affected' value='' id='bdarep_personnel_affected'/>
+        <option type='string' required='false' title='Other Observed Effects' value='' id='bdarep_other_effects'/>
+    </section>
+    <section title='Assessment Sources &amp; Remarks' role='All' id='bdarep_sources_remarks' selected='false'>
+        <list title='Assessment Source' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Direct Observation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Aerial Imagery'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Ground Imagery'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Sensor Data'/>
+            <option type='checkbox' value='false' required='' selected='false' title='External Report'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Multiple Sources'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
+        </list>
+        <list title='Assessment Confidence' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='High'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Moderate'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Low'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <option type='string' required='false' title='Remarks' value='' id='bdarep_remarks'/>
+    </section>
+</report>
