@@ -36,12 +36,12 @@ Examples of the reporting templates running in ATAK 5.8.0.
 
 | INTREP — Intelligence Report | LOGREP — Logistics Report |
 | :---: | :---: |
-| ![INTREP](screenshots/INTREP.png) | ![LOGREP](screenshots/LOGREP.png) |
+| ![INTREP](screenshots/INTREP.jng) | ![LOGREP](screenshots/LOGREP.jng) |
 | Structured reporting and collection information | Custom measurement units |
 
 | CONTACTREP — Contact Report | CBRNREP — CBRN Incident Report |
 | :---: | :---: |
-| ![CONTACTREP](screenshots/CONTACTREP.png) | ![CBRNREP](screenshots/CBRNREP.png) |
+| ![CONTACTREP](screenshots/CONTACTREP.jng) | ![CBRNREP](screenshots/CBRNREP.jng) |
 | Multi-select target activity | CBRN hazard assessment |
 
 ## Installation
