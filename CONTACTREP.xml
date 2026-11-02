@@ -1,11 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <report type='CONTACTREP' title='CONTACTREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='contactrep'>
-
     <section title='Contact Information' role='All' id='contactrep_information' selected='false'>
         <option type='dateTime' required='true' title='Time of Contact' value='' id='contactrep_dtg'/>
-
         <option type='geometry' required='true' title='Contact Location' value='' id='contactrep_location' drawMapItem='false'/>
-
         <list title='Target / Threat Type' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Personnel'/>
             <option type='checkbox' value='false' required='' selected='false' title='Vehicle'/>
@@ -17,7 +14,6 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-
         <option type='number' required='false' title='Estimated Target Count' value='' id='contactrep_target_count'/>
 
         <list title='Identification Confidence' type='dropdown' required='false'>
@@ -28,9 +24,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
     </section>
-
     <section title='Contact Observations' role='All' id='contactrep_observations' selected='false'>
-
         <list title='Target Activity' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Stationary'/>
             <option type='checkbox' value='false' required='' selected='false' title='Moving'/>
@@ -43,16 +37,11 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other Observed Activity'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-
         <option type='rangeBearing' required='false' title='Movement Direction' value='' id='contactrep_movement_direction'/>
-
         <option type='string' required='false' title='Target / Equipment Description' value='' id='contactrep_target_description'/>
-
         <option type='string' required='false' title='Additional Observations' value='' id='contactrep_observations_description'/>
     </section>
-
     <section title='Own Actions &amp; Outcome' role='All' id='contactrep_actions_outcome' selected='false'>
-
         <list title='Own Actions' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Observed / Monitored'/>
             <option type='checkbox' value='false' required='' selected='false' title='Tracked'/>
@@ -64,7 +53,6 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other Action'/>
             <option type='checkbox' value='false' required='' selected='false' title='No Action Taken'/>
         </list>
-
         <list title='Engagement Status' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='No Engagement'/>
             <option type='checkbox' value='false' required='' selected='false' title='Engagement Initiated'/>
@@ -73,7 +61,6 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-
         <list title='Contact Outcome' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Contact Maintained'/>
             <option type='checkbox' value='false' required='' selected='false' title='Contact Lost'/>
@@ -82,9 +69,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Ongoing'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-
         <option type='string' required='false' title='Support Required / Requested' value='' id='contactrep_support_required'/>
-
         <option type='string' required='false' title='Remarks' value='' id='contactrep_remarks'/>
     </section>
 </report>
