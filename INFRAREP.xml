@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='INFRAREP' title='INFRAREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='infrarep'>
+    <section title='Infrastructure Information' role='All' id='infrarep_information' selected='false'>
+        <option type='dateTime' required='true' title='Assessment DTG' value='' id='infrarep_dtg'/>
+        <option type='geometry' required='true' title='Infrastructure Location' value='' id='infrarep_location' drawMapItem='false'/>
+        <list title='Infrastructure Category' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Power Generation / Distribution'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Water Supply / Treatment'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fuel Storage / Distribution'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications / Telecommunications'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Transportation / Road Network'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Railway Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Port / Maritime Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Airport / Aviation Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Medical / Healthcare Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Government / Administrative Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Industrial Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Storage / Logistics Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <option type='string' required='false' title='Asset / Facility Name' value='' id='infrarep_asset_name'/>
+        <option type='string' required='false' title='Infrastructure Description' value='' id='infrarep_description'/>
+    </section>
+    <section title='Operational Status' role='All' id='infrarep_operational_status' selected='false'>
+        <list title='Current Operational Status' type='dropdown' required='true'>
+            <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Partially Operational'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Non-Operational'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Temporarily Closed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Under Repair / Restoration'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <list title='Service Availability' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Fully Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Partially Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <option type='string' required='false' title='Operational Status Description' value='' id='infrarep_status_description'/>
+    </section>
+    <section title='Utilities &amp; Services' role='All' id='infrarep_utilities_services' selected='false'>
+        <list title='Electricity Supply' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Water Supply' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Fuel Supply' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Communications Services' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <list title='Sanitation / Waste Services' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Available'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Intermittent'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+        </list>
+        <option type='string' required='false' title='Other Services / Utilities' value='' id='infrarep_other_services'/>
+    </section>
+    <section title='Accessibility &amp; Safety' role='All' id='infrarep_access_safety' selected='false'>
+        <list title='Accessibility Status' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Fully Accessible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Restricted Access'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Limited Access'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Inaccessible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
+        </list>
+        <list title='Observed Hazards' required='false' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Structural Instability'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fire / Smoke'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Flooding / Water Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Electrical Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Chemical / Toxic Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unexploded Ordnance / Explosive Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Environmental Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Observed Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Hazards Observed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
+        </list>
+        <option type='string' required='false' title='Access Restrictions / Safety Details' value='' id='infrarep_access_safety_details'/>
+    </section>
+    <section title='Capacity &amp; Additional Information' role='All' id='infrarep_capacity_additional' selected='false'>
+        <option type='number' required='false' title='Estimated Capacity' value='' id='infrarep_estimated_capacity'/>
+        <option type='number' required='false' title='Estimated Current Usage' value='' id='infrarep_current_usage'/>
+        <option type='string' required='false' title='Capacity / Usage Details' value='' id='infrarep_capacity_details'/>
+        <option type='string' required='false' title='Support Requirements' value='' id='infrarep_support_requirements'/>
+        <option type='string' required='false' title='Remarks' value='' id='infrarep_remarks'/>
+    </section>
+</report>
