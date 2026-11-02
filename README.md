@@ -23,8 +23,8 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 ## Key Features
 
 - **Established reporting formats:** XML implementations of established reporting formats and conventions, including `SITREP`, `SALUTE`, `INTREP`, `LOGREP`, `METHANE`, and `UXO/IED` (9-line), with appropriate adaptations for ATAK.
-- **Purpose-built templates:** Dedicated templates for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), and RF communications observations (`COMREP`).
-- **Contemporary Operational Adaptation:** Reporting structures and conventions adapted to reflect current operational environments, evolving technologies, and modern reporting requirements.
+- **Purpose-built templates:** Dedicated reporting structures for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), RF communications observations (`COMREP`), CBRN incidents (`CBRNREP`), contact reporting (`CONTACTREP`), battle damage assessment (`BDAREP`), and infrastructure status (`INFRAREP`).
+- **Contemporary Operational Adaptation:** Established reporting conventions extended with additional fields and structures reflecting modern operational environments, emerging technologies, evolving threats, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
 - **Geospatial Integration:** Utilizes ATAK-native `geometry` and `rangeBearing` field types for location selection and map-derived directional observations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
