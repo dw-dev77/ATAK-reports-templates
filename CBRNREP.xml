@@ -26,7 +26,6 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
         </list>
     </section>
-
     <section title='Hazard Assessment' role='All' id='cbrnrep_hazard_assessment' selected='false'>
         <list title='Detection Status' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Positive Detection'/>
@@ -69,7 +68,6 @@
         <option type='geometry' required='false' title='Affected Area' value='' id='cbrnrep_affected_area' drawMapItem='false'/>
         <option type='string' required='false' title='Environmental Conditions' value='' id='cbrnrep_environmental_conditions'/>
     </section>
-
     <section title='Exposure &amp; Response' role='All' id='cbrnrep_exposure_response' selected='false'>
         <list title='Personnel Exposure Assessment' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Confirmed Exposure'/>
