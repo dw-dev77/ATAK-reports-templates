@@ -32,7 +32,7 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 
 ## Screenshots
 
-Examples of the reporting templates running in ATAK 5.8.0.
+Examples of the reporting templates running in ATAK `5.8.0`.
 
 | INTREP — Intelligence Report | LOGREP — Logistics Report |
 | :---: | :---: |
@@ -88,7 +88,7 @@ Verify the installation location for your ATAK distribution and version before d
 
 ## Testing and Compatibility
 
-All included templates have been loaded and tested in ATAK 5.8.0.
+All included templates have been loaded and tested in ATAK `5.8.0`.
 
 Testing includes:
 - Template loading and display.
