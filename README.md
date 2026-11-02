@@ -30,6 +30,20 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 - **Geospatial Integration:** Utilizes ATAK-native `geometry` and `rangeBearing` field types for location selection and map-derived directional observations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
+## Screenshots
+
+Examples of the reporting templates running in ATAK 5.8.0.
+
+| INTREP — Intelligence Report | LOGREP — Logistics Report |
+| :---: | :---: |
+| ![INTREP](screenshots/INTREP.png) | ![LOGREP](screenshots/LOGREP.png) |
+| Structured reporting and collection information | Custom measurement units |
+
+| CONTACTREP — Contact Report | CBRNREP — CBRN Incident Report |
+| :---: | :---: |
+| ![CONTACTREP](screenshots/CONTACTREP.png) | ![CBRNREP](screenshots/CBRNREP.png) |
+| Multi-select target activity | CBRN hazard assessment |
+
 ## Installation
 
 ### Manual Installation
