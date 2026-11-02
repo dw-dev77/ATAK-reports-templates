@@ -39,7 +39,7 @@ Examples of the reporting templates running in ATAK 5.8.0.
 | ![INTREP](screenshots/INTREP.jpg) | ![LOGREP](screenshots/LOGREP.jpg) |
 | Structured reporting and collection information | Custom measurement units |
 
-| BDAREP — Battle Damage Assesment | CBRNREP — CBRN Incident Report |
+| BDAREP — Battle Damage Assessment | CBRNREP — CBRN Incident Report |
 | :---: | :---: |
 | ![BDAREP](screenshots/BDAREP.jpg) | ![CBRNREP](screenshots/CBRNREP.jpg) |
 | Multi-select damage indicators | CBRN hazard assessment |
