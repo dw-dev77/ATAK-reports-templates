@@ -30,18 +30,6 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 - **Geospatial Integration:** Utilizes ATAK-native `geometry` and `rangeBearing` field types for location selection and map-derived directional observations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
-## Testing and Compatibility
-
-All included templates have been loaded and tested in ATAK 5.8.0.
-
-Testing includes:
-- Template loading and display.
-- Field rendering and interaction.
-- Dropdown and multi-select functionality.
-- Geospatial field selection and map interaction.
-- Numeric inputs and measurement units, where applicable.
-- Report submission.
-
 ## Installation
 
 ### Manual Installation
@@ -86,16 +74,15 @@ Verify the installation location for your ATAK distribution and version before d
 
 ## Testing and Compatibility
 
-Templates are designed for ATAK's XML-based reporting and form functionality.
+All included templates have been loaded and tested in ATAK 5.8.0.
 
-Testing should cover:
-
+Testing includes:
 - Template loading and display.
-- Required and optional field behaviour.
-- Dropdown and multi-select interactions.
+- Field rendering and interaction.
+- Dropdown and multi-select functionality.
 - Geospatial field selection and map interaction.
-- Numeric fields and measurement units.
-- Report submission and data transmission.
+- Numeric inputs and measurement units, where applicable.
+- Report submission.
 
 XML well-formedness checks alone do not establish runtime compatibility.
 
