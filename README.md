@@ -48,40 +48,24 @@ Examples of the reporting templates running in ATAK `5.8.0`.
 
 ### Manual Installation
 
-Installation paths may vary depending on the ATAK distribution and version.
+These templates are designed for use with the ATAK `Reports` plugin.
 
-#### ATAK-CIV — Reports Plugin
-
-Copy the `.xml` template files to:
+1. Ensure the Reports plugin is installed and enabled.
+2. Copy the `.xml` template files to:
 
 ```text
 /sdcard/atak/tools/reports/templates/custom/
 ```
 
-Create the `custom` directory if it does not exist.
+3. Create the `custom` directory if it does not exist.
+4. Open the Reports plugin and select the desired template.
 
-#### ATAK-MIL / GOV — Native Forms
-
-For deployments using the native Form Manager, copy the `.xml` files to the appropriate forms directory:
-
-```text
-/sdcard/atak/support/files/forms/
-```
-
-#### Windows — WinTAK
-
-Copy the `.xml` template files to the WinTAK support forms directory:
-
-```text
-C:\ProgramData\WinTAK\Support\Forms\
-```
-
-Verify the installation location for your ATAK distribution and version before deployment.
+Installation paths may vary depending on the ATAK distribution and version.
 
 ## Usage
 
-1. Open the supported ATAK distribution.
-2. Launch the Reports plugin or Forms tool.
+1. Open ATAK.
+2. Launch the Reports plugin.
 3. Select the desired reporting template.
 4. Complete the relevant fields.
 5. Submit or share the report through the available ATAK reporting workflow.
