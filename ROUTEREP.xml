@@ -2,7 +2,7 @@
 <report type='ROUTEREP' title='ROUTEREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='routerep'>
     <section title='Route Information' role='All' id='routerep_information' selected='false'>
         <option type='dateTime' required='true' title='Assessment DTG' value='' id='routerep_dtg'/>
-        <option type='geometry' required='true' title='Route / Segment' value='' id='routerep_geometry' drawMapItem='false'/>
+        <option type='route' required='true' title='Route / Segment' value='' id='routerep_route'/>
         <option type='string' required='false' title='Route Designation / Name' value='' id='routerep_designation'/>
         <list title='Route Type' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Primary Route'/>
