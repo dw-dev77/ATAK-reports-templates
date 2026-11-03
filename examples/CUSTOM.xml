@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<report type='CUSTOM' title='Custom Template Example' visibilityStatus='false' delimiter='
+' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='custom_example'>   
+        
+        <!-- Sections: main template section -->
+    <section title='Main Section' role='All' id='template_main' selected='false'>
+
+        <!-- Sections: group related fields together -->
+
+        <section title='Optional Section' role='All' id='template_optional_section' selected='false'>
+            <option type='string' required='false' title='Optional Text Field' value='' id='template_optional_text'/>
+        </section>
+
+        <section title='Required Section' role='All' id='template_required_section' selected='false'>
+            <option type='string' required='true' title='Required Text Field' value='' id='template_required_text'/>
+        </section>
+
+        <!-- Date and Time Fields -->
+
+        <option type='time' required='false' title='Time Field' value='' id='template_time'/>
+        <option type='dateTime' required='false' title='Date and Time Field' value='' id='template_datetime'/>
+
+        <!-- Geospatial Fields -->
+
+        <option type='geometry' required='false' title='Location / Geometry Field' value='' id='template_geometry' drawMapItem='false'/>
+        <option type='rangeBearing' required='false' title='Range and Bearing Field' value='' id='template_range_bearing'/>
+        <option type='route' required='false' title='Route Field' value='' id='template_route'/>
+
+        <!-- Numeric and Measurement Fields -->
+
+        <option type='number' required='false' title='Number Field' value='' id='template_number'/>
+        <option type='number' required='false' title='Number Field with Custom Units' value='' unitOptions='&#34;unit one&#34;,&#34;unit two&#34;' id='template_number_units'/>
+
+        <!-- Formula Field -->
+
+        <option type='formula' required='false' title='Formula Field' value='no pattern' id='template_formula'/>
+
+        <!-- Selection Fields -->
+
+        <list title='Multi-Select Checkboxes' required='false' multiple='true' type='checkbox'>
+           <option type='checkbox' value='false' required='' selected='false' title='Checkbox One'/>
+           <option type='checkbox' value='false' required='' selected='false' title='Checkbox Two'/>
+        </list>
+
+        <list title='Single-Select Dropdown' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Option One'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Option Two'/>
+        </list>
+
+        <list title='Single-Select Radio Buttons' multiple='false' type='radio' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Radio One'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Radio Two'/>
+        </list>
+
+    </section>
+</report>
