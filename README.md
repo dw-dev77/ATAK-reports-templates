@@ -27,7 +27,7 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 - **Purpose-built templates:** Dedicated reporting structures for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), RF communications observations (`COMREP`), CBRN incidents (`CBRNREP`), contact reporting (`CONTACTREP`), battle damage assessment (`BDAREP`), infrastructure status (`INFRAREP`), and route assessment (`ROUTEREP`).
 - **Operational Adaptability:** Reporting structures designed to accommodate different operational environments, evolving technologies, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
-- **Geospatial Integration:** Utilizes ATAK-native `geometry` and `rangeBearing` field types for location selection and map-derived directional observations.
+- **Geospatial Integration:** Utilizes ATAK-native `geometry`, `rangeBearing` and `route` field types for location selection, directional observations and route definition.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
 ## Screenshots
