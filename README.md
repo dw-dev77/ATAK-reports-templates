@@ -62,6 +62,24 @@ These templates are designed for use with the ATAK `Reports` plugin.
 
 Installation paths may vary depending on the ATAK distribution and version.
 
+## Building Custom Templates
+
+The repository includes [`CUSTOM.xml`](examples/CUSTOM.xml), a reference template demonstrating the XML field types and configurations used in the included reports.
+
+The example covers:
+
+- **Text and input fields:** String, numeric, time and date-time inputs.
+- **Required and optional fields:** Field and section configuration.
+- **Nested Sections:** Group related fields into nested sections to organise report structure.
+- **Selection fields:** Dropdown lists, radio buttons and multi-select checkboxes.
+- **Geospatial fields:** Location geometry, range and bearing, and route selection.
+- **Measurement fields:** Numeric inputs with configurable measurement units.
+- **Formula fields:** Example formula field configuration.
+
+Use this template as a starting point when creating or adapting reporting templates. Modify the report metadata, section structure, field definitions and identifiers to suit your reporting requirements.
+
+Custom templates should be tested in the intended ATAK environment to verify field rendering and functionality.
+
 ## Usage
 
 1. Open ATAK.
