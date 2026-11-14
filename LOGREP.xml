@@ -5,79 +5,271 @@
             <option type='checkbox' value='false' required='' selected='false' title='Status Update'/>
             <option type='checkbox' value='false' required='' selected='false' title='Resupply Request'/>
         </list>
-            <option type='dateTime' required='true' title='DTG' value='' id='logrep_dtg'/>
-            <option type='string' required='true' title='Node ID / Unit Callsign' value='' id='logrep_node_id'/>
-            <option type='geometry' required='true' title='Location' value='' id='logrep_location' drawMapItem='false'/>
-    <section title='Personnel Status' role='All' id='logrep_personnel_status' selected='false'>
+        <option type='dateTime' required='true' title='DTG' value='' id='logrep_dtg'/>
+        <option type='string' required='true' title='Reporting Unit / Node ID' value='' id='logrep_node_id'/>
+        <option type='string' required='false' title='Reporting Personnel' value='' id='logrep_reporting_personnel'/>
+        <option type='geometry' required='true' title='Location' value='' id='logrep_location' drawMapItem='false'/>
+        <section title='Personnel Status' role='All' id='logrep_personnel_status' selected='false'>
             <option type='number' required='false' title='Present Strength' value='' id='logrep_personnel_strength'/>
             <option type='number' required='false' title='Personnel Available' value='' id='logrep_personnel_available'/>
             <option type='number' required='false' title='Personnel Unavailable' value='' id='logrep_personnel_unavailable'/>
-    </section>
-    <section title='Supply Status' role='All' id='logrep_supply_status' selected='false'>
-            <option type='number' required='false' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;gal&#34;' id='logrep_water_state'/>
-            <option type='number' required='false' title='Food State' value='' unitOptions='&#34;Days&#34;,&#34;Day&#34;' id='logrep_food_state'/>
-        <list title='Battery State' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='76-100%'/>
-            <option type='checkbox' value='false' required='' selected='false' title='51-75%'/>
-            <option type='checkbox' value='false' required='' selected='false' title='26-50%'/>
-            <option type='checkbox' value='false' required='' selected='false' title='1-25%'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Depleted (0%)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
-        </list>
-           <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;gal&#34;' id='logrep_fuel_state'/>
-        <list title='Medical Supplies Status' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
-        </list>
-        <list title='Ammunition Status' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
-        </list>
-    </section>
-    <section title='Equipment Status' role='All' id='logrep_equipment_status_section' selected='false'>
-        <list title='Equipment State' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Non-operational'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Under Maintenance'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
-        </list>
-    </section>
-    <section title='Resupply Requirements' role='All' id='logrep_resupply_requirements_section' selected='false'>
-            <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_supply_equipment_required'/>
-            <option type='number' required='false' title='Quantity Required' value='' id='logrep_quantity_required'/>
-        <list title='Unit of Measure' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Set'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Pair'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Kit'/>
-            <option type='checkbox' value='false' required='' selected='false' title='kg'/>
-            <option type='checkbox' value='false' required='' selected='false' title='g'/>
-            <option type='checkbox' value='false' required='' selected='false' title='L'/>
-            <option type='checkbox' value='false' required='' selected='false' title='mL'/>
-            <option type='checkbox' value='false' required='' selected='false' title='gal'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Box'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Case'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Pallet'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Pack'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Container'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Days'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Other'/>
-        </list>
-            <option type='string' required='false' title='Custom Unit of Measure' value='' id='logrep_custom_unit_of_measure'/>
-        <list title='Priority' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Immediate'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Urgent'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Routine'/>
-        </list>
+        </section>
+        <section title='Supply Status' role='All' id='logrep_supply_status' selected='false'>
+            <option type='number' required='false' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;US gal&#34;' id='logrep_water_state'/>
+            <option type='number' required='false' title='Food State' value='' unitOptions='&#34;Days&#34;' id='logrep_food_state'/>
+            <list title='Battery State' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='76-100%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='51-75%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='26-50%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='1-25%'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Depleted (0%)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+            <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;US gal&#34;' id='logrep_fuel_state'/>
+            <list title='Medical Supplies Status' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+            <list title='Ammunition Status' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+        </section>
+        <section title='Equipment Status' role='All' id='logrep_equipment_status_section' selected='false'>
+            <list title='Overall Equipment Status' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Operational'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Non-operational'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Under Maintenance'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+        </section>
+        <section title='Resupply Requirements' role='All' id='logrep_resupply_requirements_section' selected='false'>
+            <option type='string' required='false' title='Request ID / Reference' value='' id='logrep_request_id'/>
+            <list title='Resupply Status' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Submitted'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Acknowledged'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Approved'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Partially Fulfilled'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Fulfilled'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Rejected'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Cancelled'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            </list>
+            <list title='Priority' type='dropdown' required='false'>
+                <option type='checkbox' value='false' required='' selected='false' title='Immediate'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Urgent'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Priority'/>
+                <option type='checkbox' value='false' required='' selected='false' title='Routine'/>
+            </list>
             <option type='geometry' required='false' title='Delivery Location' value='' id='logrep_delivery_location' drawMapItem='false'/>
-    </section>
-            <option type='string' required='false' title='Remarks' value='' id='logrep_remarks'/>
+            <section title='Resupply Line Item 01' role='All' id='logrep_resupply_item_01' selected='false'>
+                <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_item_01_name'/>
+                <option type='number' required='false' title='Quantity Required' value='' id='logrep_item_01_quantity'/>
+                <list title='Unit of Measurement' type='dropdown' required='false'>
+                    <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Piece (PC)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pair (PR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Set (SE)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kit (KT)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Assembly (AY)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Dozen (DZ)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Package (PG)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Box (BX)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Case (CS)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pallet (PL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bundle (BD)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bag'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Drum (DR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bottle'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Can (CN)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Roll (RO)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Coil (CL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Gram (g)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kilogram (kg)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Metric Ton (t)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+                </list>
+                <option type='string' required='false' title='Other Unit (Specify)' value='' id='logrep_item_01_custom_unit'/>
+                <option type='string' required='false' title='Additional Requirements / Specifications' value='' id='logrep_item_01_specifications'/>
+            </section>
+            <section title='Resupply Line Item 02' role='All' id='logrep_resupply_item_02' selected='false'>
+                <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_item_02_name'/>
+                <option type='number' required='false' title='Quantity Required' value='' id='logrep_item_02_quantity'/>
+                <list title='Unit of Measurement' type='dropdown' required='false'>
+                    <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Piece (PC)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pair (PR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Set (SE)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kit (KT)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Assembly (AY)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Dozen (DZ)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Package (PG)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Box (BX)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Case (CS)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pallet (PL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bundle (BD)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bag'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Drum (DR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bottle'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Can (CN)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Roll (RO)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Coil (CL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Gram (g)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kilogram (kg)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Metric Ton (t)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+                </list>
+                <option type='string' required='false' title='Other Unit (Specify)' value='' id='logrep_item_02_custom_unit'/>
+                <option type='string' required='false' title='Additional Requirements / Specifications' value='' id='logrep_item_02_specifications'/>
+            </section>
+            <section title='Resupply Line Item 03' role='All' id='logrep_resupply_item_03' selected='false'>
+                <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_item_03_name'/>
+                <option type='number' required='false' title='Quantity Required' value='' id='logrep_item_03_quantity'/>
+                <list title='Unit of Measurement' type='dropdown' required='false'>
+                    <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Piece (PC)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pair (PR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Set (SE)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kit (KT)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Assembly (AY)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Dozen (DZ)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Package (PG)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Box (BX)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Case (CS)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pallet (PL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bundle (BD)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bag'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Drum (DR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bottle'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Can (CN)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Roll (RO)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Coil (CL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Gram (g)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kilogram (kg)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Metric Ton (t)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+                </list>
+                <option type='string' required='false' title='Other Unit (Specify)' value='' id='logrep_item_03_custom_unit'/>
+                <option type='string' required='false' title='Additional Requirements / Specifications' value='' id='logrep_item_03_specifications'/>
+            </section>
+            <section title='Resupply Line Item 04' role='All' id='logrep_resupply_item_04' selected='false'>
+                <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_item_04_name'/>
+                <option type='number' required='false' title='Quantity Required' value='' id='logrep_item_04_quantity'/>
+                <list title='Unit of Measurement' type='dropdown' required='false'>
+                    <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Piece (PC)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pair (PR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Set (SE)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kit (KT)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Assembly (AY)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Dozen (DZ)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Package (PG)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Box (BX)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Case (CS)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pallet (PL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bundle (BD)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bag'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Drum (DR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bottle'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Can (CN)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Roll (RO)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Coil (CL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Gram (g)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kilogram (kg)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Metric Ton (t)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+                </list>
+                <option type='string' required='false' title='Other Unit (Specify)' value='' id='logrep_item_04_custom_unit'/>
+                <option type='string' required='false' title='Additional Requirements / Specifications' value='' id='logrep_item_04_specifications'/>
+            </section>
+            <section title='Resupply Line Item 05' role='All' id='logrep_resupply_item_05' selected='false'>
+                <option type='string' required='false' title='Supply / Equipment Required' value='' id='logrep_item_05_name'/>
+                <option type='number' required='false' title='Quantity Required' value='' id='logrep_item_05_quantity'/>
+                <list title='Unit of Measurement' type='dropdown' required='false'>
+                    <option type='checkbox' value='false' required='' selected='false' title='Each (EA)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Piece (PC)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pair (PR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Set (SE)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kit (KT)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Assembly (AY)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Dozen (DZ)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Package (PG)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Box (BX)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Case (CS)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Pallet (PL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Container'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bundle (BD)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bag'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Drum (DR)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Bottle'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Can (CN)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Roll (RO)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Coil (CL)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Gram (g)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Kilogram (kg)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Metric Ton (t)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
+                    <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+                </list>
+                <option type='string' required='false' title='Other Unit (Specify)' value='' id='logrep_item_05_custom_unit'/>
+                <option type='string' required='false' title='Additional Requirements / Specifications' value='' id='logrep_item_05_specifications'/>
+            </section>
+        </section>
+        <option type='string' required='false' title='Remarks' value='' id='logrep_remarks'/>
     </section>
 </report>
