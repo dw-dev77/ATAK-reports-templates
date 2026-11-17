@@ -1,6 +1,6 @@
-# ATAK Reports Templates
+# TAK Reports Templates
 
-A collection of XML-based operational reporting templates for [ATAK](https://tak.gov), covering established reporting formats and purpose-built templates for tactical, intelligence, logistics, communications, incident response, and other operational requirements.
+A collection of XML-based operational reporting templates for [TAK](https://tak.gov), covering established reporting formats and purpose-built templates for tactical, intelligence, logistics, communications, incident response, and other operational requirements.
 
 ## Platform Support
 
