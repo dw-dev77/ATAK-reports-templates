@@ -147,7 +147,7 @@ XML well-formedness checks alone do not establish runtime compatibility.
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature/new-template`).
 3. Ensure XML files are well-formed and special characters are properly escaped.
-4. Test changes in the intended ATAK environment.
+4. Test changes in the intended platform and version (ATAK or WinTAK).
 5. Submit a Pull Request.
 
 ## License
