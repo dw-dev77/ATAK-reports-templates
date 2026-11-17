@@ -15,25 +15,18 @@
             <option type='number' required='false' title='Personnel Unavailable' value='' id='logrep_personnel_unavailable'/>
         </section>
         <section title='Supply Status' role='All' id='logrep_supply_status' selected='false'>
-            <option type='number' required='false' title='Water State' value='' unitOptions='&#34;L&#34;,&#34;US gal&#34;' id='logrep_water_state'/>
+            <option type='number' required='false' title='Water State' value='' unitOptions='&#34;Days&#34;' id='logrep_water_state'/>
             <option type='number' required='false' title='Food State' value='' unitOptions='&#34;Days&#34;' id='logrep_food_state'/>
-            <list title='Battery State' type='dropdown' required='false'>
-                <option type='checkbox' value='false' required='' selected='false' title='76-100%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='51-75%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='26-50%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='1-25%'/>
-                <option type='checkbox' value='false' required='' selected='false' title='Depleted (0%)'/>
-                <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
-            </list>
+            <option type='number' required='false' title='Battery State' value='' unitOptions='&#34;%&#34;' id='logrep_battery_state'/>
             <option type='number' required='false' title='Fuel State' value='' unitOptions='&#34;L&#34;,&#34;US gal&#34;' id='logrep_fuel_state'/>
-            <list title='Medical Supplies Status' type='dropdown' required='false'>
+            <list title='Medical Supplies' type='dropdown' required='false'>
                 <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Black (Depleted)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             </list>
-            <list title='Ammunition Status' type='dropdown' required='false'>
+            <list title='Ammunition' type='dropdown' required='false'>
                 <option type='checkbox' value='false' required='' selected='false' title='Green (Full)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Amber (Degraded)'/>
                 <option type='checkbox' value='false' required='' selected='false' title='Red (Critical)'/>
@@ -98,10 +91,7 @@
                     <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Other'/>
@@ -138,10 +128,7 @@
                     <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Other'/>
@@ -178,10 +165,7 @@
                     <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Other'/>
@@ -218,10 +202,7 @@
                     <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Other'/>
@@ -258,10 +239,7 @@
                     <option type='checkbox' value='false' required='' selected='false' title='Liter (L)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Cubic Meter (m³)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='US Gallon (gal)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Centimeter (cm)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Meter (m)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Square Meter (m²)'/>
-                    <option type='checkbox' value='false' required='' selected='false' title='Hectare (ha)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Hour (h)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Day (d)'/>
                     <option type='checkbox' value='false' required='' selected='false' title='Other'/>
