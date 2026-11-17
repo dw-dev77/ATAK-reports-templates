@@ -2,6 +2,17 @@
 
 A collection of XML-based operational reporting templates for [ATAK](https://tak.gov), covering established reporting formats and purpose-built templates for tactical, intelligence, logistics, communications, incident response, and other operational requirements.
 
+## Platform Support
+
+This repository provides reporting templates for both ATAK and WinTAK. The two implementations are maintained separately to accommodate platform-specific report structures, field types, and capabilities.
+
+| Platform | Version Tested | Implementation |
+| :--- | :--- | :--- |
+| ATAK | 5.8.0 | Individual XML templates loaded through the Reports plugin. |
+| WinTAK | 5.8.0 | Templates organized into dedicated operational categories. |
+
+Both implementations are designed to preserve the same reporting purpose, information requirements, and overall field structure wherever platform capabilities allow. Platform-specific differences in field configuration, user interaction, and symbology are maintained where necessary.
+
 ## Included Templates
 
 | Template | Description |
@@ -23,14 +34,17 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 
 ## Key Features
 
-- **Established reporting formats:** XML implementations of established reporting formats and conventions, including `SITREP`, `SALUTE`, `INTREP`, `LOGREP`, `METHANE`, and `UXO/IED` (9-line), with appropriate adaptations for ATAK.
+- **Established reporting formats:** Implementations of established reporting formats and conventions, including `SITREP`, `SALUTE`, `INTREP`, `LOGREP`, `METHANE`, and `UXO/IED` (9-line), with appropriate adaptations for ATAK and WinTAK.
 - **Purpose-built templates:** Dedicated reporting structures for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), RF communications observations (`COMREP`), CBRN incidents (`CBRNREP`), contact reporting (`CONTACTREP`), battle damage assessment (`BDAREP`), infrastructure status (`INFRAREP`), and route assessment (`ROUTEREP`).
 - **Operational Adaptability:** Reporting structures designed to accommodate different operational environments, evolving technologies, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
-- **Geospatial Integration:** Utilizes ATAK-native `geometry`, `rangeBearing` and `route` field types for location selection, directional observations and route definition.
+- **Geospatial Integration:** Utilizes native `geometry`, `rangeBearing` and `route` field types for location selection, directional observations and route definition.
+- **Cross-Platform Implementations:** Provides separate ATAK and WinTAK report definitions, adapted to each platform's supported XML structure, field types, and reporting workflows.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
 ## Screenshots
+
+### ATAK 5.8.0
 
 Examples of the reporting templates running in ATAK `5.8.0`.
 
@@ -44,9 +58,13 @@ Examples of the reporting templates running in ATAK `5.8.0`.
 | ![BDAREP](screenshots/BDAREP.jpg) | ![CBRNREP](screenshots/CBRNREP.jpg) |
 | Multi-select damage indicators | CBRN hazard assessment |
 
+### WinTAK 5.8.0
+
+Examples of the reporting templates running in WinTAK `5.8.0`.
+
 ## Installation
 
-### Manual Installation
+### ATAK
 
 These templates are designed for use with the ATAK `Reports` plugin.
 
@@ -60,11 +78,22 @@ These templates are designed for use with the ATAK `Reports` plugin.
 3. Create the `custom` directory if it does not exist.
 4. Open the Reports plugin and select the desired template.
 
-Installation paths may vary depending on the ATAK distribution and version.
+### WinTAK
+
+1. Ensure the Reports plugin is installed and enabled in WinTAK.
+2. Copy the `.xml` template files to:
+
+```text
+/AppData/Roaming/WinTAK/Surveillance/Templates/
+```
+3. Restart WinTAK to load the updated configuration.
+4. Open the Reports interface and verify that the five categories — `OPS`, `INTEL`, `SIGNALS`, `LOG`, and `HAZMAT` are displayed with their associated templates.
+
+WinTAK report definitions are not interchangeable with ATAK's individual report template XML files.
 
 ## Building Custom Templates
 
-The repository includes [`CUSTOM.xml`](examples/CUSTOM.xml), a reference template demonstrating the XML field types and configurations used in the included reports.
+The repository includes [`CUSTOM.xml`](examples/CUSTOM.xml), an ATAK reports plugin reference template demonstrating the XML field types and configurations used in the ATAK implementation.
 
 The example covers:
 
@@ -78,15 +107,25 @@ The example covers:
 
 Use this template as a starting point when creating or adapting reporting templates. Modify the report metadata, section structure, field definitions and identifiers to suit your reporting requirements.
 
-Custom templates should be tested in the intended ATAK environment to verify field rendering and functionality.
+Custom templates should be tested in their intended platform and version to verify field rendering and functionality.
 
 ## Usage
+
+### ATAK
 
 1. Open ATAK.
 2. Launch the Reports plugin.
 3. Select the desired reporting template.
 4. Complete the relevant fields.
-5. Submit or share the report through the available ATAK reporting workflow.
+5. Submit or share the report through the available reporting workflow.
+
+### WinTAK
+
+1. Open WinTAK.
+2. Open the Reports interface.
+3. Select the desired report from its operational category.
+4. Complete the relevant fields.
+5. Submit or share the report through the available WinTAK reporting workflow.
 
 ## Testing and Compatibility
 
