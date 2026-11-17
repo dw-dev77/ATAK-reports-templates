@@ -4,14 +4,14 @@ A collection of XML-based operational reporting templates for [ATAK](https://tak
 
 ## Platform Support
 
-This repository provides reporting templates for both ATAK and WinTAK. The two implementations are maintained separately to accommodate platform-specific report structures, field types, and capabilities.
+This repository provides reporting templates for both ATAK and WinTAK. Separate platform implementations accommodate differences in XML configuration, supported field types, and application-specific capabilities.
 
 | Platform | Version Tested | Implementation |
 | :--- | :--- | :--- |
-| ATAK | 5.8.0 | Individual XML templates loaded through the Reports plugin. |
+| ATAK | 5.8.0 | Individual XML templates. |
 | WinTAK | 5.8.0 | Templates organized into dedicated operational categories. |
 
-Both implementations are designed to preserve the same reporting purpose, information requirements, and overall field structure wherever platform capabilities allow. Platform-specific differences in field configuration, user interaction, and symbology are maintained where necessary.
+Both implementations follow a common reporting structure and are designed to preserve consistent information requirements, section organisation, and reporting functionality across platforms. Platform-specific adaptations are applied where differences in supported fields and application behavior require them.
 
 ## Included Templates
 
@@ -39,7 +39,7 @@ Both implementations are designed to preserve the same reporting purpose, inform
 - **Operational Adaptability:** Reporting structures designed to accommodate different operational environments, evolving technologies, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
 - **Geospatial Integration:** Utilizes native `geometry`, `rangeBearing` and `route` field types for location selection, directional observations and route definition.
-- **Cross-Platform Implementations:** Provides separate ATAK and WinTAK report definitions, adapted to each platform's supported XML structure, field types, and reporting workflows.
+- **Cross-Platform Compatibility:** Consistent reporting structures and information requirements across ATAK and WinTAK, with platform-specific XML configurations and field adaptations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
 ## Screenshots
@@ -94,6 +94,7 @@ WinTAK report definitions are not interchangeable with ATAK's individual report 
 ## Building Custom Templates
 
 The repository includes [`CUSTOM.xml`](examples/CUSTOM.xml), an ATAK reports plugin reference template demonstrating the XML field types and configurations used in the ATAK implementation.
+The WinTAK implementation follows the same general report structure, with XML attributes and field configurations adapted to WinTAK's supported capabilities.
 
 The example covers:
 
