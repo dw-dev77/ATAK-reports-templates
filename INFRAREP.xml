@@ -7,13 +7,14 @@
             <option type='checkbox' value='false' required='' selected='false' title='Power Generation / Distribution'/>
             <option type='checkbox' value='false' required='' selected='false' title='Water Supply / Treatment'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fuel Storage / Distribution'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Communications / Telecommunications'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Transportation / Road Network'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Transportation / Road Infrastructure'/>
             <option type='checkbox' value='false' required='' selected='false' title='Railway Infrastructure'/>
             <option type='checkbox' value='false' required='' selected='false' title='Port / Maritime Infrastructure'/>
             <option type='checkbox' value='false' required='' selected='false' title='Airport / Aviation Infrastructure'/>
             <option type='checkbox' value='false' required='' selected='false' title='Medical / Healthcare Facility'/>
             <option type='checkbox' value='false' required='' selected='false' title='Government / Administrative Facility'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military / Defense Facility'/>
             <option type='checkbox' value='false' required='' selected='false' title='Industrial Facility'/>
             <option type='checkbox' value='false' required='' selected='false' title='Storage / Logistics Facility'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
@@ -29,6 +30,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Partially Operational'/>
             <option type='checkbox' value='false' required='' selected='false' title='Non-Operational'/>
             <option type='checkbox' value='false' required='' selected='false' title='Temporarily Closed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Under Maintenance'/>
             <option type='checkbox' value='false' required='' selected='false' title='Under Repair / Restoration'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
@@ -68,7 +70,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Communications Services' type='dropdown' required='false'>
+        <list title='Communications' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Available'/>
             <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
@@ -76,7 +78,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Applicable'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Sanitation / Waste Services' type='dropdown' required='false'>
+        <list title='Sanitation / Waste' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Available'/>
             <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
@@ -95,7 +97,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
-        <list title='Observed Hazards' required='false' multiple='true' type='checkbox'>
+        <list title='Hazards Observed' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Structural Instability'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fire / Smoke'/>
             <option type='checkbox' value='false' required='' selected='false' title='Flooding / Water Damage'/>
