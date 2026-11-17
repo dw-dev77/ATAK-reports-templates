@@ -64,9 +64,9 @@ Examples of the reporting templates running in WinTAK `5.8.0`.
 
 ## Installation
 
-### ATAK
+These templates are designed for use with the `Reports` plugin.
 
-These templates are designed for use with the ATAK `Reports` plugin.
+### ATAK
 
 1. Ensure the Reports plugin is installed and enabled.
 2. Copy the `.xml` template files to:
@@ -87,7 +87,7 @@ These templates are designed for use with the ATAK `Reports` plugin.
 /AppData/Roaming/WinTAK/Surveillance/Templates/
 ```
 3. Restart WinTAK to load the updated configuration.
-4. Open the Reports interface and verify that the five categories — `OPS`, `INTEL`, `SIGNALS`, `LOG`, and `HAZMAT` are displayed with their associated templates.
+4. Open the Reports interface and verify that the five categories - `OPS`, `INTEL`, `SIGNALS`, `LOG`, `HAZMAT` are displayed with their associated templates.
 
 WinTAK report definitions are not interchangeable with ATAK's individual report template XML files.
 
