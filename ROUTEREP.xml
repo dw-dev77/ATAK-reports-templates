@@ -1,19 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <report type='ROUTEREP' title='ROUTEREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='routerep'>
     <section title='Route Information' role='All' id='routerep_information' selected='false'>
-        <option type='dateTime' required='true' title='Assessment DTG' value='' id='routerep_dtg'/>
-        <option type='route' required='true' title='Route / Segment' value='' id='routerep_route'/>
-        <option type='string' required='false' title='Route Designation / Name' value='' id='routerep_designation'/>
+            <option type='dateTime' required='true' title='Assessment DTG' value='' id='routerep_dtg'/>
+            <option type='route' required='true' title='Route / Segment' value='' id='routerep_route'/>
+            <option type='string' required='false' title='Route Designation / Name' value='' id='routerep_designation'/>
         <list title='Route Type' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Primary Route'/>
             <option type='checkbox' value='false' required='' selected='false' title='Alternate Route'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Diversion / Detour'/>
             <option type='checkbox' value='false' required='' selected='false' title='Supply Route'/>
             <option type='checkbox' value='false' required='' selected='false' title='Evacuation Route'/>
             <option type='checkbox' value='false' required='' selected='false' title='Access Route'/>
             <option type='checkbox' value='false' required='' selected='false' title='Local / Secondary Route'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
         </list>
-        <option type='string' required='false' title='Route Description' value='' id='routerep_description'/>
+            <option type='string' required='false' title='Route Description' value='' id='routerep_description'/>
     </section>
     <section title='Route Condition' role='All' id='routerep_condition' selected='false'>
         <list title='Route Status' type='dropdown' required='true'>
@@ -41,16 +42,19 @@
             <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
             <option type='checkbox' value='false' required='' selected='false' title='Poor'/>
             <option type='checkbox' value='false' required='' selected='false' title='Damaged'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Uneven / Deformed'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Eroded / Washed Out'/>
             <option type='checkbox' value='false' required='' selected='false' title='Flooded / Waterlogged'/>
             <option type='checkbox' value='false' required='' selected='false' title='Snow / Ice Covered'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
-        <option type='string' required='false' title='Route Condition Description' value='' id='routerep_condition_description'/>
+            <option type='string' required='false' title='Route Condition Description' value='' id='routerep_condition_description'/>
     </section>
     <section title='Trafficability' role='All' id='routerep_trafficability' selected='false'>
         <list title='Suitable Movement Categories' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Dismounted Personnel'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Motorcycles'/>
             <option type='checkbox' value='false' required='' selected='false' title='Light Wheeled Vehicles'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy Wheeled Vehicles'/>
             <option type='checkbox' value='false' required='' selected='false' title='Tracked Vehicles'/>
@@ -67,12 +71,15 @@
             <option type='checkbox' value='false' required='' selected='false' title='Time-Based Restriction'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
         </list>
-        <option type='string' required='false' title='Trafficability Details' value='' id='routerep_trafficability_details'/>
+            <option type='string' required='false' title='Trafficability Details' value='' id='routerep_trafficability_details'/>
     </section>
     <section title='Obstacles &amp; Hazards' role='All' id='routerep_obstacles_hazards' selected='false'>
         <list title='Observed Obstacles' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Road Debris'/>
             <option type='checkbox' value='false' required='' selected='false' title='Damaged / Destroyed Infrastructure'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Bridge / Culvert Damage'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Crater / Road Surface Collapse'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Security Barrier / Physical Blockage'/>
             <option type='checkbox' value='false' required='' selected='false' title='Abandoned / Disabled Vehicles'/>
             <option type='checkbox' value='false' required='' selected='false' title='Flooding / Standing Water'/>
             <option type='checkbox' value='false' required='' selected='false' title='Landslide / Rockfall'/>
@@ -93,12 +100,12 @@
             <option type='checkbox' value='false' required='' selected='false' title='No Hazards Observed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unable to Determine'/>
         </list>
-        <option type='string' required='false' title='Obstacle / Hazard Description' value='' id='routerep_obstacle_description'/>
+            <option type='string' required='false' title='Obstacle / Hazard Description' value='' id='routerep_obstacle_description'/>
     </section>
     <section title='Additional Information' role='All' id='routerep_additional_info' selected='false'>
-        <option type='number' required='false' title='Estimated Delay' value='' unitOptions='&#34;min&#34;,&#34;h&#34;' id='routerep_estimated_delay'/>
-        <option type='string' required='false' title='Observed Traffic / Movement Conditions' value='' id='routerep_traffic_conditions'/>
-        <option type='string' required='false' title='Support Requirements' value='' id='routerep_support_requirements'/>
-        <option type='string' required='false' title='Remarks' value='' id='routerep_remarks'/>
+            <option type='number' required='false' title='Estimated Delay' value='' unitOptions='&#34;min&#34;,&#34;h&#34;' id='routerep_estimated_delay'/>
+            <option type='string' required='false' title='Observed Traffic / Movement Conditions' value='' id='routerep_traffic_conditions'/>
+            <option type='string' required='false' title='Support Requirements' value='' id='routerep_support_requirements'/>
+            <option type='string' required='false' title='Remarks' value='' id='routerep_remarks'/>
     </section>
 </report>
