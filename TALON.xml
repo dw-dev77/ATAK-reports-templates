@@ -14,6 +14,7 @@
         <list title='Type of Propulsion' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Piston Engine'/>
             <option type='checkbox' value='false' required='' selected='false' title='Turbine Engine'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Electric'/>
             <option type='checkbox' value='false' required='' selected='false' title='Hybrid'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
