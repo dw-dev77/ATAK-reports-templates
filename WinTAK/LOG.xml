@@ -6,8 +6,7 @@
         <option title="Status Update" required="false" type="string" />
         <option title="Resupply Request" required="false" type="string" />
       </list>
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <option title="Reporting Unit / Node ID" required="true" type="string" />
       <option title="Reporting Personnel" required="false" type="string" />
       <option title="Location" required="true" type="geometry" />
@@ -254,8 +253,7 @@
   </report>
   <report type="INFRAREP">
     <section title="Infrastructure Information" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
-      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment DTG" />
       <option title="Infrastructure Location" required="true" type="geometry" />
       <list title="Infrastructure Category" required="true">
         <option title="Power Generation / Distribution" required="false" type="string" />
@@ -375,8 +373,7 @@
   </report>
   <report type="ROUTEREP">
     <section title="Route Information" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
-      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment DTG" />
       <option title="Route / Segment" required="true" type="route" />
       <option title="Route Designation / Name" required="false" type="string" />
       <list title="Route Type" required="true">
