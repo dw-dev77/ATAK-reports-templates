@@ -12,36 +12,39 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Type of Propulsion' type='dropdown' required='false'>
-            <option type='checkbox' value='false' required='' selected='false' title='Electric'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Piston / Combustion'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Turbine / Jet'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Piston Engine'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Turbine Engine'/>
             <option type='checkbox' value='false' required='' selected='false' title='Hybrid'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Activity' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Transit (High Speed)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Low Hover / Target Search'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Thermal / Optical Sweep'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Payload Drop / Terminal Strike'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Perched / Static Surveillance'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Signal Relay / Airborne Mesh'/>
+        <list title='Activity' required='true' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Transit / High-Speed Movement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Hovering / Stationary Flight'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Target Search / Scanning'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Thermal / Optical Observation'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Payload Deployment / Drop'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Terminal Dive / Strike'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Perched / Grounded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Signal Relay / Communications Relay'/>
             <option type='checkbox' value='false' required='' selected='false' title='Mine Laying / Dispersal'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified Activity'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Observed Activity'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='geometry' required='true' title='Location' value='' id='talon_location' drawMapItem='false'/>
             <option type='rangeBearing' required='false' title='Orientation' value='' id='talon_orientation'/>
             <option type='number' required='false' title='Orientation (Manual)' value='' unitOptions='&#34;° (deg)&#34;,&#34;mils&#34;' id='talon_orientation_manual'/>   
         <list title='Noise' required='false' multiple='true' type='checkbox'>
-            <option type='checkbox' value='false' required='' selected='false' title='Loud (Close Proximity)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Moderate (Audible)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Loud'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Moderate'/>
             <option type='checkbox' value='false' required='' selected='false' title='Low / Faint'/>
-            <option type='checkbox' value='false' required='' selected='false' title='High Pitch Buzz'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Silent / Not Audible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='High-Pitched Buzz'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy Motor Thrum'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Piston / Prop Engine Hum'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Piston / Propeller Engine Hum'/>
             <option type='checkbox' value='false' required='' selected='false' title='Turbine / Jet Engine Noise'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Silent / Negligible'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Other Audible Characteristics'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
     </section>
     <section title='Supplementary Observations' role='All' id='talon_supplementary_observations' selected='false'>
@@ -53,8 +56,8 @@
         </list>
         <list title='Control Link' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='RF'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Fibre-Optic'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Tethered'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fiber-Optic'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Tethered (Unspecified)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
@@ -68,7 +71,7 @@
         </list>
         <list title='Estimated Altitude AGL' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Ultra Low (&lt;15m)'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Canopy Level (15m-50m)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Very Low (15m-50m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Low Altitude (50m-150m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Medium Altitude (150m-500m)'/>
             <option type='checkbox' value='false' required='' selected='false' title='High Altitude (&gt;500m)'/>
@@ -83,16 +86,15 @@
         </list>
         <list title='Payload / Equipment Type' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Explosive / Munition'/>
-            <option type='checkbox' value='false' required='' selected='false' title='ISR Sensor (EO / IR)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='ISR Sensor (EO/IR)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Communications / Relay Equipment'/>
             <option type='checkbox' value='false' required='' selected='false' title='Cargo / Delivery Payload'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Multiple / Mixed Payload'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='string' required='false' title='Payload / Equipment Description' value='' id='talon_payload_description'/>
         <list title='Visual Characteristics' required='false' multiple='true' type='checkbox'>
-            <option type='checkbox' value='false' required='' selected='false' title='Visible Lighting'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Steady / Continuous Lighting'/>
             <option type='checkbox' value='false' required='' selected='false' title='Flashing / Strobing Lights'/>
             <option type='checkbox' value='false' required='' selected='false' title='Distinctive Visual Markings'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unusual Airframe Features'/>
