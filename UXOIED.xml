@@ -30,6 +30,7 @@
         </list>
             <option type='string' required='true' title='Line 7: Impact on Mission' value='' id='uxoied_impact_mission'/>
         <list title='Line 8: Protective Measures Taken' required='true' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Personnel / Area Warning'/>
             <option type='checkbox' value='false' required='' selected='false' title='Cordon / Restricted Access'/>
             <option type='checkbox' value='false' required='' selected='false' title='Evacuation'/>
             <option type='checkbox' value='false' required='' selected='false' title='Standardized Marking'/>
@@ -43,7 +44,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Immediate'/>
             <option type='checkbox' value='false' required='' selected='false' title='Indirect'/>
             <option type='checkbox' value='false' required='' selected='false' title='Minor'/>
-            <option type='checkbox' value='false' required='' selected='false' title='No Threat'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Priority Assigned'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='string' required='false' title='Remarks / Additional Observations' value='' id='uxoied_remarks'/>
