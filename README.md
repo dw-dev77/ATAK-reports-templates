@@ -2,6 +2,8 @@
 
 A collection of XML-based operational reporting templates for [TAK](https://tak.gov), covering established reporting formats and purpose-built templates for tactical, intelligence, logistics, communications, incident response, and other operational requirements.
 
+Designed to be simple enough for field use, yet comprehensive enough to capture information that matters.
+
 ## Platform Support
 
 This repository provides reporting templates for both ATAK and WinTAK. Separate platform implementations accommodate differences in XML configuration, supported field types, and application-specific capabilities.
