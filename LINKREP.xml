@@ -2,7 +2,7 @@
 <report type='LINKREP' title='LINKREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='linkrep'>
     <section title='Tactical Link Status Report' role='All' id='linkrep_title' selected='false'>
             <option type='dateTime' required='true' title='DTG' value='' id='linkrep_dtg'/>
-            <option type='string' required='true' title='Reporting Station / Call sign' value='' id='linkrep_reporting_station'/>
+            <option type='string' required='true' title='Reporting Station / Callsign' value='' id='linkrep_reporting_station'/>
             <option type='string' required='true' title='Affected Node / Target Station' value='' id='linkrep_target_station'/>
             <option type='geometry' required='false' title='Node Location' value='' id='linkrep_node_location' drawMapItem='false'/>
         <list title='Link Status' type='dropdown' required='true'>
