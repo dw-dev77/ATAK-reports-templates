@@ -111,7 +111,7 @@ These templates are designed for use with the `Reports` plugin.
 /AppData/Roaming/WinTAK/Surveillance/Templates/
 ```
 3. Restart WinTAK to load the updated configuration.
-4. Open the Reports interface and verify that the five categories - `OPS`, `INTEL`, `SIGNALS`, `LOG`, `HAZMAT` are displayed with their associated templates.
+4. Open the Reports interface and verify that the five categories (`OPS`, `INTEL`, `SIGNALS`, `LOG`, and `HAZMAT`) are displayed with their associated templates.
 
 WinTAK and ATAK use platform-specific report definitions. Their XML files are not directly interchangeable.
 
@@ -166,7 +166,7 @@ Testing includes:
 - Dropdown and multi-select functionality.
 - Geospatial field selection and map interaction, where supported.
 - Numeric inputs and measurement units, where applicable.
-- Nested sections and repeated report structures.
+- Nested sections and repeated report structures, where supported by the platform.
 - Report submission.
 - Report export and sharing.
 - WinTAK category persistence after application restart.
