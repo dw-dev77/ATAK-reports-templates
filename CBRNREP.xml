@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <report type='CBRNREP' title='CBRNREP Template' visibilityStatus='false' delimiter='&#10;' userCallsign='' userDescription='' dateTime='' dateTimeDescription='' location='' locationDescription='' tags='' showOptions='false' showTags='false' eventScale='' scaleDescription='' importance='' status='None' id='cbrnrep'>
     <section title='Incident Information' role='All' id='cbrnrep_incident_info' selected='false'>
-        <option type='dateTime' required='true' title='DTG' value='' id='cbrnrep_incident_info_dtg'/>
-        <list title='Incident Type' type='dropdown' required='true'>
+            <option type='dateTime' required='true' title='DTG' value='' id='cbrnrep_incident_info_dtg'/>
+        <list title='Incident Type' required='true' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Chemical'/>
             <option type='checkbox' value='false' required='' selected='false' title='Biological'/>
             <option type='checkbox' value='false' required='' selected='false' title='Radiological'/>
@@ -16,8 +16,8 @@
             <option type='checkbox' value='false' required='' selected='false' title='Resolved'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='geometry' required='true' title='Incident Location' value='' id='cbrnrep_location' drawMapItem='false'/>
-        <list title='Detection / Observation Source' type='dropdown' required='false'>
+            <option type='geometry' required='true' title='Incident Location' value='' id='cbrnrep_location' drawMapItem='false'/>
+        <list title='Detection / Observation Source' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Personnel Observation'/>
             <option type='checkbox' value='false' required='' selected='false' title='CBRN Detection Equipment'/>
             <option type='checkbox' value='false' required='' selected='false' title='Environmental Monitoring'/>
@@ -36,7 +36,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Equipment Failure'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Detection Method' type='dropdown' required='false'>
+        <list title='Detection Method' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Direct Observation'/>
             <option type='checkbox' value='false' required='' selected='false' title='Instrument / Sensor Detection'/>
             <option type='checkbox' value='false' required='' selected='false' title='Field Sampling'/>
@@ -46,8 +46,8 @@
             <option type='checkbox' value='false' required='' selected='false' title='Medical / Clinical Indicators'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
         </list>
-        <option type='string' required='false' title='Detection Equipment' value='' id='cbrnrep_detection_equipment'/>
-        <option type='string' required='false' title='Suspected Agent / Material' value='' id='cbrnrep_suspected_agent_material'/>
+            <option type='string' required='false' title='Detection Equipment' value='' id='cbrnrep_detection_equipment'/>
+            <option type='string' required='false' title='Suspected Agent / Material' value='' id='cbrnrep_suspected_agent_material'/>
         <list title='Identification Confidence' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Confirmed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Presumptive'/>
@@ -55,8 +55,8 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
-        <option type='string' required='false' title='Detection Result' value='' id='cbrnrep_detection_result'/>
-        <option type='number' required='false' title='Measurement' value='' unitOptions='&#34;ppm&#34;,&#34;ppb&#34;,&#34;mg/m³&#34;,&#34;µg/m³&#34;,&#34;Bq&#34;,&#34;kBq&#34;,&#34;MBq&#34;,&#34;GBq&#34;,&#34;Bq/m³&#34;,&#34;Bq/cm²&#34;,&#34;cps&#34;,&#34;cpm&#34;,&#34;Gy&#34;,&#34;mGy&#34;,&#34;µGy&#34;,&#34;Sv&#34;,&#34;mSv&#34;,&#34;µSv&#34;,&#34;Gy/h&#34;,&#34;mGy/h&#34;,&#34;µGy/h&#34;,&#34;Sv/h&#34;,&#34;mSv/h&#34;,&#34;µSv/h&#34;' id='cbrnrep_measurement'/>
+            <option type='string' required='false' title='Detection Result' value='' id='cbrnrep_detection_result'/>
+            <option type='number' required='false' title='Measurement' value='' unitOptions='&#34;ppm&#34;,&#34;ppb&#34;,&#34;mg/m³&#34;,&#34;µg/m³&#34;,&#34;Bq&#34;,&#34;kBq&#34;,&#34;MBq&#34;,&#34;GBq&#34;,&#34;Bq/m³&#34;,&#34;Bq/cm²&#34;,&#34;cps&#34;,&#34;cpm&#34;,&#34;Gy&#34;,&#34;mGy&#34;,&#34;µGy&#34;,&#34;Sv&#34;,&#34;mSv&#34;,&#34;µSv&#34;,&#34;Gy/h&#34;,&#34;mGy/h&#34;,&#34;µGy/h&#34;,&#34;Sv/h&#34;,&#34;mSv/h&#34;,&#34;µSv/h&#34;' id='cbrnrep_measurement'/>
         <list title='Contamination Assessment' type='dropdown' required='true'>
             <option type='checkbox' value='false' required='' selected='false' title='Confirmed Contamination'/>
             <option type='checkbox' value='false' required='' selected='false' title='Suspected Contamination'/>
@@ -65,8 +65,8 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='geometry' required='false' title='Affected Area' value='' id='cbrnrep_affected_area' drawMapItem='false'/>
-        <option type='string' required='false' title='Environmental Conditions' value='' id='cbrnrep_environmental_conditions'/>
+            <option type='geometry' required='false' title='Affected Area' value='' id='cbrnrep_affected_area' drawMapItem='false'/>
+            <option type='string' required='false' title='Environmental Conditions' value='' id='cbrnrep_environmental_conditions'/>
     </section>
     <section title='Exposure &amp; Response' role='All' id='cbrnrep_exposure_response' selected='false'>
         <list title='Personnel Exposure Assessment' type='dropdown' required='false'>
@@ -77,7 +77,7 @@
             <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <option type='number' required='false' title='Number of Potentially Exposed Personnel' value='' id='cbrnrep_exposed_personnel'/>
+            <option type='number' required='false' title='Number of Potentially Exposed Personnel' value='' id='cbrnrep_exposed_personnel'/>
         <list title='Protective Measures' required='false' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Protective Clothing'/>
             <option type='checkbox' value='false' required='' selected='false' title='Respiratory Protection'/>
@@ -88,13 +88,15 @@
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unspecified'/>
         </list>
         <list title='Decontamination Status' type='dropdown' required='false'>
+            <option type='checkbox' value='false' required='' selected='false' title='Required / Planned'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Required'/>
             <option type='checkbox' value='false' required='' selected='false' title='Not Started'/>
             <option type='checkbox' value='false' required='' selected='false' title='In Progress'/>
             <option type='checkbox' value='false' required='' selected='false' title='Completed'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unavailable'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Not Assessed'/>
         </list>
-        <option type='string' required='false' title='Remarks' value='' id='cbrnrep_remarks'/>
+            <option type='string' required='false' title='Remarks' value='' id='cbrnrep_remarks'/>
     </section>
 </report>
