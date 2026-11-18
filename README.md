@@ -67,10 +67,10 @@ Examples of the reporting templates running in ATAK `5.8.0`.
 | ![INTREP](screenshots/ATAK-INTREP.jpg) | ![LOGREP](screenshots/ATAK-LOGREP.jpg) |
 | Structured reporting and collection information | Custom measurement units |
 
-| BDAREP — Battle Damage Assessment | CBRNREP — CBRN Incident Report |
+| ROUTEREP — Route Assessment | TALON — C-UAS Report |
 | :---: | :---: |
-| ![BDAREP](screenshots/BDAREP.jpg) | ![CBRNREP](screenshots/CBRNREP.jpg) |
-| Multi-select damage indicators | CBRN hazard assessment |
+| ![ROUTEREP](screenshots/ATAK-ROUTEREP.jpg) | ![TALON](screenshots/ATAK-TALON.jpg) |
+| Multi-select categories | Altitude and payload assessment |
 
 ### WinTAK 5.8.0
 
