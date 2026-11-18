@@ -2,8 +2,7 @@
 <reports>
   <report type="METHANE">
     <section title="Major Incident / MASCAL Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <list title="M: Major Incident Status" required="true">
         <option title="Major Incident Declared" required="false" type="string" />
         <option title="Standby / Assessment Phase" required="false" type="string" />
@@ -109,8 +108,7 @@
   </report>
   <report type="UXO/IED">
     <section title="9-Line Explosive Hazard Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Line 1: Date" />
-      <option title="Line 1: Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Line 1: DTG" />
       <option title="Line 2: Reporting Activity / Contact" required="true" type="string" />
       <option title="Line 3: Location" required="true" type="geometry" />
       <list title="Line 4: Type of Ordnance" required="true">
@@ -163,8 +161,7 @@
   </report>
   <report type="CBRNREP">
     <section title="Incident Information" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <list title="Incident Type" required="true" multiple="true">
         <option title="Chemical" required="false" type="string" />
         <option title="Biological" required="false" type="string" />
