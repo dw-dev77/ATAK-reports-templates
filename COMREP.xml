@@ -15,11 +15,15 @@
     <list title='Signal / Communications Type' type='dropdown' required='false'>
             <option type='checkbox' value='false' required='' selected='false' title='Analog Voice (AM / FM / SSB)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Digital LMR (DMR / P25 / TETRA / NXDN)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='HF / Tactical Radio Data'/>
             <option type='checkbox' value='false' required='' selected='false' title='Digital Data / Telemetry (FSK / PSK / LoRa)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Tactical Data Link'/>
             <option type='checkbox' value='false' required='' selected='false' title='Cellular Communications (LTE / 5G NR)'/>
             <option type='checkbox' value='false' required='' selected='false' title='WLAN / Wireless Network (Wi-Fi)'/>
             <option type='checkbox' value='false' required='' selected='false' title='Satellite Communications'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Broadcast'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Broadcast / Broadcast Relay'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Navigation / Positioning Signal'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Remote Control / Command Link'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Specialized'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
     </list>
