@@ -2,8 +2,7 @@
 <reports>
  <report type="LINKREP">
     <section title="Tactical Link Status Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <option title="Reporting Station / Callsign" required="true" type="string" />
       <option title="Affected Node / Target Station" required="true" type="string" />
       <option title="Node Location" required="false" type="geometry" />
@@ -47,8 +46,7 @@
   </report>
   <report type="COMREP">
     <section title="Tactical Communications Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <option title="Observer Position / Grid" required="true" type="geometry" />
       <option title="Observed Frequency" required="false" type="number" />
       <list title="Signal Strength" required="false">
