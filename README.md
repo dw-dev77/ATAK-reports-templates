@@ -76,6 +76,16 @@ Examples of the reporting templates running in ATAK `5.8.0`.
 
 Examples of the reporting templates running in WinTAK `5.8.0`.
 
+| SITREP | BDAREP |
+| :---: | :---: |
+| ![SITREP](screenshots/WINTAK-SITREP.jpg) | ![BDAREP](screenshots/WINTAK-BDAREP.jpg) |
+| Situation report | Battle damage assessment |
+
+| COMREP | UXO/IED |
+| :---: | :---: |
+| ![COMREP](screenshots/WINTAK-COMREP.jpg) | ![UXO/IED](screenshots/WINTAK-UXOIED.jpg) |
+| Communications report | 9-Line unexploded ordnance / improvised explosive device report |
+
 ## Installation
 
 These templates are designed for use with the `Reports` plugin.
