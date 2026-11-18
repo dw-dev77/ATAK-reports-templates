@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reports>
+  <report type="METHANE">
+    <section title="Major Incident / MASCAL Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <list title="M: Major Incident Status" required="true">
+        <option title="Major Incident Declared" required="false" type="string" />
+        <option title="Standby / Assessment Phase" required="false" type="string" />
+        <option title="Incident De-escalated" required="false" type="string" />
+      </list>
+      <option title="E: Exact Location / Grid" required="true" type="geometry" />
+      <list title="T: Type of Incident" required="true" multiple="true">
+        <option title="Mass Casualty Incident" required="false" type="string" />
+        <option title="Kinetic Engagement" required="false" type="string" />
+        <option title="Explosion" required="false" type="string" />
+        <option title="Ordnance / UXO Incident" required="false" type="string" />
+        <option title="IED Incident" required="false" type="string" />
+        <option title="Structural Collapse" required="false" type="string" />
+        <option title="Vehicle Accident / Crash" required="false" type="string" />
+        <option title="CBRN Incident" required="false" type="string" />
+        <option title="Hazardous Material Release" required="false" type="string" />
+        <option title="Fire" required="false" type="string" />
+        <option title="Environmental Incident" required="false" type="string" />
+        <option title="Other Incident" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="H: On-Scene Hazards" required="true" multiple="true">
+        <option title="Secondary Explosive Devices" required="false" type="string" />
+        <option title="Unexploded Ordnance (UXO)" required="false" type="string" />
+        <option title="Active Fire" required="false" type="string" />
+        <option title="Smoke / Toxic Fumes" required="false" type="string" />
+        <option title="Structural Instability" required="false" type="string" />
+        <option title="Structural Collapse / Falling Debris" required="false" type="string" />
+        <option title="CBRN Contamination" required="false" type="string" />
+        <option title="Hazardous Material Release" required="false" type="string" />
+        <option title="Enemy Small Arms Fire" required="false" type="string" />
+        <option title="Sniper Threat" required="false" type="string" />
+        <option title="Indirect Fire / Incoming Munitions" required="false" type="string" />
+        <option title="Downed Power Lines" required="false" type="string" />
+        <option title="Electrical Infrastructure Damage" required="false" type="string" />
+        <option title="Gas Leak / Flammable Atmosphere" required="false" type="string" />
+        <option title="Flooding / Dangerous Water Conditions" required="false" type="string" />
+        <option title="Unstable Terrain / Ground Conditions" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="None Identified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="A: Access / Ingress / HLZ Routes" required="false" type="string" />
+      <list title="N: Casualty Assessment Status" required="true">
+        <option title="Confirmed Figures" required="false" type="string" />
+        <option title="Estimated Figures" required="false" type="string" />
+        <option title="Assessment Ongoing" required="false" type="string" />
+        <option title="No Casualties Reported" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <section title="N: Number &amp; Severity of Casualties" invert="False" role="All">
+        <option title="P1 / Red (Immediate)" required="false" type="number" />
+        <option title="P2 / Yellow (Delayed)" required="false" type="number" />
+        <option title="P3 / Green (Minimal)" required="false" type="number" />
+        <option title="Black (Deceased)" required="false" type="number" />
+      </section>
+      <list title="E: Emergency Services Present" required="true" multiple="true">
+        <option title="Medical / Ambulance" required="false" type="string" />
+        <option title="Fire and Rescue" required="false" type="string" />
+        <option title="Police / Law Enforcement" required="false" type="string" />
+        <option title="Military Police" required="false" type="string" />
+        <option title="Military Medical" required="false" type="string" />
+        <option title="EOD" required="false" type="string" />
+        <option title="C-IED" required="false" type="string" />
+        <option title="HazMat Response" required="false" type="string" />
+        <option title="CBRN Response" required="false" type="string" />
+        <option title="Search and Rescue" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="None Present" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="E: Emergency / Specialist Services Required" required="true" multiple="true">
+        <option title="Civilian Ambulance / EMS" required="false" type="string" />
+        <option title="Military Medical Support" required="false" type="string" />
+        <option title="Medical Evacuation (MEDEVAC)" required="false" type="string" />
+        <option title="Field Surgical Team" required="false" type="string" />
+        <option title="EOD Support" required="false" type="string" />
+        <option title="C-IED Support" required="false" type="string" />
+        <option title="Heavy Rescue / Extrication" required="false" type="string" />
+        <option title="Urban Search and Rescue (USAR)" required="false" type="string" />
+        <option title="Search and Rescue (SAR)" required="false" type="string" />
+        <option title="HazMat Response" required="false" type="string" />
+        <option title="CBRN Response" required="false" type="string" />
+        <option title="Police / Law Enforcement" required="false" type="string" />
+        <option title="Military Police" required="false" type="string" />
+        <option title="Security / Perimeter Force" required="false" type="string" />
+        <option title="Fire and Rescue" required="false" type="string" />
+        <option title="Emergency Engineering Support" required="false" type="string" />
+        <option title="Infrastructure / Utilities Support" required="false" type="string" />
+        <option title="Communications Support" required="false" type="string" />
+        <option title="Transport Support" required="false" type="string" />
+        <option title="Logistics / Supply Support" required="false" type="string" />
+        <option title="Unmanned Aerial Systems (UAS)" required="false" type="string" />
+        <option title="Unmanned Ground Systems (UGS)" required="false" type="string" />
+        <option title="Unmanned Surface / Underwater Systems (USV/UUV)" required="false" type="string" />
+        <option title="Remote Sensing / Reconnaissance Support" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="No Additional Services Required" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Remarks / Additional Details" required="false" type="string" />
+    </section>
+  </report>
+  <report type="UXO/IED">
+    <section title="9-Line Explosive Hazard Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Line 1: Date" />
+      <option title="Line 1: Time (UTC)" required="true" type="time" />
+      <option title="Line 2: Reporting Activity / Contact" required="true" type="string" />
+      <option title="Line 3: Location" required="true" type="geometry" />
+      <list title="Line 4: Type of Ordnance" required="true">
+        <option title="Dropped (Bomb/Cluster Munition)" required="false" type="string" />
+        <option title="Projected (Artillery/Mortar/Rocket)" required="false" type="string" />
+        <option title="Placed (IED/Landmine/Booby Trap)" required="false" type="string" />
+        <option title="Thrown (Hand Grenade/Improvised Device)" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Line 5: CBRN Contamination" required="true">
+        <option title="None / Clear" required="false" type="string" />
+        <option title="Suspected CBRN" required="false" type="string" />
+        <option title="Confirmed Chemical" required="false" type="string" />
+        <option title="Confirmed Biological" required="false" type="string" />
+        <option title="Confirmed Radiological" required="false" type="string" />
+        <option title="Confirmed Multiple / Mixed CBRN" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Line 6: Resources Threatened" required="true" multiple="true">
+        <option title="Buildings / Facilities" required="false" type="string" />
+        <option title="Roads / Tracks / Egress Routes" required="false" type="string" />
+        <option title="Vehicles / Aircraft" required="false" type="string" />
+        <option title="Personnel / Civilians" required="false" type="string" />
+        <option title="Critical Infrastructure" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Line 7: Impact on Mission" required="true" type="string" />
+      <list title="Line 8: Protective Measures Taken" required="true" multiple="true">
+        <option title="Personnel / Area Warning" required="false" type="string" />
+        <option title="Cordon / Restricted Access" required="false" type="string" />
+        <option title="Evacuation" required="false" type="string" />
+        <option title="Standardized Marking" required="false" type="string" />
+        <option title="Improvised Marking" required="false" type="string" />
+        <option title="No Protective Measures Taken" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Protective Measures / Additional Details" required="false" type="string" />
+      <list title="Line 9: Recommended Priority" required="true">
+        <option title="Immediate" required="false" type="string" />
+        <option title="Indirect" required="false" type="string" />
+        <option title="Minor" required="false" type="string" />
+        <option title="No Priority Assigned" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+  <report type="CBRNREP">
+    <section title="Incident Information" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <list title="Incident Type" required="true" multiple="true">
+        <option title="Chemical" required="false" type="string" />
+        <option title="Biological" required="false" type="string" />
+        <option title="Radiological" required="false" type="string" />
+        <option title="Nuclear" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Incident Status" required="true">
+        <option title="Active" required="false" type="string" />
+        <option title="Contained" required="false" type="string" />
+        <option title="Under Investigation" required="false" type="string" />
+        <option title="Resolved" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Incident Location" required="true" type="geometry" />
+      <list title="Detection / Observation Source" required="false" multiple="true">
+        <option title="Personnel Observation" required="false" type="string" />
+        <option title="CBRN Detection Equipment" required="false" type="string" />
+        <option title="Environmental Monitoring" required="false" type="string" />
+        <option title="Medical / Casualty Indicators" required="false" type="string" />
+        <option title="External Reporting" required="false" type="string" />
+        <option title="Other / Unspecified" required="false" type="string" />
+      </list>
+      <section title="Hazard Assessment" invert="False" role="All">
+        <list title="Detection Status" required="true">
+          <option title="Positive Detection" required="false" type="string" />
+          <option title="Detection Indicated" required="false" type="string" />
+          <option title="No Detection" required="false" type="string" />
+          <option title="Inconclusive" required="false" type="string" />
+          <option title="Not Conducted" required="false" type="string" />
+          <option title="Equipment Failure" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Detection Method" required="false" multiple="true">
+          <option title="Direct Observation" required="false" type="string" />
+          <option title="Instrument / Sensor Detection" required="false" type="string" />
+          <option title="Field Sampling" required="false" type="string" />
+          <option title="Laboratory Analysis" required="false" type="string" />
+          <option title="Remote / Standoff Detection" required="false" type="string" />
+          <option title="Environmental Monitoring" required="false" type="string" />
+          <option title="Medical / Clinical Indicators" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+        </list>
+        <option title="Detection Equipment" required="false" type="string" />
+        <option title="Suspected Agent / Material" required="false" type="string" />
+        <list title="Identification Confidence" required="false">
+          <option title="Confirmed" required="false" type="string" />
+          <option title="Presumptive" required="false" type="string" />
+          <option title="Suspected" required="false" type="string" />
+          <option title="Unidentified" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Detection Result" required="false" type="string" />
+        <option title="Measurement Value" required="false" type="number" unitOptions="&quot;ppm&quot;,&quot;ppb&quot;,&quot;mg/m³&quot;,&quot;µg/m³&quot;,&quot;Bq&quot;,&quot;kBq&quot;,&quot;MBq&quot;,&quot;GBq&quot;,&quot;Bq/m³&quot;,&quot;Bq/cm²&quot;,&quot;cps&quot;,&quot;cpm&quot;,&quot;Gy&quot;,&quot;mGy&quot;,&quot;µGy&quot;,&quot;Sv&quot;,&quot;mSv&quot;,&quot;µSv&quot;,&quot;Gy/h&quot;,&quot;mGy/h&quot;,&quot;µGy/h&quot;,&quot;Sv/h&quot;,&quot;mSv/h&quot;,&quot;µSv/h&quot;" />
+        <list title="Contamination Assessment" required="true">
+          <option title="Confirmed Contamination" required="false" type="string" />
+          <option title="Suspected Contamination" required="false" type="string" />
+          <option title="No Contamination Detected" required="false" type="string" />
+          <option title="Inconclusive" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Affected Area" required="false" type="geometry" />
+        <option title="Environmental Conditions" required="false" type="string" />
+      </section>
+      <section title="Exposure &amp; Response" invert="False" role="All">
+        <list title="Personnel Exposure Assessment" required="false">
+          <option title="Confirmed Exposure" required="false" type="string" />
+          <option title="Suspected Exposure" required="false" type="string" />
+          <option title="No Exposure Identified" required="false" type="string" />
+          <option title="Inconclusive" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Number of Potentially Exposed Personnel" required="false" type="number" />
+        <list title="Protective Measures" required="false" multiple="true">
+          <option title="Protective Clothing" required="false" type="string" />
+          <option title="Respiratory Protection" required="false" type="string" />
+          <option title="Shelter in Place" required="false" type="string" />
+          <option title="Evacuation" required="false" type="string" />
+          <option title="Area Isolation / Cordon" required="false" type="string" />
+          <option title="Access Restriction" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+        </list>
+        <list title="Decontamination Status" required="false">
+          <option title="Required / Planned" required="false" type="string" />
+          <option title="Not Required" required="false" type="string" />
+          <option title="Not Started" required="false" type="string" />
+          <option title="In Progress" required="false" type="string" />
+          <option title="Completed" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+</reports>

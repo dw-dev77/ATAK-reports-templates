@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<reports>
+ <report type="LOGREP">
+    <section title="Logistics &amp; Supply Report" invert="False" role="All">
+      <list title="Report Type" required="true">
+        <option title="Status Update" required="false" type="string" />
+        <option title="Resupply Request" required="false" type="string" />
+      </list>
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <option title="Reporting Unit / Node ID" required="true" type="string" />
+      <option title="Reporting Personnel" required="false" type="string" />
+      <option title="Location" required="true" type="geometry" />
+      <section title="Personnel Status" invert="False" role="All">
+        <option title="Present Strength" required="false" type="number" />
+        <option title="Personnel Available" required="false" type="number" />
+        <option title="Personnel Unavailable" required="false" type="number" />
+      </section>
+      <section title="Supply Status" invert="False" role="All">
+        <option title="Water State (Days)" required="false" type="number" />
+        <option title="Food State (Days)" required="false" type="number" />
+        <option title="Battery State (%)" required="false" type="number" />
+        <option title="Fuel State (L/US gal)" required="false" type="number" />
+        <list title="Medical Supplies" required="false">
+          <option title="Green (Full)" required="false" type="string" />
+          <option title="Amber (Degraded)" required="false" type="string" />
+          <option title="Red (Critical)" required="false" type="string" />
+          <option title="Black (Depleted)" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Ammunition" required="false">
+          <option title="Green (Full)" required="false" type="string" />
+          <option title="Amber (Degraded)" required="false" type="string" />
+          <option title="Red (Critical)" required="false" type="string" />
+          <option title="Black (Depleted)" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+      </section>
+      <section title="Equipment Status" invert="False" role="All">
+        <list title="Overall Equipment Status" required="false">
+          <option title="Operational" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Non-operational" required="false" type="string" />
+          <option title="Under Maintenance" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+      </section>
+      <section title="Resupply Requirements" invert="False" role="All">
+        <option title="Request ID / Reference" required="false" type="string" />
+        <list title="Resupply Status" required="false">
+          <option title="Submitted" required="false" type="string" />
+          <option title="Acknowledged" required="false" type="string" />
+          <option title="Approved" required="false" type="string" />
+          <option title="Partially Fulfilled" required="false" type="string" />
+          <option title="Fulfilled" required="false" type="string" />
+          <option title="Rejected" required="false" type="string" />
+          <option title="Cancelled" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Priority" required="false">
+          <option title="Immediate" required="false" type="string" />
+          <option title="Urgent" required="false" type="string" />
+          <option title="Priority" required="false" type="string" />
+          <option title="Routine" required="false" type="string" />
+        </list>
+        <option title="Delivery Location" required="false" type="geometry" />
+      </section>
+      <section title="Resupply Line Item 01" invert="False" role="All">
+        <option title="Supply / Equipment Required" required="false" type="string" />
+        <option title="Quantity Required" required="false" type="number" />
+        <list title="Unit of Measurement" required="false">
+          <option title="Each (EA)" required="false" type="string" />
+          <option title="Piece (PC)" required="false" type="string" />
+          <option title="Pair (PR)" required="false" type="string" />
+          <option title="Set (SE)" required="false" type="string" />
+          <option title="Kit (KT)" required="false" type="string" />
+          <option title="Assembly (AY)" required="false" type="string" />
+          <option title="Dozen (DZ)" required="false" type="string" />
+          <option title="Package (PG)" required="false" type="string" />
+          <option title="Box (BX)" required="false" type="string" />
+          <option title="Case (CS)" required="false" type="string" />
+          <option title="Pallet (PL)" required="false" type="string" />
+          <option title="Container" required="false" type="string" />
+          <option title="Bundle (BD)" required="false" type="string" />
+          <option title="Bag" required="false" type="string" />
+          <option title="Drum (DR)" required="false" type="string" />
+          <option title="Bottle" required="false" type="string" />
+          <option title="Can (CN)" required="false" type="string" />
+          <option title="Roll (RO)" required="false" type="string" />
+          <option title="Coil (CL)" required="false" type="string" />
+          <option title="Gram (g)" required="false" type="string" />
+          <option title="Kilogram (kg)" required="false" type="string" />
+          <option title="Metric Ton (t)" required="false" type="string" />
+          <option title="Liter (L)" required="false" type="string" />
+          <option title="Cubic Meter (m³)" required="false" type="string" />
+          <option title="US Gallon (gal)" required="false" type="string" />
+          <option title="Meter (m)" required="false" type="string" />
+          <option title="Hour (h)" required="false" type="string" />
+          <option title="Day (d)" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+        </list>
+        <option title="Other Unit (Specify)" required="false" type="string" />
+        <option title="Additional Requirements / Specifications" required="false" type="string" />
+      </section>
+      <section title="Resupply Line Item 02" invert="False" role="All">
+        <option title="Supply / Equipment Required" required="false" type="string" />
+        <option title="Quantity Required" required="false" type="number" />
+        <list title="Unit of Measurement" required="false">
+          <option title="Each (EA)" required="false" type="string" />
+          <option title="Piece (PC)" required="false" type="string" />
+          <option title="Pair (PR)" required="false" type="string" />
+          <option title="Set (SE)" required="false" type="string" />
+          <option title="Kit (KT)" required="false" type="string" />
+          <option title="Assembly (AY)" required="false" type="string" />
+          <option title="Dozen (DZ)" required="false" type="string" />
+          <option title="Package (PG)" required="false" type="string" />
+          <option title="Box (BX)" required="false" type="string" />
+          <option title="Case (CS)" required="false" type="string" />
+          <option title="Pallet (PL)" required="false" type="string" />
+          <option title="Container" required="false" type="string" />
+          <option title="Bundle (BD)" required="false" type="string" />
+          <option title="Bag" required="false" type="string" />
+          <option title="Drum (DR)" required="false" type="string" />
+          <option title="Bottle" required="false" type="string" />
+          <option title="Can (CN)" required="false" type="string" />
+          <option title="Roll (RO)" required="false" type="string" />
+          <option title="Coil (CL)" required="false" type="string" />
+          <option title="Gram (g)" required="false" type="string" />
+          <option title="Kilogram (kg)" required="false" type="string" />
+          <option title="Metric Ton (t)" required="false" type="string" />
+          <option title="Liter (L)" required="false" type="string" />
+          <option title="Cubic Meter (m³)" required="false" type="string" />
+          <option title="US Gallon (gal)" required="false" type="string" />
+          <option title="Meter (m)" required="false" type="string" />
+          <option title="Hour (h)" required="false" type="string" />
+          <option title="Day (d)" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+        </list>
+        <option title="Other Unit (Specify)" required="false" type="string" />
+        <option title="Additional Requirements / Specifications" required="false" type="string" />
+      </section>
+      <section title="Resupply Line Item 03" invert="False" role="All">
+        <option title="Supply / Equipment Required" required="false" type="string" />
+        <option title="Quantity Required" required="false" type="number" />
+        <list title="Unit of Measurement" required="false">
+          <option title="Each (EA)" required="false" type="string" />
+          <option title="Piece (PC)" required="false" type="string" />
+          <option title="Pair (PR)" required="false" type="string" />
+          <option title="Set (SE)" required="false" type="string" />
+          <option title="Kit (KT)" required="false" type="string" />
+          <option title="Assembly (AY)" required="false" type="string" />
+          <option title="Dozen (DZ)" required="false" type="string" />
+          <option title="Package (PG)" required="false" type="string" />
+          <option title="Box (BX)" required="false" type="string" />
+          <option title="Case (CS)" required="false" type="string" />
+          <option title="Pallet (PL)" required="false" type="string" />
+          <option title="Container" required="false" type="string" />
+          <option title="Bundle (BD)" required="false" type="string" />
+          <option title="Bag" required="false" type="string" />
+          <option title="Drum (DR)" required="false" type="string" />
+          <option title="Bottle" required="false" type="string" />
+          <option title="Can (CN)" required="false" type="string" />
+          <option title="Roll (RO)" required="false" type="string" />
+          <option title="Coil (CL)" required="false" type="string" />
+          <option title="Gram (g)" required="false" type="string" />
+          <option title="Kilogram (kg)" required="false" type="string" />
+          <option title="Metric Ton (t)" required="false" type="string" />
+          <option title="Liter (L)" required="false" type="string" />
+          <option title="Cubic Meter (m³)" required="false" type="string" />
+          <option title="US Gallon (gal)" required="false" type="string" />
+          <option title="Meter (m)" required="false" type="string" />
+          <option title="Hour (h)" required="false" type="string" />
+          <option title="Day (d)" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+        </list>
+        <option title="Other Unit (Specify)" required="false" type="string" />
+        <option title="Additional Requirements / Specifications" required="false" type="string" />
+      </section>
+      <section title="Resupply Line Item 04" invert="False" role="All">
+        <option title="Supply / Equipment Required" required="false" type="string" />
+        <option title="Quantity Required" required="false" type="number" />
+        <list title="Unit of Measurement" required="false">
+          <option title="Each (EA)" required="false" type="string" />
+          <option title="Piece (PC)" required="false" type="string" />
+          <option title="Pair (PR)" required="false" type="string" />
+          <option title="Set (SE)" required="false" type="string" />
+          <option title="Kit (KT)" required="false" type="string" />
+          <option title="Assembly (AY)" required="false" type="string" />
+          <option title="Dozen (DZ)" required="false" type="string" />
+          <option title="Package (PG)" required="false" type="string" />
+          <option title="Box (BX)" required="false" type="string" />
+          <option title="Case (CS)" required="false" type="string" />
+          <option title="Pallet (PL)" required="false" type="string" />
+          <option title="Container" required="false" type="string" />
+          <option title="Bundle (BD)" required="false" type="string" />
+          <option title="Bag" required="false" type="string" />
+          <option title="Drum (DR)" required="false" type="string" />
+          <option title="Bottle" required="false" type="string" />
+          <option title="Can (CN)" required="false" type="string" />
+          <option title="Roll (RO)" required="false" type="string" />
+          <option title="Coil (CL)" required="false" type="string" />
+          <option title="Gram (g)" required="false" type="string" />
+          <option title="Kilogram (kg)" required="false" type="string" />
+          <option title="Metric Ton (t)" required="false" type="string" />
+          <option title="Liter (L)" required="false" type="string" />
+          <option title="Cubic Meter (m³)" required="false" type="string" />
+          <option title="US Gallon (gal)" required="false" type="string" />
+          <option title="Meter (m)" required="false" type="string" />
+          <option title="Hour (h)" required="false" type="string" />
+          <option title="Day (d)" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+        </list>
+        <option title="Other Unit (Specify)" required="false" type="string" />
+        <option title="Additional Requirements / Specifications" required="false" type="string" />
+      </section>
+      <section title="Resupply Line Item 05" invert="False" role="All">
+        <option title="Supply / Equipment Required" required="false" type="string" />
+        <option title="Quantity Required" required="false" type="number" />
+        <list title="Unit of Measurement" required="false">
+          <option title="Each (EA)" required="false" type="string" />
+          <option title="Piece (PC)" required="false" type="string" />
+          <option title="Pair (PR)" required="false" type="string" />
+          <option title="Set (SE)" required="false" type="string" />
+          <option title="Kit (KT)" required="false" type="string" />
+          <option title="Assembly (AY)" required="false" type="string" />
+          <option title="Dozen (DZ)" required="false" type="string" />
+          <option title="Package (PG)" required="false" type="string" />
+          <option title="Box (BX)" required="false" type="string" />
+          <option title="Case (CS)" required="false" type="string" />
+          <option title="Pallet (PL)" required="false" type="string" />
+          <option title="Container" required="false" type="string" />
+          <option title="Bundle (BD)" required="false" type="string" />
+          <option title="Bag" required="false" type="string" />
+          <option title="Drum (DR)" required="false" type="string" />
+          <option title="Bottle" required="false" type="string" />
+          <option title="Can (CN)" required="false" type="string" />
+          <option title="Roll (RO)" required="false" type="string" />
+          <option title="Coil (CL)" required="false" type="string" />
+          <option title="Gram (g)" required="false" type="string" />
+          <option title="Kilogram (kg)" required="false" type="string" />
+          <option title="Metric Ton (t)" required="false" type="string" />
+          <option title="Liter (L)" required="false" type="string" />
+          <option title="Cubic Meter (m³)" required="false" type="string" />
+          <option title="US Gallon (gal)" required="false" type="string" />
+          <option title="Meter (m)" required="false" type="string" />
+          <option title="Hour (h)" required="false" type="string" />
+          <option title="Day (d)" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+        </list>
+        <option title="Other Unit (Specify)" required="false" type="string" />
+        <option title="Additional Requirements / Specifications" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+  <report type="INFRAREP">
+    <section title="Infrastructure Information" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
+      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option title="Infrastructure Location" required="true" type="geometry" />
+      <list title="Infrastructure Category" required="true">
+        <option title="Power Generation / Distribution" required="false" type="string" />
+        <option title="Water Supply / Treatment" required="false" type="string" />
+        <option title="Fuel Storage / Distribution" required="false" type="string" />
+        <option title="Communications" required="false" type="string" />
+        <option title="Transportation / Road Infrastructure" required="false" type="string" />
+        <option title="Railway Infrastructure" required="false" type="string" />
+        <option title="Port / Maritime Infrastructure" required="false" type="string" />
+        <option title="Airport / Aviation Infrastructure" required="false" type="string" />
+        <option title="Medical / Healthcare Facility" required="false" type="string" />
+        <option title="Government / Administrative Facility" required="false" type="string" />
+        <option title="Military / Defense Facility" required="false" type="string" />
+        <option title="Industrial Facility" required="false" type="string" />
+        <option title="Storage / Logistics Facility" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Asset / Facility Name" required="false" type="string" />
+      <option title="Infrastructure Description" required="false" type="string" />
+      <section title="Operational Status" invert="False" role="All">
+        <list title="Current Operational Status" required="true">
+          <option title="Operational" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Partially Operational" required="false" type="string" />
+          <option title="Non-Operational" required="false" type="string" />
+          <option title="Temporarily Closed" required="false" type="string" />
+           <option title="Under Maintenance" required="false" type="string" />
+          <option title="Under Repair / Restoration" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Service Availability" required="false">
+          <option title="Fully Available" required="false" type="string" />
+          <option title="Partially Available" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Operational Status Description" required="false" type="string" />
+      </section>
+      <section title="Utilities &amp; Services" invert="False" role="All">
+        <list title="Electricity Supply" required="false">
+          <option title="Available" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Water Supply" required="false">
+          <option title="Available" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Fuel Supply" required="false">
+          <option title="Available" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Communications" required="false">
+          <option title="Available" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Sanitation / Waste" required="false">
+          <option title="Available" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Unavailable" required="false" type="string" />
+          <option title="Intermittent" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Other Services / Utilities" required="false" type="string" />
+      </section>
+      <section title="Accessibility" invert="False" role="All">
+        <list title="Accessibility Status" required="false">
+          <option title="Fully Accessible" required="false" type="string" />
+          <option title="Restricted Access" required="false" type="string" />
+          <option title="Limited Access" required="false" type="string" />
+          <option title="Inaccessible" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Hazards Observed" required="false">
+          <option title="Structural Instability" required="false" type="string" />
+          <option title="Fire / Smoke" required="false" type="string" />
+          <option title="Flooding / Water Damage" required="false" type="string" />
+          <option title="Electrical Hazard" required="false" type="string" />
+          <option title="Chemical / Toxic Hazard" required="false" type="string" />
+          <option title="Explosive Hazard / Unexploded Ordnance" required="false" type="string" />
+          <option title="Environmental Hazard" required="false" type="string" />
+          <option title="Other Observed Hazard" required="false" type="string" />
+          <option title="No Hazards Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <option title="Access Restrictions / Safety Details" required="false" type="string" />
+      </section>
+      <section title="Capacity &amp; Additional Information" invert="False" role="All">
+        <option title="Estimated Capacity" required="false" type="number" />
+        <option title="Estimated Current Usage" required="false" type="number" />
+        <option title="Capacity / Usage Details" required="false" type="string" />
+        <option title="Support Requirements" required="false" type="string" />
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+  <report type="ROUTEREP">
+    <section title="Route Information" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
+      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option title="Route / Segment" required="true" type="route" />
+      <option title="Route Designation / Name" required="false" type="string" />
+      <list title="Route Type" required="true">
+        <option title="Primary Route" required="false" type="string" />
+        <option title="Alternate Route" required="false" type="string" />
+        <option title="Diversion / Detour" required="false" type="string" />
+        <option title="Supply Route" required="false" type="string" />
+        <option title="Evacuation Route" required="false" type="string" />
+        <option title="Access Route" required="false" type="string" />
+        <option title="Local / Secondary Route" required="false" type="string" />
+        <option title="Other / Unspecified" required="false" type="string" />
+      </list>
+      <option title="Route Description" required="false" type="string" />
+      <section title="Route Condition" invert="False" role="All">
+        <list title="Route Status" required="true">
+          <option title="Open" required="false" type="string" />
+          <option title="Open with Restrictions" required="false" type="string" />
+          <option title="Partially Blocked" required="false" type="string" />
+          <option title="Blocked" required="false" type="string" />
+          <option title="Impassable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Surface Type" required="false" multiple="true">
+          <option title="Paved / Asphalt" required="false" type="string" />
+          <option title="Concrete" required="false" type="string" />
+          <option title="Gravel" required="false" type="string" />
+          <option title="Dirt / Earth" required="false" type="string" />
+          <option title="Sand" required="false" type="string" />
+          <option title="Rock / Rough Terrain" required="false" type="string" />
+          <option title="Mixed Surface" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Surface Condition" required="false" multiple="true">
+          <option title="Good" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Poor" required="false" type="string" />
+          <option title="Damaged" required="false" type="string" />
+          <option title="Uneven / Deformed" required="false" type="string" />
+          <option title="Eroded / Washed Out" required="false" type="string" />
+          <option title="Flooded / Waterlogged" required="false" type="string" />
+          <option title="Snow / Ice Covered" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Route Condition Description" required="false" type="string" />
+      </section>
+      <section title="Trafficability" invert="False" role="All">
+        <list title="Suitable Movement Categories" required="false" multiple="true">
+          <option title="Dismounted Personnel" required="false" type="string" />
+          <option title="Motorcycles" required="false" type="string" />
+          <option title="Light Wheeled Vehicles" required="false" type="string" />
+          <option title="Heavy Wheeled Vehicles" required="false" type="string" />
+          <option title="Tracked Vehicles" required="false" type="string" />
+          <option title="Emergency / Response Vehicles" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Movement Restrictions" required="false" multiple="true">
+          <option title="Width Restriction" required="false" type="string" />
+          <option title="Height Restriction" required="false" type="string" />
+          <option title="Weight / Load Restriction" required="false" type="string" />
+          <option title="Speed Restriction" required="false" type="string" />
+          <option title="Single-Lane Movement" required="false" type="string" />
+          <option title="Time-Based Restriction" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+        </list>
+        <option title="Trafficability Details" required="false" type="string" />
+      </section>
+      <section title="Obstacles &amp; Hazards" invert="False" role="All">
+        <list title="Observed Obstacles" required="false" multiple="true">
+          <option title="Road Debris" required="false" type="string" />
+          <option title="Damaged / Destroyed Infrastructure" required="false" type="string" />
+          <option title="Bridge / Culvert Damage" required="false" type="string" />
+          <option title="Crater / Road Surface Collapse" required="false" type="string" />
+          <option title="Security Barrier / Physical Blockage" required="false" type="string" />
+          <option title="Abandoned / Disabled Vehicles" required="false" type="string" />
+          <option title="Flooding / Standing Water" required="false" type="string" />
+          <option title="Landslide / Rockfall" required="false" type="string" />
+          <option title="Vegetation / Fallen Trees" required="false" type="string" />
+          <option title="Unexploded Ordnance / Explosive Hazard" required="false" type="string" />
+          <option title="Road Closure / Checkpoint" required="false" type="string" />
+          <option title="Other Observed Obstacle" required="false" type="string" />
+          <option title="No Obstacles Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <list title="Environmental / Safety Hazards" required="false" multiple="true">
+          <option title="Poor Visibility" required="false" type="string" />
+          <option title="Severe Weather" required="false" type="string" />
+          <option title="Unstable Ground / Subsidence" required="false" type="string" />
+          <option title="Fire / Smoke" required="false" type="string" />
+          <option title="Chemical / Toxic Hazard" required="false" type="string" />
+          <option title="Other Observed Hazard" required="false" type="string" />
+          <option title="No Hazards Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <option title="Obstacle / Hazard Description" required="false" type="string" />
+        <option title="Additional Information" required="false" type="string" />
+        <option title="Estimated Delay" required="false" type="number" unitOptions="&quot;min&quot;,&quot;h&quot;" />
+        <option title="Observed Traffic / Movement Conditions" required="false" type="string" />
+        <option title="Support Requirements" required="false" type="string" />
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+</reports>

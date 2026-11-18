@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<reports>
+  <report type="INTREP">
+    <section title="Intelligence Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <option title="Location" required="true" type="geometry" />
+      <list title="Collection Discipline" required="false">
+        <option title="HUMINT" required="false" type="string" />
+        <option title="GEOINT" required="false" type="string" />
+        <option title="SIGINT" required="false" type="string" />
+        <option title="OSINT" required="false" type="string" />
+        <option title="IMINT" required="false" type="string" />
+        <option title="MASINT" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Source / Collection Origin" required="true">
+        <option title="Own Observation" required="false" type="string" />
+        <option title="Friendly Unit Report" required="false" type="string" />
+        <option title="Partner Force Report" required="false" type="string" />
+        <option title="Civilian Report" required="false" type="string" />
+        <option title="Open-Source Publication" required="false" type="string" />
+        <option title="Social Media" required="false" type="string" />
+        <option title="Sensor / Surveillance Feed" required="false" type="string" />
+        <option title="Captured Material / Document" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Target Type" required="false">
+        <option title="Personnel" required="false" type="string" />
+        <option title="Military Vehicle" required="false" type="string" />
+        <option title="Civilian Vehicle" required="false" type="string" />
+        <option title="Aircraft" required="false" type="string" />
+        <option title="Vessel" required="false" type="string" />
+        <option title="Installation / Facility" required="false" type="string" />
+        <option title="Equipment / Material" required="false" type="string" />
+        <option title="Multiple / Mixed Targets" required="false" type="string" />
+        <option title="Unidentified Target" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+      </list>
+      <list title="Assessed Element / Role" required="false">
+        <option title="Infantry" required="false" type="string" />
+        <option title="Mechanized / Armored" required="false" type="string" />
+        <option title="Reconnaissance" required="false" type="string" />
+        <option title="Command &amp; Control" required="false" type="string" />
+        <option title="Logistics / Support" required="false" type="string" />
+        <option title="Electronic Warfare" required="false" type="string" />
+        <option title="Air Defence" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Estimated Strength / Size" required="false">
+        <option title="Individual" required="false" type="string" />
+        <option title="Small Team" required="false" type="string" />
+        <option title="Section / Squad" required="false" type="string" />
+        <option title="Platoon" required="false" type="string" />
+        <option title="Company" required="false" type="string" />
+        <option title="Battalion" required="false" type="string" />
+        <option title="Regiment" required="false" type="string" />
+        <option title="Brigade" required="false" type="string" />
+        <option title="Division+" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Estimated Personnel / Unit Count" required="false" type="number" />
+      <list title="Activity Type" required="false">
+        <option title="Advancing / Moving Forward" required="false" type="string" />
+        <option title="Defensive Posture / Entrenched" required="false" type="string" />
+        <option title="Withdrawing / Disengaging" required="false" type="string" />
+        <option title="Patrolling / Reconnaissance" required="false" type="string" />
+        <option title="Resupply / Logistics" required="false" type="string" />
+        <option title="Transiting / Movement" required="false" type="string" />
+        <option title="Establishing / Occupying Position" required="false" type="string" />
+        <option title="Stationary" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Range &amp; Bearing (Movement)" required="false" type="rangeBearing" />
+      <list title="Equipment Observed" required="false" multiple="true">
+        <option title="Small Arms" required="false" type="string" />
+        <option title="Crew-Served Weapons" required="false" type="string" />
+        <option title="Heavy Weapons / Support Systems" required="false" type="string" />
+        <option title="Communications Equipment" required="false" type="string" />
+        <option title="Optical / Observation Equipment" required="false" type="string" />
+        <option title="Night Vision Equipment" required="false" type="string" />
+        <option title="CBRN Protective Equipment" required="false" type="string" />
+        <option title="Unmanned Systems" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Personnel Appearance" required="false" multiple="true">
+        <option title="Military Uniform" required="false" type="string" />
+        <option title="Civilian Clothing" required="false" type="string" />
+        <option title="Mixed Attire" required="false" type="string" />
+        <option title="Distinctive Insignia / Identification" required="false" type="string" />
+        <option title="Protective Equipment" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Signatures Observed" required="false" multiple="true">
+        <option title="Radio / Antenna Presence" required="false" type="string" />
+        <option title="Electronic Equipment / Components" required="false" type="string" />
+        <option title="Vehicle Markings" required="false" type="string" />
+        <option title="Unit Markings / Insignia" required="false" type="string" />
+        <option title="Visible Camouflage / Concealment" required="false" type="string" />
+        <option title="Physical Fortifications" required="false" type="string" />
+        <option title="Vehicle / Equipment Configuration" required="false" type="string" />
+        <option title="Other" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Source Reliability" required="true">
+        <option title="A - Completely Reliable" required="false" type="string" />
+        <option title="B - Usually Reliable" required="false" type="string" />
+        <option title="C - Fairly Reliable" required="false" type="string" />
+        <option title="D - Not Usually Reliable" required="false" type="string" />
+        <option title="E - Unreliable" required="false" type="string" />
+        <option title="F - Cannot Be Judged" required="false" type="string" />
+      </list>
+      <list title="Information Credibility" required="true">
+        <option title="1 - Confirmed" required="false" type="string" />
+        <option title="2 - Probably True" required="false" type="string" />
+        <option title="3 - Possibly True" required="false" type="string" />
+        <option title="4 - Doubtful" required="false" type="string" />
+        <option title="5 - Improbable" required="false" type="string" />
+        <option title="6 - Cannot Be Judged" required="false" type="string" />
+      </list>
+      <option title="Observation / Information Description" required="true" type="string" />
+      <option title="Analytical Assessment" required="false" type="string" />
+      <option title="Assessed Intent" required="false" type="string" />
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+  <report type="BDAREP">
+    <section title="Assessment Information" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
+      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option title="Target Location" required="true" type="geometry" />
+      <list title="Target Category" required="true">
+        <option title="Personnel" required="false" type="string" />
+        <option title="Vehicle" required="false" type="string" />
+        <option title="Unmanned Aerial System (UAS)" required="false" type="string" />
+        <option title="Unmanned Ground System (UGS)" required="false" type="string" />
+        <option title="Unmanned Surface Vehicle (USV)" required="false" type="string" />
+        <option title="Unmanned Underwater Vehicle (UUV)" required="false" type="string" />
+        <option title="Aircraft" required="false" type="string" />
+        <option title="Vessel" required="false" type="string" />
+        <option title="Building / Structure" required="false" type="string" />
+        <option title="Position / Installation" required="false" type="string" />
+        <option title="Equipment / System" required="false" type="string" />
+        <option title="Infrastructure / Facility" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Target Description" required="false" type="string" />
+      <option title="Estimated Target Count" required="false" type="number" />
+      <list title="Identification Confidence" required="false">
+        <option title="Confirmed" required="false" type="string" />
+        <option title="Probable" required="false" type="string" />
+        <option title="Possible" required="false" type="string" />
+        <option title="Unidentified" required="false" type="string" />
+        <option title="Not Assessed" required="false" type="string" />
+      </list>
+      <section title="Physical Damage Assessment" invert="False" role="All">
+        <list title="Physical Damage Level" required="true">
+          <option title="No Visible Damage" required="false" type="string" />
+          <option title="Light Damage" required="false" type="string" />
+          <option title="Moderate Damage" required="false" type="string" />
+          <option title="Severe Damage" required="false" type="string" />
+          <option title="Destroyed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Estimated Damage (%)" required="false" type="number" />
+        <list title="Observed Damage Indicators" required="false" multiple="true">
+          <option title="Structural Damage" required="false" type="string" />
+          <option title="Fire Damage" required="false" type="string" />
+          <option title="Thermal Damage" required="false" type="string" />
+          <option title="Explosion Damage" required="false" type="string" />
+          <option title="Visible Deformation" required="false" type="string" />
+          <option title="Component / Equipment Damage" required="false" type="string" />
+          <option title="Debris / Fragmentation" required="false" type="string" />
+          <option title="Smoke / Burn Marks" required="false" type="string" />
+          <option title="Penetration / Impact Damage" required="false" type="string" />
+          <option title="Other Observed Damage" required="false" type="string" />
+          <option title="No Damage Indicators Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <option title="Physical Damage Description" required="false" type="string" />
+      </section>
+      <section title="Functional Assessment" invert="False" role="All">
+        <list title="Functional Status" required="true">
+          <option title="Operational" required="false" type="string" />
+          <option title="Degraded" required="false" type="string" />
+          <option title="Non-Operational" required="false" type="string" />
+          <option title="Temporarily Unavailable" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Affected Capabilities" required="true" multiple="true">
+          <option title="Mobility" required="false" type="string" />
+          <option title="Communications" required="false" type="string" />
+          <option title="Power Supply" required="false" type="string" />
+          <option title="Energy Storage / Distribution" required="false" type="string" />
+          <option title="Detection / Sensor Systems" required="false" type="string" />
+          <option title="Weapons Systems" required="false" type="string" />
+          <option title="Other Equipment Systems" required="false" type="string" />
+          <option title="Command / Control Functions" required="false" type="string" />
+          <option title="Structural Integrity" required="false" type="string" />
+          <option title="Logistics / Supply" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <list title="Recovery Status" required="false">
+          <option title="Recovery / Repair Underway" required="false" type="string" />
+          <option title="Recoverable / Repairable" required="false" type="string" />
+          <option title="Recovery / Repair Unlikely" required="false" type="string" />
+          <option title="Beyond Recovery / Repair" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Functional Effects Description" required="false" type="string" />
+      </section>
+      <section title="Additional Effects" invert="False" role="All">
+        <list title="Additional / Collateral Damage" required="false" multiple="true">
+          <option title="Adjacent Structures" required="false" type="string" />
+          <option title="Nearby Equipment / Assets" required="false" type="string" />
+          <option title="Civilian Infrastructure" required="false" type="string" />
+          <option title="Civilian Property" required="false" type="string" />
+          <option title="Environmental Damage" required="false" type="string" />
+          <option title="No Additional Damage Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+        </list>
+        <option title="Personnel Affected" required="false" type="number" />
+        <option title="Other Observed Effects" required="false" type="string" />
+      </section>
+      <section title="Assessment Sources &amp; Confidence" invert="False" role="All">
+        <list title="Assessment Source" required="false" multiple="true">
+          <option title="Direct Observation" required="false" type="string" />
+          <option title="Aerial Imagery" required="false" type="string" />
+          <option title="Ground Imagery" required="false" type="string" />
+          <option title="Satellite Imagery" required="false" type="string" />
+          <option title="Sensor Data" required="false" type="string" />
+          <option title="External Report" required="false" type="string" />
+          <option title="Other / Unspecified" required="false" type="string" />
+        </list>
+        <list title="Assessment Confidence" required="true">
+          <option title="High" required="false" type="string" />
+          <option title="Moderate" required="false" type="string" />
+          <option title="Low" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+  <report type="TALON">
+    <section title="TALON C-UAS Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <list title="Type of Platform" required="true">
+        <option title="Single-Rotor" required="false" type="string" />
+        <option title="Multirotor" required="false" type="string" />
+        <option title="Heavy Multirotor" required="false" type="string" />
+        <option title="Fixed-Wing" required="false" type="string" />
+        <option title="VTOL / Fixed-Wing Hybrid" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Type of Propulsion" required="false">
+        <option title="Piston Engine" required="false" type="string" />
+        <option title="Turbine Engine" required="false" type="string" />
+        <option title="Electric" required="false" type="string" />
+        <option title="Hybrid" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Activity" required="true" multiple="true">
+        <option title="Transit / High-Speed Movement" required="false" type="string" />
+        <option title="Hovering / Stationary" required="false" type="string" />
+        <option title="Target Search / Scanning" required="false" type="string" />
+        <option title="Thermal / Optical Observation" required="false" type="string" />
+        <option title="Payload Deployment / Drop" required="false" type="string" />
+        <option title="Terminal Dive / Strike" required="false" type="string" />
+        <option title="Perched / Grounded" required="false" type="string" />
+        <option title="Signal Relay / Communications Relay" required="false" type="string" />
+        <option title="Mine Laying / Dispersal" required="false" type="string" />
+        <option title="Other Observed Activity" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Location" required="true" type="geometry" />
+      <option title="Orientation" required="false" type="rangeBearing" />
+      <list title="Noise" required="false" multiple="true">
+        <option title="Loud" required="false" type="string" />
+        <option title="Moderate" required="false" type="string" />
+        <option title="Low / Faint" required="false" type="string" />
+        <option title="Silent / Not Audible" required="false" type="string" />
+        <option title="High-Pitched Buzz" required="false" type="string" />
+        <option title="Heavy Motor Thrum" required="false" type="string" />
+        <option title="Piston / Propeller Engine Hum" required="false" type="string" />
+        <option title="Turbine / Jet Engine Noise" required="false" type="string" />
+        <option title="Other Audible Characteristics" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <section title="Supplementary Observations" invert="False" role="All">
+        <list title="Group / Formation" required="false">
+          <option title="Single UAS" required="false" type="string" />
+          <option title="Multiple UAS" required="false" type="string" />
+          <option title="Coordinated Swarm" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Control Link" required="false">
+          <option title="RF" required="false" type="string" />
+          <option title="Fiber-Optic" required="false" type="string" />
+          <option title="Tethered (Unspecified)" required="false" type="string" />
+          <option title="Other / Unidentified" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Guidance / Navigation" required="false" multiple="true">
+          <option title="Manual / Pilot-Controlled" required="false" type="string" />
+          <option title="Autonomous" required="false" type="string" />
+          <option title="GNSS-Assisted" required="false" type="string" />
+          <option title="Inertial Navigation" required="false" type="string" />
+          <option title="Other / Unidentified" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Estimated Altitude AGL" required="false">
+          <option title="Ultra Low (&lt;15m)" required="false" type="string" />
+          <option title="Very Low (15m-50m)" required="false" type="string" />
+          <option title="Low Altitude (50m-150m)" required="false" type="string" />
+          <option title="Medium Altitude (150m-500m)" required="false" type="string" />
+          <option title="High Altitude (&gt;500m)" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Payload Assessment" required="false">
+          <option title="Confirmed" required="false" type="string" />
+          <option title="Suspected" required="false" type="string" />
+          <option title="No Payload Observed" required="false" type="string" />
+          <option title="Unable to Determine" required="false" type="string" />
+          <option title="Not Assessed" required="false" type="string" />
+        </list>
+        <list title="Payload / Equipment Type" required="false" multiple="true">
+          <option title="Explosive / Munition" required="false" type="string" />
+          <option title="ISR Sensor (EO/IR)" required="false" type="string" />
+          <option title="Communications / Relay Equipment" required="false" type="string" />
+          <option title="Cargo / Delivery Payload" required="false" type="string" />
+          <option title="Other / Unidentified" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Payload / Equipment Description" required="false" type="string" />
+        <list title="Visual Characteristics" required="false" multiple="true">
+          <option title="Steady / Continuous Lighting" required="false" type="string" />
+          <option title="Flashing / Strobing Lighting" required="false" type="string" />
+          <option title="Distinctive Visual Markings" required="false" type="string" />
+          <option title="Unusual Airframe Features" required="false" type="string" />
+          <option title="Visible External Attachments" required="false" type="string" />
+          <option title="Other / Unidentified" required="false" type="string" />
+        </list>
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+</reports>

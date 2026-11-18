@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<reports>
+  <report type="SITREP">
+    <section title="Situation Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <option title="General Situation" required="true" type="string" />
+      <option title="Opposing Forces" required="false" type="string" />
+      <option title="Friendly Forces" required="true" type="string" />
+      <option title="Incidents / Observations" required="false" type="string" />
+      <option title="Logistics &amp; Administration" required="true" type="string" />
+      <option title="Command &amp; Signal" required="true" type="string" />
+      <option title="Commander Assessment" required="false" type="string" />
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+  <report type="SALUTE">
+    <section title="Main Section" invert="False" role="All">
+      <option title="Size" required="true" type="string" />
+      <option title="Activity" required="true" type="string" />
+      <option title="Location" required="true" type="geometry" />
+      <option title="Unit" required="true" type="string" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time Observed (UTC)" required="true" type="time" />
+      <option title="Equipment" required="true" type="string" />
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+  <report type="CONTACTREP">
+    <section title="Contact Information" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date of Contact" />
+      <option title="Time of Contact" required="true" type="time" />
+      <option title="Contact Location" required="true" type="geometry" />
+      <list title="Target / Threat Type" required="true" multiple="true">
+        <option title="Personnel" required="false" type="string" />
+        <option title="Vehicle" required="false" type="string" />
+        <option title="Animal / Working Animal" required="false" type="string" />
+        <option title="Unmanned Aerial System (UAS)" required="false" type="string" />
+        <option title="Unmanned Ground System (UGS)" required="false" type="string" />
+        <option title="Unmanned Surface Vehicle (USV)" required="false" type="string" />
+        <option title="Unmanned Underwater Vehicle (UUV)" required="false" type="string" />
+        <option title="Aircraft" required="false" type="string" />
+        <option title="Vessel" required="false" type="string" />
+        <option title="Position / Installation" required="false" type="string" />
+        <option title="Equipment / Weapon System" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Estimated Target Count" required="false" type="number" />
+      <list title="Identification Confidence" required="false">
+        <option title="Confirmed" required="false" type="string" />
+        <option title="Probable" required="false" type="string" />
+        <option title="Possible" required="false" type="string" />
+        <option title="Unidentified" required="false" type="string" />
+        <option title="Not Assessed" required="false" type="string" />
+      </list>
+      <section title="Contact Observations" invert="False" role="All">
+        <list title="Target Activity" required="false" multiple="true">
+          <option title="Stationary" required="false" type="string" />
+          <option title="Moving" required="false" type="string" />
+          <option title="Approaching" required="false" type="string" />
+          <option title="Withdrawing" required="false" type="string" />
+          <option title="Maneuvering" required="false" type="string" />
+          <option title="Patrolling" required="false" type="string" />
+          <option title="Searching" required="false" type="string" />
+          <option title="Observing" required="false" type="string" />
+          <option title="Conducting Surveillance" required="false" type="string" />
+          <option title="Transmitting / Communicating" required="false" type="string" />
+          <option title="Firing / Engaging" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Movement Direction" required="false" type="rangeBearing" />
+        <option title="Target / Equipment Description" required="false" type="string" />
+        <option title="Additional Observations" required="false" type="string" />
+      </section>
+      <section title="Own Actions &amp; Outcome" invert="False" role="All">
+        <list title="Own Actions" required="false" multiple="true">
+          <option title="Observed / Monitored" required="false" type="string" />
+          <option title="Tracked" required="false" type="string" />
+          <option title="Reported to Higher Authority" required="false" type="string" />
+          <option title="Challenged" required="false" type="string" />
+          <option title="Warned" required="false" type="string" />
+          <option title="Attempted Interception" required="false" type="string" />
+          <option title="Intercepted" required="false" type="string" />
+          <option title="Engaged" required="false" type="string" />
+          <option title="Requested Support" required="false" type="string" />
+          <option title="Other" required="false" type="string" />
+          <option title="No Action Taken" required="false" type="string" />
+        </list>
+        <list title="Engagement Status" required="false">
+          <option title="No Engagement" required="false" type="string" />
+          <option title="Engagement Initiated" required="false" type="string" />
+          <option title="Engagement Ongoing" required="false" type="string" />
+          <option title="Engagement Terminated" required="false" type="string" />
+          <option title="Not Applicable" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <list title="Contact Outcome" required="false">
+          <option title="Contact Maintained" required="false" type="string" />
+          <option title="Contact Lost" required="false" type="string" />
+          <option title="Target Withdrawn" required="false" type="string" />
+          <option title="Target No Longer Present" required="false" type="string" />
+          <option title="Target Neutralized" required="false" type="string" />
+          <option title="Ongoing" required="false" type="string" />
+          <option title="Unknown / Undetermined" required="false" type="string" />
+        </list>
+        <option title="Support Required / Requested" required="false" type="string" />
+        <option title="Remarks" required="false" type="string" />
+      </section>
+    </section>
+  </report>
+</reports>
