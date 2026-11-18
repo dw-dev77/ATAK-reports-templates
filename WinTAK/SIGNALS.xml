@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reports>
+ <report type="LINKREP">
+    <section title="Tactical Link Status Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <option title="Reporting Station / Callsign" required="true" type="string" />
+      <option title="Affected Node / Target Station" required="true" type="string" />
+      <option title="Node Location" required="false" type="geometry" />
+      <list title="Link Status" required="true">
+        <option title="Active" required="false" type="string" />
+        <option title="Degraded" required="false" type="string" />
+        <option title="Dropped" required="false" type="string" />
+        <option title="Intermittent" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Medium / Transport Type" required="true">
+        <option title="Mesh IP / MANET" required="false" type="string" />
+        <option title="VHF / UHF Radio" required="false" type="string" />
+        <option title="HF Radio" required="false" type="string" />
+        <option title="Tactical Data Link" required="false" type="string" />
+        <option title="SatCom" required="false" type="string" />
+        <option title="Cellular Network" required="false" type="string" />
+        <option title="Wired / Ethernet" required="false" type="string" />
+        <option title="Fiber Optic" required="false" type="string" />
+        <option title="Microwave / PtP LoS" required="false" type="string" />
+        <option title="Relay / Repeater Network" required="false" type="string" />
+        <option title="Other / Unidentified" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Channel / Frequency / Network Identifier" required="false" type="string" />
+      <list title="Signal Quality" required="true">
+        <option title="Good" required="false" type="string" />
+        <option title="Marginal" required="false" type="string" />
+        <option title="No Signal" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Impact on Operations" required="true">
+        <option title="No Operational Impact" required="false" type="string" />
+        <option title="Restricted Capability" required="false" type="string" />
+        <option title="Isolated / Loss of Connectivity" required="false" type="string" />
+        <option title="Degraded Operations" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+  <report type="COMREP">
+    <section title="Tactical Communications Report" invert="False" role="All">
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
+      <option title="Time (UTC)" required="true" type="time" />
+      <option title="Observer Position / Grid" required="true" type="geometry" />
+      <option title="Observed Frequency" required="false" type="number" />
+      <list title="Signal Strength" required="false">
+        <option title="Very Weak" required="false" type="string" />
+        <option title="Weak" required="false" type="string" />
+        <option title="Moderate" required="false" type="string" />
+        <option title="Strong" required="false" type="string" />
+        <option title="Very Strong" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Signal / Communications Type" required="false">
+        <option title="Analog Voice (AM/FM/SSB)" required="false" type="string" />
+        <option title="Digital LMR (DMR/P25/TETRA/NXDN)" required="false" type="string" />
+        <option title="HF / Tactical Radio Data" required="false" type="string" />
+        <option title="Digital Data / Telemetry (FSK/PSK/LoRa)" required="false" type="string" />
+        <option title="Tactical Data Link" required="false" type="string" />
+        <option title="Cellular Communications (LTE/5G NR)" required="false" type="string" />
+        <option title="WLAN / Wireless Network (Wi-Fi)" required="false" type="string" />
+        <option title="Satellite Communications" required="false" type="string" />
+        <option title="Broadcast / Broadcast Relay" required="false" type="string" />
+        <option title="Navigation / Positioning Signal" required="false" type="string" />
+        <option title="Remote Control / Command Link" required="false" type="string" />
+        <option title="Other / Specialized" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Direction of Arrival" required="false" type="rangeBearing" />
+      <list title="Interference Level" required="false">
+        <option title="None Observed" required="false" type="string" />
+        <option title="Sporadic" required="false" type="string" />
+        <option title="Moderate" required="false" type="string" />
+        <option title="Heavy" required="false" type="string" />
+        <option title="Saturated" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <list title="Jamming Assessment" required="false">
+        <option title="Not Suspected" required="false" type="string" />
+        <option title="Suspected" required="false" type="string" />
+        <option title="Confirmed" required="false" type="string" />
+        <option title="Unknown / Undetermined" required="false" type="string" />
+      </list>
+      <option title="Remarks" required="false" type="string" />
+    </section>
+  </report>
+</reports>
