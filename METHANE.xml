@@ -8,24 +8,33 @@
             <option type='checkbox' value='false' required='' selected='false' title='Incident De-escalated'/>
         </list>
             <option type='geometry' required='true' title='E: Exact Location / Grid' value='' id='methane_location' drawMapItem='false'/>
-        <list title='T: Type of Incident' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Mass Casualty / Kinetic Engagement'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Explosion / Ordnance / IED'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Structural Collapse / Vehicle Crash'/>
-            <option type='checkbox' value='false' required='' selected='false' title='CBRN / Hazardous Material Release'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Fire / Environmental Hazard'/>
+        <list title='T: Type of Incident' required='true' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Mass Casualty Incident'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Kinetic Engagement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Explosion'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Ordnance / UXO Incident'/>
+            <option type='checkbox' value='false' required='' selected='false' title='IED Incident'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Structural Collapse'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Vehicle Accident / Crash'/>
+            <option type='checkbox' value='false' required='' selected='false' title='CBRN Incident'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Hazardous Material Release'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fire'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Environmental Incident'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other Incident'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='H: On-Scene Hazards' required='true' multiple='true' type='checkbox'>
-            <option type='checkbox' value='false' required='' selected='false' title='Secondary Devices / Unexploded Ordnance'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Active Fire / Toxic Smoke'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Structural Instability'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Secondary Devices / UXO'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Active Fire / Smoke / Toxic Fumes'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Structural Instability / Collapse'/>
             <option type='checkbox' value='false' required='' selected='false' title='CBRN Contamination'/>
             <option type='checkbox' value='false' required='' selected='false' title='Enemy Small Arms Fire / Sniper Threat'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Downed Power Lines / Gas Leak'/>
-             <option type='checkbox' value='false' required='' selected='false' title='None Identified'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Downed Power Lines / Electrical Hazard'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Gas Leak / Flammable Atmosphere'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Flooding / Dangerous Water Condtions'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unstable Terrain / Ground Conditions'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='None Identified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='string' required='false' title='A: Access / Ingress / HLZ Routes' value='' id='methane_access_routes'/>
@@ -45,25 +54,45 @@
         <list title='E: Emergency Services Present' required='true' multiple='true' type='checkbox'>
             <option type='checkbox' value='false' required='' selected='false' title='Medical / Ambulance'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fire and Rescue'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Police / Security'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Police / Law Enforcement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military Police'/>
             <option type='checkbox' value='false' required='' selected='false' title='Military Medical'/>
-            <option type='checkbox' value='false' required='' selected='false' title='EOD / C-IED'/>
-            <option type='checkbox' value='false' required='' selected='false' title='HazMat / CBRN'/>
+            <option type='checkbox' value='false' required='' selected='false' title='EOD'/>
+            <option type='checkbox' value='false' required='' selected='false' title='C-IED'/>
+            <option type='checkbox' value='false' required='' selected='false' title='HazMat Response'/>
+            <option type='checkbox' value='false' required='' selected='false' title='CBRN Response'/>
             <option type='checkbox' value='false' required='' selected='false' title='Search and Rescue'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
             <option type='checkbox' value='false' required='' selected='false' title='None Present'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
-        <list title='Emergency / Specialist Services Required' required='true' multiple='true' type='checkbox'>
-            <option type='checkbox' value='false' required='' selected='false' title='Medical Evacuation / Field Surgical'/>
-            <option type='checkbox' value='false' required='' selected='false' title='EOD / C-IED Support'/>
+        <list title='E: Emergency / Specialist Services Required' required='true' multiple='true' type='checkbox'>
+            <option type='checkbox' value='false' required='' selected='false' title='Civilian Ambulance / EMS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military Medical Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Medical Evacuation (MEDEVAC)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Field Surgical Team'/>
+            <option type='checkbox' value='false' required='' selected='false' title='EOD Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='C-IED Support'/>
             <option type='checkbox' value='false' required='' selected='false' title='Heavy Rescue / Extrication'/>
-            <option type='checkbox' value='false' required='' selected='false' title='HazMat / CBRN Decontamination'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Urban Search and Rescue (USAR)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Search and Rescue (SAR)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='HazMat Response'/>
+            <option type='checkbox' value='false' required='' selected='false' title='CBRN Decontamination'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Police / Law Enforcement'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Military Police'/>
             <option type='checkbox' value='false' required='' selected='false' title='Security / Perimeter Force'/>
             <option type='checkbox' value='false' required='' selected='false' title='Fire and Rescue'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Search and Rescue'/>
-            <option type='checkbox' value='false' required='' selected='false' title='No Additional Services Required'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Emergency Engineering Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Infrastructure / Utilities Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Communications Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Transport Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Logistics / Supply Support'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmanned Aerial Systems (UAS)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmanned Ground Systems (UGS)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Unmanned Surface / Underwater Systems (USV / UUV)'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Remote Sensing / Reconnaissance Support'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Additional Services Required'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
             <option type='string' required='false' title='Remarks / Additional Details' value='' id='methane_remarks'/>
