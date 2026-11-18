@@ -53,7 +53,7 @@ WinTAK templates are organized into five operational categories:
 - **Operational Adaptability:** Reporting structures designed to accommodate different operational environments, evolving technologies, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
 - **Geospatial Integration:** Supports location selection, directional observations, and route definition. ATAK implementations use native `geometry`, `rangeBearing`, and `route` field types where applicable.
-- **Cross-Platform Compatibility:** Consistent reporting structures and information requirements across ATAK and WinTAK, with platform-specific XML configurations and field adaptations.
+- **Cross-Platform Implementations:** Consistent reporting structures and information requirements across ATAK and WinTAK, implemented through platform-specific XML configurations and field adaptations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
 ## Screenshots
@@ -108,7 +108,7 @@ These templates are designed for use with the `Reports` plugin.
 2. Copy the `.xml` template files to:
 
 ```text
-/AppData/Roaming/WinTAK/Surveillance/Templates/
+/%APPDATA%/Roaming/WinTAK/Surveillance/Templates/
 ```
 3. Restart WinTAK to load the updated configuration.
 4. Open the Reports interface and verify that the five categories (`OPS`, `INTEL`, `SIGNALS`, `LOG`, and `HAZMAT`) are displayed with their associated templates.
