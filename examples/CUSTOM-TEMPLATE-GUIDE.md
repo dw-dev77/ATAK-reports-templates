@@ -6,7 +6,7 @@ The XML definitions are platform-specific and are not directly interchangeable. 
 
 ---
 
-## ATAK — Reports Plugin
+## ATAK - Reports Plugin
 
 The ATAK example uses the XML structure supported by the ATAK Reports plugin. It demonstrates nested sections, field configuration, geospatial inputs, measurement units, formulas, and selection controls.
 
@@ -90,7 +90,7 @@ The ATAK example uses the XML structure supported by the ATAK Reports plugin. It
 
 ---
 
-## WinTAK — Custom Reports
+## WinTAK - Custom Reports
 
 The WinTAK example uses the custom report XML structure exported by WinTAK. It demonstrates section-based report organization, list options, standalone checkboxes, and the field types available in the exported custom report definition.
 
@@ -157,6 +157,41 @@ The WinTAK example uses the custom report XML structure exported by WinTAK. It d
     </section>
 </report>
 ```
+### Adding Custom Templates to WinTAK
+
+Custom WinTAK report templates can be added through the `Surveillance/Templates/` directory using either of the following methods:
+
+**1. Add templates to `custom.xml`**
+
+Add individual `<report>` definitions to the existing `custom.xml` file in the `Surveillance/Templates/` directory. Each report is defined using its own `<report>` element.
+
+**2. Create a separate custom category**
+
+Create a separate XML file in the `Surveillance/Templates/` directory. The filename identifies the custom category, while the XML contents define the individual report templates belonging to it.
+
+Use a `<reports>` root element containing one or more `<report>` elements. Each `<report>` defines an individual template within that category.
+
+For example, `Example.xml` creates a category containing two report templates:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<reports>
+    <report type="First-Custom-Report">
+        <section title="First Report" invert="False" role="All">
+            <option title="Text Field" required="false" type="string" />
+        </section>
+    </report>
+
+    <report type="Second-Custom-Report">
+        <section title="Second Report" invert="False" role="All">
+            <option title="Location" required="false" type="geometry" />
+        </section>
+    </report>
+</reports>
+```
+Both methods allow custom report definitions to be loaded by WinTAK. Keep each report definition within its own `<report>` element and preserve the appropriate XML structure for the selected method.
+
+Restart WinTAK after adding or modifying report definitions for the changes to take effect.
 
 ---
 
