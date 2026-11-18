@@ -84,7 +84,7 @@ Examples of the reporting templates running in WinTAK `5.8.0`.
 | COMREP | UXO/IED |
 | :---: | :---: |
 | ![COMREP](screenshots/WINTAK-COMREP.jpg) | ![UXO/IED](screenshots/WINTAK-UXOIED.jpg) |
-| Communications report | 9-Line unexploded ordnance / improvised explosive device report |
+| Communications report | 9-Line UXO report |
 
 ## Installation
 
