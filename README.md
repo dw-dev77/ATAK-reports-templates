@@ -117,22 +117,23 @@ WinTAK and ATAK use platform-specific report definitions. Their XML files are no
 
 ## Building Custom Templates
 
-The repository includes [`CUSTOM.xml`](examples/CUSTOM.xml), an ATAK reports plugin reference template demonstrating the XML field types and configurations used in the ATAK implementation.
-The WinTAK implementation follows the same general report structure, with XML attributes and field configurations adapted to WinTAK's supported capabilities.
+The repository includes [**`CUSTOM-TEMPLATE-GUIDE.md`**](examples/CUSTOM-TEMPLATE-GUIDE.md), a reference guide containing separate custom report template examples for ATAK and WinTAK.
 
-The example covers:
+Each example demonstrates the XML structure, field types and configurations used by its respective platform.
+
+The examples cover:
 
 - **Text and input fields:** String, numeric, time and date-time inputs.
-- **Required and optional fields:** Field and section configuration.
-- **Nested Sections:** Group related fields into nested sections to organise report structure.
-- **Selection fields:** Dropdown lists, radio buttons and multi-select checkboxes.
+- **Required and optional fields:** Field configuration and input requirements.
+- **Sections and organisation:** Grouping related fields into report sections, including nested sections in the ATAK implementation.
+- **Selection fields:** Dropdown lists, radio buttons, standalone checkboxes and multi-select options.
 - **Geospatial fields:** Location geometry, range and bearing, and route selection.
 - **Measurement fields:** Numeric inputs with configurable measurement units.
-- **Formula fields:** Example formula field configuration.
+- **Formula fields:** Example formula field configuration in the ATAK implementation.
 
-Use this template as a starting point when creating or adapting reporting templates. Modify the report metadata, section structure, field definitions and identifiers to suit your reporting requirements.
+Use the relevant platform example as a starting point when creating or adapting reporting templates. Modify the report metadata, section structure, field definitions and identifiers to suit your reporting requirements.
 
-Custom templates should be tested in their intended platform and version to verify field rendering and functionality.
+ATAK and WinTAK use platform-specific XML structures and field configurations. Their templates are not directly interchangeable. Custom templates should be tested in their intended platform and version to verify field rendering and functionality.
 
 ## Usage
 
