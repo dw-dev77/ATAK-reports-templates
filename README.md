@@ -15,6 +15,18 @@ This repository provides reporting templates for both ATAK and WinTAK. Separate 
 
 Both implementations follow a common reporting structure and are designed to preserve consistent information requirements, section organisation, and reporting functionality across platforms. Platform-specific adaptations are applied where differences in supported fields and application behavior require them.
 
+### WinTAK Categories
+
+WinTAK templates are organized into five operational categories:
+
+| Category | Included Templates |
+| :--- | :--- |
+| OPS | SITREP, SALUTE, CONTACTREP |
+| INTEL | INTREP, BDAREP, TALON |
+| SIGNALS | LINKREP, COMREP |
+| LOG | LOGREP, INFRAREP, ROUTEREP |
+| HAZMAT | METHANE, CBRNREP, UXO / IED |
+
 ## Included Templates
 
 | Template | Description |
@@ -22,11 +34,11 @@ Both implementations follow a common reporting structure and are designed to pre
 | **SITREP** | Situation report covering operational status assessment, unit readiness, and mission progress. |
 | **SALUTE** | Standard report for tactical field observations (Size, Activity, Location, Unit, Time, Equipment). |
 | **INTREP** | Intelligence report for documenting observed activities, target characteristics, collection information, and analytical assessments, including source reliability and information credibility ratings (Admiralty Code). |
-| **LINKREP** | Report template for logging tactical data link (TDL) status, network connectivity, node health, transport mediums, signal quality, and operational disruptions. |
+| **LINKREP** | Tactical communications link status report covering affected nodes, transport media, network connectivity, signal quality, and operational impact. |
 | **LOGREP** | Logistics report covering personnel strength and availability, supply levels, equipment readiness, and resupply requirements. Includes structured supply assessments, request priority and status tracking, delivery location, and up to five individual resupply line items with quantities, units of measurement, and additional specifications. |
 | **UXO / IED** | Explosive hazard reporting template based on the 9-Line reporting format. |
-| **TALON** | Structured C-UAS reporting template for documenting and classifying unmanned aircraft system (UAS) observations, including platform and propulsion types, observed activity, location, orientation, acoustic signatures, group formations, control links, guidance and navigation characteristics, estimated altitude, payload assessments, and visual characteristics. |
-| **COMREP** | RF observation report for documenting observed frequencies, signal strength, communications types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
+| **TALON** | Structured C-UAS reporting template for documenting unmanned aircraft system (UAS) observations, including platform characteristics, observed activity, location, orientation, acoustic signatures, formations, control links, navigation characteristics, altitude, payload assessments, and visual characteristics. |
+| **COMREP** | Communications observation report covering observed frequencies, signal strength, signal and communications types, direction of arrival, and interference conditions, including suspected or confirmed jamming. |
 | **METHANE** | Major incident report for emergency triage, scene hazard identification, access routing, and mass casualty (MASCAL) counts. |
 | **CBRNREP** | CBRN incident reporting, including hazard detection, agent identification confidence, contamination assessment, personnel exposure and protective measures. |
 | **CONTACTREP** | Template for reporting enemy or threat contacts, including contact location, target type and strength, observed activity, actions taken by own forces, and contact outcome. |
@@ -40,7 +52,7 @@ Both implementations follow a common reporting structure and are designed to pre
 - **Purpose-built templates:** Dedicated reporting structures for tactical data link status (`LINKREP`), counter-UAS observations (`TALON`), RF communications observations (`COMREP`), CBRN incidents (`CBRNREP`), contact reporting (`CONTACTREP`), battle damage assessment (`BDAREP`), infrastructure status (`INFRAREP`), and route assessment (`ROUTEREP`).
 - **Operational Adaptability:** Reporting structures designed to accommodate different operational environments, evolving technologies, and situational awareness requirements.
 - **Multi-Select Fields:** Checkbox-based selections for recording multiple observations, hazards, conditions, and requirements where applicable.
-- **Geospatial Integration:** Utilizes native `geometry`, `rangeBearing` and `route` field types for location selection, directional observations and route definition.
+- **Geospatial Integration:** Supports location selection, directional observations, and route definition. ATAK implementations use native `geometry`, `rangeBearing`, and `route` field types where applicable.
 - **Cross-Platform Compatibility:** Consistent reporting structures and information requirements across ATAK and WinTAK, with platform-specific XML configurations and field adaptations.
 - **Configurable XML Templates:** Lightweight XML-based report definitions that can be adapted to different operational reporting requirements.
 
@@ -91,7 +103,7 @@ These templates are designed for use with the `Reports` plugin.
 3. Restart WinTAK to load the updated configuration.
 4. Open the Reports interface and verify that the five categories - `OPS`, `INTEL`, `SIGNALS`, `LOG`, `HAZMAT` are displayed with their associated templates.
 
-WinTAK report definitions are not interchangeable with ATAK's individual report template XML files.
+WinTAK and ATAK use platform-specific report definitions. Their XML files are not directly interchangeable.
 
 ## Building Custom Templates
 
@@ -132,15 +144,21 @@ Custom templates should be tested in their intended platform and version to veri
 
 ## Testing and Compatibility
 
-All included templates have been loaded and tested in ATAK `5.8.0`.
+All ATAK templates have been loaded and tested in ATAK `5.8.0`.
+
+WinTAK report definitions have been loaded and tested in WinTAK `5.8.0`, including their custom category organization.
 
 Testing includes:
+
 - Template loading and display.
 - Field rendering and interaction.
 - Dropdown and multi-select functionality.
-- Geospatial field selection and map interaction.
+- Geospatial field selection and map interaction, where supported.
 - Numeric inputs and measurement units, where applicable.
+- Nested sections and repeated report structures.
 - Report submission.
+- Report export and sharing.
+- WinTAK category persistence after application restart.
 
 XML well-formedness checks alone do not establish runtime compatibility.
 
