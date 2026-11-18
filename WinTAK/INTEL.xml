@@ -2,8 +2,7 @@
 <reports>
   <report type="INTREP">
     <section title="Intelligence Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <option title="Location" required="true" type="geometry" />
       <list title="Collection Discipline" required="false">
         <option title="HUMINT" required="false" type="string" />
@@ -131,8 +130,7 @@
   </report>
   <report type="BDAREP">
     <section title="Assessment Information" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment Date" />
-      <option title="Assessment Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Assessment DTG" />
       <option title="Target Location" required="true" type="geometry" />
       <list title="Target Category" required="true">
         <option title="Personnel" required="false" type="string" />
@@ -255,8 +253,7 @@
   </report>
   <report type="TALON">
     <section title="TALON C-UAS Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <list title="Type of Platform" required="true">
         <option title="Single-Rotor" required="false" type="string" />
         <option title="Multirotor" required="false" type="string" />
