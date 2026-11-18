@@ -2,8 +2,7 @@
 <reports>
   <report type="SITREP">
     <section title="Situation Report" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="DTG" />
       <option title="General Situation" required="true" type="string" />
       <option title="Opposing Forces" required="false" type="string" />
       <option title="Friendly Forces" required="true" type="string" />
@@ -20,16 +19,14 @@
       <option title="Activity" required="true" type="string" />
       <option title="Location" required="true" type="geometry" />
       <option title="Unit" required="true" type="string" />
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date" />
-      <option title="Time Observed (UTC)" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Time Observed (DTG)" />
       <option title="Equipment" required="true" type="string" />
       <option title="Remarks" required="false" type="string" />
     </section>
   </report>
   <report type="CONTACTREP">
     <section title="Contact Information" invert="False" role="All">
-      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date of Contact" />
-      <option title="Time of Contact" required="true" type="time" />
+      <option format="MM dd yyyy HH:mm" type="dateTime" required="true" title="Date/Time of Contact (DTG)" />
       <option title="Contact Location" required="true" type="geometry" />
       <list title="Target / Threat Type" required="true" multiple="true">
         <option title="Personnel" required="false" type="string" />
