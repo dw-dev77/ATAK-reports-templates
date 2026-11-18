@@ -13,11 +13,16 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Medium / Transport Type' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='Mesh IP'/>
-            <option type='checkbox' value='false' required='' selected='false' title='VHF / UHF'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Mesh IP / MANET'/>
+            <option type='checkbox' value='false' required='' selected='false' title='VHF / UHF Radio'/>
+            <option type='checkbox' value='false' required='' selected='false' title='HF Radio'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Tactical Data Link'/>
             <option type='checkbox' value='false' required='' selected='false' title='SatCom'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Cellular'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Alternate / Relay Path'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Cellular Network'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Wired / Ethernet'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Fiber Optic'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Microwave / PtP LoS'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Relay / Repeater Network'/>
             <option type='checkbox' value='false' required='' selected='false' title='Other / Unidentified'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
@@ -29,10 +34,10 @@
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>
         <list title='Impact on Operations' type='dropdown' required='true'>
-            <option type='checkbox' value='false' required='' selected='false' title='None'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Restricted'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Isolated'/>
-            <option type='checkbox' value='false' required='' selected='false' title='Degraded'/>
+            <option type='checkbox' value='false' required='' selected='false' title='No Operational Impact'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Restricted Capability'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Isolated / Loss of Connectivity'/>
+            <option type='checkbox' value='false' required='' selected='false' title='Degraded Operations'/>
             <option type='checkbox' value='false' required='' selected='false' title='Unknown / Undetermined'/>
         </list>   
             <option type='string' required='false' title='Remarks / Cause of Disruption' value='' id='linkrep_remarks'/>
