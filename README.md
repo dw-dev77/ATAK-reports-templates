@@ -62,12 +62,12 @@ WinTAK templates are organized into five operational categories:
 
 Examples of the reporting templates running in ATAK `5.8.0`.
 
-| INTREP — Intelligence Report | LOGREP — Logistics Report |
+| INTREP - Intelligence Report | LOGREP - Logistics Report |
 | :---: | :---: |
 | ![INTREP](screenshots/ATAK-INTREP.jpg) | ![LOGREP](screenshots/ATAK-LOGREP.jpg) |
 | Structured reporting and collection information | Custom measurement units |
 
-| ROUTEREP — Route Assessment | TALON — C-UAS Report |
+| ROUTEREP - Route Assessment | TALON - C-UAS Report |
 | :---: | :---: |
 | ![ROUTEREP](screenshots/ATAK-ROUTEREP.jpg) | ![TALON](screenshots/ATAK-TALON.jpg) |
 | Multi-select categories | Altitude and payload assessment |
