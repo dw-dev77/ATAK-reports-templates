@@ -64,7 +64,7 @@ Examples of the reporting templates running in ATAK `5.8.0`.
 
 | INTREP — Intelligence Report | LOGREP — Logistics Report |
 | :---: | :---: |
-| ![INTREP](screenshots/INTREP.jpg) | ![LOGREP](screenshots/LOGREP.jpg) |
+| ![INTREP](screenshots/ATAK-INTREP.jpg) | ![LOGREP](screenshots/ATAK-LOGREP.jpg) |
 | Structured reporting and collection information | Custom measurement units |
 
 | BDAREP — Battle Damage Assessment | CBRNREP — CBRN Incident Report |
